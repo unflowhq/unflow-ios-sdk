@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "Unflow",
-            targets: ["Unflow"]
+            targets: ["UnflowTarget"]
         )
     ],
     dependencies: [
@@ -21,14 +21,14 @@ let package = Package(
             path: "UnflowUI.xcframework"
         ),
         .binaryTarget(
-            name: "UnflowCore",
+            name: "Unflow",
             path: "Unflow.xcframework"
         ),
         .target(
-            name: "Unflow",
+            name: "UnflowTarget",
             dependencies: [
+                "Unflow",
                 "UnflowUI",
-                "UnflowCore",
                 "Nuke",
             ]
         )
