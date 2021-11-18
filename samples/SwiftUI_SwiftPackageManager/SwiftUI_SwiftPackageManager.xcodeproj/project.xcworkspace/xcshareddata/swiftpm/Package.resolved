@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Nuke",
+        "repositoryURL": "https://github.com/kean/Nuke.git",
+        "state": {
+          "branch": null,
+          "revision": "472a03c15f39592007d94f25abe554350bc8aa2b",
+          "version": "10.5.1"
+        }
+      },
+      {
+        "package": "Unflow",
+        "repositoryURL": "https://github.com/unflowhq/unflow-ios-sdk",
+        "state": {
+          "branch": null,
+          "revision": "26b3e7378f927789321d5f20cebea234e3ea3eeb",
+          "version": "1.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
