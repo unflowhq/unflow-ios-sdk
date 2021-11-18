@@ -1,0 +1,29 @@
+PODS:
+  - Nuke (10.5.1)
+  - Unflow (1.0.0):
+    - Nuke
+
+DEPENDENCIES:
+  - Unflow (from `https://github.com/unflowhq/unflow-ios-sdk.git`, tag `v1.0.0`)
+
+SPEC REPOS:
+  trunk:
+    - Nuke
+
+EXTERNAL SOURCES:
+  Unflow:
+    :git: https://github.com/unflowhq/unflow-ios-sdk.git
+    :tag: v1.0.0
+
+CHECKOUT OPTIONS:
+  Unflow:
+    :git: https://github.com/unflowhq/unflow-ios-sdk.git
+    :tag: v1.0.0
+
+SPEC CHECKSUMS:
+  Nuke: 6ae28db7d24c07d040bcc52f6957b32dac23e91b
+  Unflow: f6f6af29112323f7931d8e9b2b4176a62fb68204
+
+PODFILE CHECKSUM: 613c965c71d793812379cc118b280a23ce3def8d
+
+COCOAPODS: 1.11.2
