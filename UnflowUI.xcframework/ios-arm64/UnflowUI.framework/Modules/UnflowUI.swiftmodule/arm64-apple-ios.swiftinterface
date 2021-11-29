@@ -13,17 +13,20 @@ import Unflow
 import _Concurrency
 @_hasMissingDesignatedInitializers public class UnflowSDK {
   public var isInitialized: Swift.Bool
-  public static let client: UnflowUI.UnflowSDK
-  public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: Unflow.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
   public func setUserId(userId: Swift.String)
   public func setAttributes(attributes: [Swift.String : Swift.String])
+  @available(iOS 13.0, *)
+  public func setCustomFonts(fonts: UnflowUI.Fonts)
+  @available(iOS 13.0, *)
   public func sync()
-  @available(*, deprecated, renamed: "client.sync()", message: "Sync using the Unflow client instance")
-  public static func sync()
+  @objc deinit
+}
+extension UnflowUI.UnflowSDK {
   public struct Config {
     public init(apiKey: Swift.String, enableLogging: Swift.Bool)
   }
-  @objc deinit
+  public static let client: UnflowUI.UnflowSDK
+  public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: Unflow.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
 }
 @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) public struct RemoteImage : SwiftUI.View {
@@ -42,8 +45,8 @@ public struct ImageBlock : SwiftUI.View {
   public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10ImageBlockV4bodyQrvp", 0) __
 }
 @available(iOS 13.0, *)
-public struct TextBlock : SwiftUI.View {
-  public init(block: Unflow.Block.Text)
+@_Concurrency.MainActor(unsafe) public struct TextBlock : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(block: Unflow.Block.Text)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -79,8 +82,16 @@ public struct BlockView : SwiftUI.View {
   @objc deinit
 }
 @available(iOS 13.0, *)
+public struct AuthorBlock : SwiftUI.View {
+  public init(block: Unflow.Block.Author)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI11AuthorBlockV4bodyQrvp", 0) __
+}
+@available(iOS 13.0, *)
 public struct Paginator : SwiftUI.View {
-  public init(numDots: Swift.Int, activeIndex: Swift.Int)
+  public init(numDots: Swift.Int, activeIndex: Swift.Int, pageTheme: Unflow.Theme)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -92,4 +103,16 @@ public struct OpenerBanner : SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI12OpenerBannerV4bodyQrvp", 0) __
+}
+@available(iOS 13.0, *)
+public struct Typography {
+}
+@available(iOS 13.0, *)
+public struct Fonts {
+  public var title: SwiftUI.Font?
+  public var body: SwiftUI.Font?
+  public var button: SwiftUI.Font?
+  public var openerTitle: SwiftUI.Font?
+  public var openerSubtitle: SwiftUI.Font?
+  public init(title: SwiftUI.Font? = nil, body: SwiftUI.Font? = nil, button: SwiftUI.Font? = nil, openerTitle: SwiftUI.Font? = nil, openerSubtitle: SwiftUI.Font? = nil)
 }

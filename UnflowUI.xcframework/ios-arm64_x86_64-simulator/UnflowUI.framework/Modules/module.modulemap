@@ -1,0 +1,11 @@
+framework module UnflowUI {
+  umbrella header "UnflowUI.h"
+
+  export *
+  module * { export * }
+}
+
+module UnflowUI.Swift {
+    header "UnflowUI-Swift.h"
+    requires objc
+}
