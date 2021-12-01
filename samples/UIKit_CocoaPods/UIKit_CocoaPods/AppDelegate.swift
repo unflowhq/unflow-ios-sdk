@@ -14,7 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ),
             analyticsListener: nil
         )
-        client.sync()
+        if #available(iOS 13.0, *) {
+            client.sync()
+        }
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = ViewController()
