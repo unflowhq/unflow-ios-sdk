@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class UnflowUnflowEvent, UnflowUnflowEventCompanion, UnflowUnflowEventActionInteraction, UnflowUnflowEventAction, UnflowKotlinEnumCompanion, UnflowKotlinEnum<E>, UnflowKotlinArray<T>, UnflowUnflowEventScreen, UnflowKotlinPair<__covariant A, __covariant B>, UnflowUnflowSdk, UnflowUnflowSdkConfig, UnflowDatabaseDriverFactory, UnflowUnflowComponent, UnflowLink, UnflowLinkAction, UnflowLinkActionClose, UnflowLinkActionNext, UnflowLinkNavigable, UnflowLinkNavigableHttp, UnflowLinkNavigableOther, UnflowKotlinUnit, UnflowAppStyle, UnflowCommonFlow<T>, UnflowOpener, UnflowScreen, UnflowBlock, UnflowBlockButtonStyle, UnflowBlockButton, UnflowBlockButtonStyleCompanion, UnflowBlockImage, UnflowBlockSpacer, UnflowBlockTextStyle, UnflowBlockText, UnflowBlockTextStyleCompanion, UnflowBlockTypeCompanion, UnflowBlockType, UnflowHorizontalAlignmentCompanion, UnflowHorizontalAlignment, UnflowSlot, UnflowVerticalAlignment, UnflowPage, UnflowScreenContentType, UnflowScreenContentTypeCompanion, UnflowVerticalAlignmentCompanion, UnflowAppStyle_, UnflowRuntimeQuery<__covariant RowType>, UnflowBlock_, UnflowRuntimeAfterVersionWithDriver, UnflowOpener_, UnflowPage_, UnflowScreen_, UnflowSlot_, UnflowUnflowDatabaseCompanion, UnflowKotlinThrowable, UnflowKotlinException, UnflowKotlinRuntimeException, UnflowKotlinIllegalStateException, UnflowRuntimeTransacterTransaction, UnflowKotlinByteArray, UnflowKotlinByteIterator;
+@class UnflowUnflowEvent, UnflowUnflowEventCompanion, UnflowUnflowEventActionInteraction, UnflowUnflowEventAction, UnflowKotlinEnumCompanion, UnflowKotlinEnum<E>, UnflowKotlinArray<T>, UnflowUnflowEventScreen, UnflowKotlinPair<__covariant A, __covariant B>, UnflowUnflowSdk, UnflowUnflowSdkConfig, UnflowDatabaseDriverFactory, UnflowUnflowComponent, UnflowLink, UnflowLinkActionCompanion, UnflowLinkAction, UnflowLinkActionClose, UnflowLinkLinkIdCompanion, UnflowLinkLinkId, UnflowLinkNavigable, UnflowLinkNavigableHttp, UnflowLinkNavigableOther, UnflowKotlinUnit, UnflowAppStyleTheme, UnflowCommonFlow<T>, UnflowOpener, UnflowScreen, UnflowBlock, UnflowTheme, UnflowBlockAuthor, UnflowBlockButtonStyle, UnflowBlockButton, UnflowBlockButtonStyleCompanion, UnflowBlockImage, UnflowBlockSpacer, UnflowBlockTextStyle, UnflowBlockText, UnflowBlockTextStyleCompanion, UnflowBlockTypeCompanion, UnflowBlockType, UnflowHorizontalAlignmentCompanion, UnflowHorizontalAlignment, UnflowSlot, UnflowVerticalAlignment, UnflowPage, UnflowScreenContentType, UnflowScreenContentTypeCompanion, UnflowVerticalAlignmentCompanion, UnflowThemeCompanion, UnflowTheme_, UnflowRuntimeQuery<__covariant RowType>, UnflowBlock_, UnflowRuntimeAfterVersionWithDriver, UnflowLink_, UnflowOpener_, UnflowPage_, UnflowScreen_, UnflowSlot_, UnflowUnflowDatabaseCompanion, UnflowKotlinThrowable, UnflowKotlinException, UnflowKotlinRuntimeException, UnflowKotlinIllegalStateException, UnflowRuntimeTransacterTransaction, UnflowKotlinByteArray, UnflowKotlinByteIterator;
 
-@protocol UnflowKotlinComparable, UnflowAnalyticsListener, UnflowAnalytics, UnflowAnalyticsLocalDataSource, UnflowUnflowRepository, UnflowKotlinx_coroutines_coreFlowCollector, UnflowKotlinx_coroutines_coreFlow, UnflowKtor_ioCloseable, UnflowAlignment, UnflowRuntimeTransactionWithoutReturn, UnflowRuntimeTransactionWithReturn, UnflowRuntimeTransacter, UnflowRuntimeSqlDriver, UnflowAppStyleQueries, UnflowScreenQueries, UnflowUnflowDatabase, UnflowRuntimeSqlDriverSchema, UnflowKotlinIterator, UnflowRuntimeSqlCursor, UnflowRuntimeQueryListener, UnflowRuntimeTransactionCallbacks, UnflowRuntimeSqlPreparedStatement, UnflowRuntimeCloseable;
+@protocol UnflowKotlinComparable, UnflowAnalyticsListener, UnflowAnalytics, UnflowAnalyticsLocalDataSource, UnflowUnflowRepository, UnflowKotlinx_coroutines_coreFlowCollector, UnflowKotlinx_coroutines_coreFlow, UnflowKtor_ioCloseable, UnflowAlignment, UnflowRuntimeTransactionWithoutReturn, UnflowRuntimeTransactionWithReturn, UnflowRuntimeTransacter, UnflowRuntimeSqlDriver, UnflowAppStyleQueries, UnflowLinkQueries, UnflowScreenQueries, UnflowUnflowDatabase, UnflowRuntimeSqlDriverSchema, UnflowKotlinIterator, UnflowRuntimeSqlCursor, UnflowRuntimeQueryListener, UnflowRuntimeTransactionCallbacks, UnflowRuntimeSqlPreparedStatement, UnflowRuntimeCloseable;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -289,6 +289,7 @@ __attribute__((swift_name("Link.Action")))
 @interface UnflowLinkAction : UnflowLink
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) UnflowLinkActionCompanion *companion __attribute__((swift_name("companion")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -304,15 +305,38 @@ __attribute__((swift_name("Link.ActionClose")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Link.ActionNext")))
-@interface UnflowLinkActionNext : UnflowLinkAction
+__attribute__((swift_name("Link.ActionCompanion")))
+@interface UnflowLinkActionCompanion : UnflowBase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowLinkActionCompanion *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Link.LinkId")))
+@interface UnflowLinkLinkId : UnflowLink
+- (instancetype)initWithUri:(NSString *)uri linkId:(int64_t)linkId __attribute__((swift_name("init(uri:linkId:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
-+ (instancetype)next __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UnflowLinkActionNext *shared __attribute__((swift_name("shared")));
+@property (class, readonly, getter=companion) UnflowLinkLinkIdCompanion *companion __attribute__((swift_name("companion")));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (int64_t)component2 __attribute__((swift_name("component2()")));
+- (UnflowLinkLinkId *)doCopyUri:(NSString *)uri linkId:(int64_t)linkId __attribute__((swift_name("doCopy(uri:linkId:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int64_t linkId __attribute__((swift_name("linkId")));
 @property (readonly) NSString *uri __attribute__((swift_name("uri")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Link.LinkIdCompanion")))
+@interface UnflowLinkLinkIdCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowLinkLinkIdCompanion *shared __attribute__((swift_name("shared")));
 @end;
 
 __attribute__((swift_name("Link.Navigable")))
@@ -373,10 +397,18 @@ __attribute__((swift_name("CommonFlow")))
 - (id<UnflowKtor_ioCloseable>)watchBlock:(void (^)(T))block __attribute__((swift_name("watch(block:)")));
 @end;
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PlatformProvider")))
+@interface UnflowPlatformProvider : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (readonly) NSString *platform __attribute__((swift_name("platform")));
+@end;
+
 __attribute__((swift_name("UnflowRepository")))
 @protocol UnflowUnflowRepository
 @required
-- (UnflowCommonFlow<UnflowAppStyle *> *)appStyle __attribute__((swift_name("appStyle()")));
+- (UnflowCommonFlow<NSArray<UnflowAppStyleTheme *> *> *)appStyleThemes __attribute__((swift_name("appStyleThemes()")));
 - (UnflowCommonFlow<NSArray<UnflowOpener *> *> *)openersSubscriptionId:(NSString *)subscriptionId __attribute__((swift_name("openers(subscriptionId:)")));
 - (UnflowCommonFlow<UnflowScreen *> *)screenId:(int64_t)id __attribute__((swift_name("screen(id:)")));
 
@@ -402,9 +434,31 @@ __attribute__((swift_name("Block")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Block.Author")))
+@interface UnflowBlockAuthor : UnflowBlock
+- (instancetype)initWithId:(int64_t)id position:(int32_t)position name:(NSString *)name avatar:(NSString * _Nullable)avatar theme:(UnflowTheme *)theme __attribute__((swift_name("init(id:position:name:avatar:theme:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (int64_t)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (UnflowTheme *)component5 __attribute__((swift_name("component5()")));
+- (UnflowBlockAuthor *)doCopyId:(int64_t)id position:(int32_t)position name:(NSString *)name avatar:(NSString * _Nullable)avatar theme:(UnflowTheme *)theme __attribute__((swift_name("doCopy(id:position:name:avatar:theme:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable avatar __attribute__((swift_name("avatar")));
+@property (readonly) int64_t id __attribute__((swift_name("id")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) int32_t position __attribute__((swift_name("position")));
+@property (readonly) UnflowTheme *theme __attribute__((swift_name("theme")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Block.Button")))
 @interface UnflowBlockButton : UnflowBlock
-- (instancetype)initWithId:(int64_t)id position:(int32_t)position text:(NSString *)text link:(UnflowLink * _Nullable)link style:(UnflowBlockButtonStyle *)style __attribute__((swift_name("init(id:position:text:link:style:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id position:(int32_t)position text:(NSString *)text link:(UnflowLink * _Nullable)link style:(UnflowBlockButtonStyle *)style theme:(UnflowTheme *)theme __attribute__((swift_name("init(id:position:text:link:style:theme:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
@@ -412,7 +466,8 @@ __attribute__((swift_name("Block.Button")))
 - (NSString *)component3 __attribute__((swift_name("component3()")));
 - (UnflowLink * _Nullable)component4 __attribute__((swift_name("component4()")));
 - (UnflowBlockButtonStyle *)component5 __attribute__((swift_name("component5()")));
-- (UnflowBlockButton *)doCopyId:(int64_t)id position:(int32_t)position text:(NSString *)text link:(UnflowLink * _Nullable)link style:(UnflowBlockButtonStyle *)style __attribute__((swift_name("doCopy(id:position:text:link:style:)")));
+- (UnflowTheme *)component6 __attribute__((swift_name("component6()")));
+- (UnflowBlockButton *)doCopyId:(int64_t)id position:(int32_t)position text:(NSString *)text link:(UnflowLink * _Nullable)link style:(UnflowBlockButtonStyle *)style theme:(UnflowTheme *)theme __attribute__((swift_name("doCopy(id:position:text:link:style:theme:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -421,6 +476,7 @@ __attribute__((swift_name("Block.Button")))
 @property (readonly) int32_t position __attribute__((swift_name("position")));
 @property (readonly) UnflowBlockButtonStyle *style __attribute__((swift_name("style")));
 @property (readonly) NSString *text __attribute__((swift_name("text")));
+@property (readonly) UnflowTheme *theme __attribute__((swift_name("theme")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -483,23 +539,23 @@ __attribute__((swift_name("Block.Spacer")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Block.Text")))
 @interface UnflowBlockText : UnflowBlock
-- (instancetype)initWithId:(int64_t)id position:(int32_t)position text:(NSString *)text color:(NSString * _Nullable)color style:(UnflowBlockTextStyle * _Nullable)style __attribute__((swift_name("init(id:position:text:color:style:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id position:(int32_t)position text:(NSString *)text style:(UnflowBlockTextStyle * _Nullable)style theme:(UnflowTheme *)theme __attribute__((swift_name("init(id:position:text:style:theme:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
 - (int32_t)component2 __attribute__((swift_name("component2()")));
 - (NSString *)component3 __attribute__((swift_name("component3()")));
-- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (UnflowBlockTextStyle * _Nullable)component5 __attribute__((swift_name("component5()")));
-- (UnflowBlockText *)doCopyId:(int64_t)id position:(int32_t)position text:(NSString *)text color:(NSString * _Nullable)color style:(UnflowBlockTextStyle * _Nullable)style __attribute__((swift_name("doCopy(id:position:text:color:style:)")));
+- (UnflowBlockTextStyle * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (UnflowTheme *)component5 __attribute__((swift_name("component5()")));
+- (UnflowBlockText *)doCopyId:(int64_t)id position:(int32_t)position text:(NSString *)text style:(UnflowBlockTextStyle * _Nullable)style theme:(UnflowTheme *)theme __attribute__((swift_name("doCopy(id:position:text:style:theme:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable color __attribute__((swift_name("color")));
 @property (readonly) int64_t id __attribute__((swift_name("id")));
 @property (readonly) int32_t position __attribute__((swift_name("position")));
 @property (readonly) UnflowBlockTextStyle * _Nullable style __attribute__((swift_name("style")));
 @property (readonly) NSString *text __attribute__((swift_name("text")));
+@property (readonly) UnflowTheme *theme __attribute__((swift_name("theme")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -511,6 +567,7 @@ __attribute__((swift_name("Block.TextStyle")))
 @property (class, readonly, getter=companion) UnflowBlockTextStyleCompanion *companion __attribute__((swift_name("companion")));
 @property (class, readonly) UnflowBlockTextStyle *title __attribute__((swift_name("title")));
 @property (class, readonly) UnflowBlockTextStyle *subtitle __attribute__((swift_name("subtitle")));
+@property (class, readonly) UnflowBlockTextStyle *body __attribute__((swift_name("body")));
 + (UnflowKotlinArray<UnflowBlockTextStyle *> *)values __attribute__((swift_name("values()")));
 @end;
 
@@ -534,6 +591,7 @@ __attribute__((swift_name("BlockType")))
 @property (class, readonly) UnflowBlockType *text __attribute__((swift_name("text")));
 @property (class, readonly) UnflowBlockType *button __attribute__((swift_name("button")));
 @property (class, readonly) UnflowBlockType *spacer __attribute__((swift_name("spacer")));
+@property (class, readonly) UnflowBlockType *author __attribute__((swift_name("author")));
 + (UnflowKotlinArray<UnflowBlockType *> *)values __attribute__((swift_name("values()")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end;
@@ -574,17 +632,15 @@ __attribute__((swift_name("HorizontalAlignment.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Opener")))
 @interface UnflowOpener : UnflowBase
-- (instancetype)initWithScreenId:(int64_t)screenId title:(NSString *)title subtitle:(NSString * _Nullable)subtitle imageUrl:(NSString * _Nullable)imageUrl backgroundColor:(NSString * _Nullable)backgroundColor __attribute__((swift_name("init(screenId:title:subtitle:imageUrl:backgroundColor:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithScreenId:(int64_t)screenId title:(NSString *)title subtitle:(NSString * _Nullable)subtitle imageUrl:(NSString * _Nullable)imageUrl __attribute__((swift_name("init(screenId:title:subtitle:imageUrl:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
 - (NSString *)component2 __attribute__((swift_name("component2()")));
 - (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
-- (UnflowOpener *)doCopyScreenId:(int64_t)screenId title:(NSString *)title subtitle:(NSString * _Nullable)subtitle imageUrl:(NSString * _Nullable)imageUrl backgroundColor:(NSString * _Nullable)backgroundColor __attribute__((swift_name("doCopy(screenId:title:subtitle:imageUrl:backgroundColor:)")));
+- (UnflowOpener *)doCopyScreenId:(int64_t)screenId title:(NSString *)title subtitle:(NSString * _Nullable)subtitle imageUrl:(NSString * _Nullable)imageUrl __attribute__((swift_name("doCopy(screenId:title:subtitle:imageUrl:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable backgroundColor __attribute__((swift_name("backgroundColor")));
 @property (readonly) NSString * _Nullable imageUrl __attribute__((swift_name("imageUrl")));
 @property (readonly) int64_t screenId __attribute__((swift_name("screenId")));
 @property (readonly) NSString * _Nullable subtitle __attribute__((swift_name("subtitle")));
@@ -594,13 +650,14 @@ __attribute__((swift_name("Opener")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Page")))
 @interface UnflowPage : UnflowBase
-- (instancetype)initWithId:(int64_t)id slots:(NSArray<UnflowSlot *> *)slots verticalAlignment:(UnflowVerticalAlignment * _Nullable)verticalAlignment horizontalAlignment:(UnflowHorizontalAlignment * _Nullable)horizontalAlignment backgroundImageUrl:(NSString * _Nullable)backgroundImageUrl __attribute__((swift_name("init(id:slots:verticalAlignment:horizontalAlignment:backgroundImageUrl:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id theme:(UnflowTheme *)theme slots:(NSArray<UnflowSlot *> *)slots verticalAlignment:(UnflowVerticalAlignment * _Nullable)verticalAlignment horizontalAlignment:(UnflowHorizontalAlignment * _Nullable)horizontalAlignment backgroundImageUrl:(NSString * _Nullable)backgroundImageUrl __attribute__((swift_name("init(id:theme:slots:verticalAlignment:horizontalAlignment:backgroundImageUrl:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
-- (NSArray<UnflowSlot *> *)component2 __attribute__((swift_name("component2()")));
-- (UnflowVerticalAlignment * _Nullable)component3 __attribute__((swift_name("component3()")));
-- (UnflowHorizontalAlignment * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
-- (UnflowPage *)doCopyId:(int64_t)id slots:(NSArray<UnflowSlot *> *)slots verticalAlignment:(UnflowVerticalAlignment * _Nullable)verticalAlignment horizontalAlignment:(UnflowHorizontalAlignment * _Nullable)horizontalAlignment backgroundImageUrl:(NSString * _Nullable)backgroundImageUrl __attribute__((swift_name("doCopy(id:slots:verticalAlignment:horizontalAlignment:backgroundImageUrl:)")));
+- (UnflowTheme *)component2 __attribute__((swift_name("component2()")));
+- (NSArray<UnflowSlot *> *)component3 __attribute__((swift_name("component3()")));
+- (UnflowVerticalAlignment * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (UnflowHorizontalAlignment * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (NSString * _Nullable)component6 __attribute__((swift_name("component6()")));
+- (UnflowPage *)doCopyId:(int64_t)id theme:(UnflowTheme *)theme slots:(NSArray<UnflowSlot *> *)slots verticalAlignment:(UnflowVerticalAlignment * _Nullable)verticalAlignment horizontalAlignment:(UnflowHorizontalAlignment * _Nullable)horizontalAlignment backgroundImageUrl:(NSString * _Nullable)backgroundImageUrl __attribute__((swift_name("doCopy(id:theme:slots:verticalAlignment:horizontalAlignment:backgroundImageUrl:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -608,6 +665,7 @@ __attribute__((swift_name("Page")))
 @property (readonly) UnflowHorizontalAlignment * _Nullable horizontalAlignment __attribute__((swift_name("horizontalAlignment")));
 @property (readonly) int64_t id __attribute__((swift_name("id")));
 @property (readonly) NSArray<UnflowSlot *> *slots __attribute__((swift_name("slots")));
+@property (readonly) UnflowTheme *theme __attribute__((swift_name("theme")));
 @property (readonly) UnflowVerticalAlignment * _Nullable verticalAlignment __attribute__((swift_name("verticalAlignment")));
 @end;
 
@@ -639,7 +697,8 @@ __attribute__((swift_name("Screen.ContentType")))
 - (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 @property (class, readonly, getter=companion) UnflowScreenContentTypeCompanion *companion __attribute__((swift_name("companion")));
 @property (class, readonly) UnflowScreenContentType *carousel __attribute__((swift_name("carousel")));
-@property (class, readonly) UnflowScreenContentType *story __attribute__((swift_name("story")));
+@property (class, readonly) UnflowScreenContentType *singlePage __attribute__((swift_name("singlePage")));
+@property (class, readonly) UnflowScreenContentType *scrollingPage __attribute__((swift_name("scrollingPage")));
 + (UnflowKotlinArray<UnflowScreenContentType *> *)values __attribute__((swift_name("values()")));
 @property (readonly) NSString *apiValue __attribute__((swift_name("apiValue")));
 @end;
@@ -693,47 +752,50 @@ __attribute__((swift_name("VerticalAlignment.Companion")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AppStyle")))
-@interface UnflowAppStyle : UnflowBase
-- (instancetype)initWithPrimaryColor:(NSString *)primaryColor __attribute__((swift_name("init(primaryColor:)"))) __attribute__((objc_designated_initializer));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (UnflowAppStyle *)doCopyPrimaryColor:(NSString *)primaryColor __attribute__((swift_name("doCopy(primaryColor:)")));
+__attribute__((swift_name("AppStyleTheme")))
+@interface UnflowAppStyleTheme : UnflowBase
+- (instancetype)initWithTheme:(UnflowTheme *)theme primaryColor:(NSString *)primaryColor onPrimaryColor:(NSString *)onPrimaryColor secondaryColor:(NSString *)secondaryColor onSecondaryColor:(NSString *)onSecondaryColor textTitleColor:(NSString *)textTitleColor textBodyColor:(NSString *)textBodyColor __attribute__((swift_name("init(theme:primaryColor:onPrimaryColor:secondaryColor:onSecondaryColor:textTitleColor:textBodyColor:)"))) __attribute__((objc_designated_initializer));
+- (UnflowTheme *)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (NSString *)component4 __attribute__((swift_name("component4()")));
+- (NSString *)component5 __attribute__((swift_name("component5()")));
+- (NSString *)component6 __attribute__((swift_name("component6()")));
+- (NSString *)component7 __attribute__((swift_name("component7()")));
+- (UnflowAppStyleTheme *)doCopyTheme:(UnflowTheme *)theme primaryColor:(NSString *)primaryColor onPrimaryColor:(NSString *)onPrimaryColor secondaryColor:(NSString *)secondaryColor onSecondaryColor:(NSString *)onSecondaryColor textTitleColor:(NSString *)textTitleColor textBodyColor:(NSString *)textBodyColor __attribute__((swift_name("doCopy(theme:primaryColor:onPrimaryColor:secondaryColor:onSecondaryColor:textTitleColor:textBodyColor:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *onPrimaryColor __attribute__((swift_name("onPrimaryColor")));
+@property (readonly) NSString *onSecondaryColor __attribute__((swift_name("onSecondaryColor")));
 @property (readonly) NSString *primaryColor __attribute__((swift_name("primaryColor")));
-@end;
-
-__attribute__((swift_name("UnflowLocalDataSource")))
-@protocol UnflowUnflowLocalDataSource
-@required
-- (id<UnflowKotlinx_coroutines_coreFlow>)allOpenersSubscriptionId:(NSString *)subscriptionId __attribute__((swift_name("allOpeners(subscriptionId:)")));
-- (id<UnflowKotlinx_coroutines_coreFlow>)getAppStyle __attribute__((swift_name("getAppStyle()")));
-
-/**
- @note This method converts instances of CancellationException to errors.
- Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)replaceAppStyleAppStyle:(UnflowAppStyle *)appStyle completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("replaceAppStyle(appStyle:completionHandler:)")));
-
-/**
- @note This method converts instances of CancellationException to errors.
- Other uncaught Kotlin exceptions are fatal.
-*/
-- (void)replaceScreensScreens:(NSArray<UnflowScreen *> *)screens completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("replaceScreens(screens:completionHandler:)")));
-- (id<UnflowKotlinx_coroutines_coreFlow>)screenId:(int64_t)id __attribute__((swift_name("screen(id:)")));
+@property (readonly) NSString *secondaryColor __attribute__((swift_name("secondaryColor")));
+@property (readonly) NSString *textBodyColor __attribute__((swift_name("textBodyColor")));
+@property (readonly) NSString *textTitleColor __attribute__((swift_name("textTitleColor")));
+@property (readonly) UnflowTheme *theme __attribute__((swift_name("theme")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AppStyle_")))
-@interface UnflowAppStyle_ : UnflowBase
-- (instancetype)initWithPrimary_color:(NSString *)primary_color __attribute__((swift_name("init(primary_color:)"))) __attribute__((objc_designated_initializer));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (UnflowAppStyle_ *)doCopyPrimary_color:(NSString *)primary_color __attribute__((swift_name("doCopy(primary_color:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *primary_color __attribute__((swift_name("primary_color")));
+__attribute__((swift_name("Theme")))
+@interface UnflowTheme : UnflowKotlinEnum<UnflowTheme *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowThemeCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) UnflowTheme *light __attribute__((swift_name("light")));
+@property (class, readonly) UnflowTheme *dark __attribute__((swift_name("dark")));
+@property (class, readonly) UnflowTheme *system __attribute__((swift_name("system")));
++ (UnflowKotlinArray<UnflowTheme *> *)values __attribute__((swift_name("values()")));
+@property (readonly) NSString *themeName __attribute__((swift_name("themeName")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Theme.Companion")))
+@interface UnflowThemeCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowThemeCompanion *shared __attribute__((swift_name("shared")));
 @end;
 
 __attribute__((swift_name("RuntimeTransacter")))
@@ -746,16 +808,20 @@ __attribute__((swift_name("RuntimeTransacter")))
 __attribute__((swift_name("AppStyleQueries")))
 @protocol UnflowAppStyleQueries <UnflowRuntimeTransacter>
 @required
-- (void)deleteAppStyle __attribute__((swift_name("deleteAppStyle()")));
-- (void)insertAppStylePrimary_color:(NSString *)primary_color __attribute__((swift_name("insertAppStyle(primary_color:)")));
-- (UnflowRuntimeQuery<NSString *> *)selectAll __attribute__((swift_name("selectAll()")));
+- (void)deleteAllThemes __attribute__((swift_name("deleteAllThemes()")));
+- (void)insertThemeTheme:(UnflowTheme_ *)theme __attribute__((swift_name("insertTheme(theme:)")));
+- (UnflowRuntimeQuery<UnflowTheme_ *> *)selectAllThemes __attribute__((swift_name("selectAllThemes()")));
+- (UnflowRuntimeQuery<id> *)selectAllThemesMapper:(id (^)(NSString *, NSString *, NSString *, NSString *, NSString *, NSString *, NSString *))mapper __attribute__((swift_name("selectAllThemes(mapper:)")));
+- (UnflowRuntimeQuery<UnflowTheme_ *> *)selectThemeWithNameName:(NSString *)name __attribute__((swift_name("selectThemeWithName(name:)")));
+- (UnflowRuntimeQuery<id> *)selectThemeWithNameName:(NSString *)name mapper:(id (^)(NSString *, NSString *, NSString *, NSString *, NSString *, NSString *, NSString *))mapper __attribute__((swift_name("selectThemeWithName(name:mapper:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Block_")))
 @interface UnflowBlock_ : UnflowBase
-- (instancetype)initWithBlock_id:(int64_t)block_id slot_id:(int64_t)slot_id position:(int32_t)position block_type:(NSString *)block_type value:(NSString *)value text_style:(NSString * _Nullable)text_style text_color:(NSString * _Nullable)text_color button_style:(NSString * _Nullable)button_style uri:(NSString * _Nullable)uri __attribute__((swift_name("init(block_id:slot_id:position:block_type:value:text_style:text_color:button_style:uri:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithBlock_id:(int64_t)block_id slot_id:(int64_t)slot_id position:(int32_t)position block_type:(NSString *)block_type value_:(NSString *)value_ text_style:(NSString * _Nullable)text_style button_style:(NSString * _Nullable)button_style theme:(NSString * _Nullable)theme uri:(NSString * _Nullable)uri avatar:(NSString * _Nullable)avatar __attribute__((swift_name("init(block_id:slot_id:position:block_type:value_:text_style:button_style:theme:uri:avatar:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component10 __attribute__((swift_name("component10()")));
 - (int64_t)component2 __attribute__((swift_name("component2()")));
 - (int32_t)component3 __attribute__((swift_name("component3()")));
 - (NSString *)component4 __attribute__((swift_name("component4()")));
@@ -764,19 +830,20 @@ __attribute__((swift_name("Block_")))
 - (NSString * _Nullable)component7 __attribute__((swift_name("component7()")));
 - (NSString * _Nullable)component8 __attribute__((swift_name("component8()")));
 - (NSString * _Nullable)component9 __attribute__((swift_name("component9()")));
-- (UnflowBlock_ *)doCopyBlock_id:(int64_t)block_id slot_id:(int64_t)slot_id position:(int32_t)position block_type:(NSString *)block_type value:(NSString *)value text_style:(NSString * _Nullable)text_style text_color:(NSString * _Nullable)text_color button_style:(NSString * _Nullable)button_style uri:(NSString * _Nullable)uri __attribute__((swift_name("doCopy(block_id:slot_id:position:block_type:value:text_style:text_color:button_style:uri:)")));
+- (UnflowBlock_ *)doCopyBlock_id:(int64_t)block_id slot_id:(int64_t)slot_id position:(int32_t)position block_type:(NSString *)block_type value_:(NSString *)value_ text_style:(NSString * _Nullable)text_style button_style:(NSString * _Nullable)button_style theme:(NSString * _Nullable)theme uri:(NSString * _Nullable)uri avatar:(NSString * _Nullable)avatar __attribute__((swift_name("doCopy(block_id:slot_id:position:block_type:value_:text_style:button_style:theme:uri:avatar:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable avatar __attribute__((swift_name("avatar")));
 @property (readonly) int64_t block_id __attribute__((swift_name("block_id")));
 @property (readonly) NSString *block_type __attribute__((swift_name("block_type")));
 @property (readonly) NSString * _Nullable button_style __attribute__((swift_name("button_style")));
 @property (readonly) int32_t position __attribute__((swift_name("position")));
 @property (readonly) int64_t slot_id __attribute__((swift_name("slot_id")));
-@property (readonly) NSString * _Nullable text_color __attribute__((swift_name("text_color")));
 @property (readonly) NSString * _Nullable text_style __attribute__((swift_name("text_style")));
+@property (readonly) NSString * _Nullable theme __attribute__((swift_name("theme")));
 @property (readonly) NSString * _Nullable uri __attribute__((swift_name("uri")));
-@property (readonly) NSString *value __attribute__((swift_name("value")));
+@property (readonly) NSString *value_ __attribute__((swift_name("value_")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -788,19 +855,42 @@ __attribute__((swift_name("DatabaseDriverFactory")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Link_")))
+@interface UnflowLink_ : UnflowBase
+- (instancetype)initWithLink_id:(int64_t)link_id uri:(NSString * _Nullable)uri name:(NSString * _Nullable)name __attribute__((swift_name("init(link_id:uri:name:)"))) __attribute__((objc_designated_initializer));
+- (int64_t)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
+- (UnflowLink_ *)doCopyLink_id:(int64_t)link_id uri:(NSString * _Nullable)uri name:(NSString * _Nullable)name __attribute__((swift_name("doCopy(link_id:uri:name:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int64_t link_id __attribute__((swift_name("link_id")));
+@property (readonly) NSString * _Nullable name __attribute__((swift_name("name")));
+@property (readonly) NSString * _Nullable uri __attribute__((swift_name("uri")));
+@end;
+
+__attribute__((swift_name("LinkQueries")))
+@protocol UnflowLinkQueries <UnflowRuntimeTransacter>
+@required
+- (void)deleteAllLinks __attribute__((swift_name("deleteAllLinks()")));
+- (void)insertLinkLink:(UnflowLink_ *)link __attribute__((swift_name("insertLink(link:)")));
+- (UnflowRuntimeQuery<UnflowLink_ *> *)selectLinkForIdLink_id:(int64_t)link_id __attribute__((swift_name("selectLinkForId(link_id:)")));
+- (UnflowRuntimeQuery<id> *)selectLinkForIdLink_id:(int64_t)link_id mapper:(id (^)(UnflowLong *, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectLinkForId(link_id:mapper:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Opener_")))
 @interface UnflowOpener_ : UnflowBase
-- (instancetype)initWithScreen_id:(int64_t)screen_id title:(NSString *)title subtitle:(NSString * _Nullable)subtitle image_url:(NSString * _Nullable)image_url background_color:(NSString * _Nullable)background_color __attribute__((swift_name("init(screen_id:title:subtitle:image_url:background_color:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithScreen_id:(int64_t)screen_id title:(NSString *)title subtitle:(NSString * _Nullable)subtitle image_url:(NSString * _Nullable)image_url __attribute__((swift_name("init(screen_id:title:subtitle:image_url:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
 - (NSString *)component2 __attribute__((swift_name("component2()")));
 - (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
-- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
-- (UnflowOpener_ *)doCopyScreen_id:(int64_t)screen_id title:(NSString *)title subtitle:(NSString * _Nullable)subtitle image_url:(NSString * _Nullable)image_url background_color:(NSString * _Nullable)background_color __attribute__((swift_name("doCopy(screen_id:title:subtitle:image_url:background_color:)")));
+- (UnflowOpener_ *)doCopyScreen_id:(int64_t)screen_id title:(NSString *)title subtitle:(NSString * _Nullable)subtitle image_url:(NSString * _Nullable)image_url __attribute__((swift_name("doCopy(screen_id:title:subtitle:image_url:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable background_color __attribute__((swift_name("background_color")));
 @property (readonly) NSString * _Nullable image_url __attribute__((swift_name("image_url")));
 @property (readonly) int64_t screen_id __attribute__((swift_name("screen_id")));
 @property (readonly) NSString * _Nullable subtitle __attribute__((swift_name("subtitle")));
@@ -810,13 +900,14 @@ __attribute__((swift_name("Opener_")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Page_")))
 @interface UnflowPage_ : UnflowBase
-- (instancetype)initWithPage_id:(int64_t)page_id screen_id:(int64_t)screen_id vertical_alignment:(NSString * _Nullable)vertical_alignment horizontal_alignment:(NSString * _Nullable)horizontal_alignment background_image_url:(NSString * _Nullable)background_image_url __attribute__((swift_name("init(page_id:screen_id:vertical_alignment:horizontal_alignment:background_image_url:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPage_id:(int64_t)page_id screen_id:(int64_t)screen_id theme:(NSString * _Nullable)theme vertical_alignment:(NSString * _Nullable)vertical_alignment horizontal_alignment:(NSString * _Nullable)horizontal_alignment background_image_url:(NSString * _Nullable)background_image_url __attribute__((swift_name("init(page_id:screen_id:theme:vertical_alignment:horizontal_alignment:background_image_url:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
 - (int64_t)component2 __attribute__((swift_name("component2()")));
 - (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
 - (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
-- (UnflowPage_ *)doCopyPage_id:(int64_t)page_id screen_id:(int64_t)screen_id vertical_alignment:(NSString * _Nullable)vertical_alignment horizontal_alignment:(NSString * _Nullable)horizontal_alignment background_image_url:(NSString * _Nullable)background_image_url __attribute__((swift_name("doCopy(page_id:screen_id:vertical_alignment:horizontal_alignment:background_image_url:)")));
+- (NSString * _Nullable)component6 __attribute__((swift_name("component6()")));
+- (UnflowPage_ *)doCopyPage_id:(int64_t)page_id screen_id:(int64_t)screen_id theme:(NSString * _Nullable)theme vertical_alignment:(NSString * _Nullable)vertical_alignment horizontal_alignment:(NSString * _Nullable)horizontal_alignment background_image_url:(NSString * _Nullable)background_image_url __attribute__((swift_name("doCopy(page_id:screen_id:theme:vertical_alignment:horizontal_alignment:background_image_url:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -824,6 +915,7 @@ __attribute__((swift_name("Page_")))
 @property (readonly) NSString * _Nullable horizontal_alignment __attribute__((swift_name("horizontal_alignment")));
 @property (readonly) int64_t page_id __attribute__((swift_name("page_id")));
 @property (readonly) int64_t screen_id __attribute__((swift_name("screen_id")));
+@property (readonly) NSString * _Nullable theme __attribute__((swift_name("theme")));
 @property (readonly) NSString * _Nullable vertical_alignment __attribute__((swift_name("vertical_alignment")));
 @end;
 
@@ -856,13 +948,13 @@ __attribute__((swift_name("ScreenQueries")))
 - (void)insertScreenScreen:(UnflowScreen_ *)screen __attribute__((swift_name("insertScreen(screen:)")));
 - (void)insertSlotSlot:(UnflowSlot_ *)slot __attribute__((swift_name("insertSlot(slot:)")));
 - (UnflowRuntimeQuery<UnflowOpener_ *> *)selectAllOpenersForSubscriptionIdSubscription_id:(NSString *)subscription_id __attribute__((swift_name("selectAllOpenersForSubscriptionId(subscription_id:)")));
-- (UnflowRuntimeQuery<id> *)selectAllOpenersForSubscriptionIdSubscription_id:(NSString *)subscription_id mapper:(id (^)(UnflowLong *, NSString *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectAllOpenersForSubscriptionId(subscription_id:mapper:)")));
+- (UnflowRuntimeQuery<id> *)selectAllOpenersForSubscriptionIdSubscription_id:(NSString *)subscription_id mapper:(id (^)(UnflowLong *, NSString *, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectAllOpenersForSubscriptionId(subscription_id:mapper:)")));
 - (UnflowRuntimeQuery<UnflowBlock_ *> *)selectBlockForSlotIdSlot_id:(int64_t)slot_id __attribute__((swift_name("selectBlockForSlotId(slot_id:)")));
-- (UnflowRuntimeQuery<id> *)selectBlockForSlotIdSlot_id:(int64_t)slot_id mapper:(id (^)(UnflowLong *, UnflowLong *, UnflowInt *, NSString *, NSString *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectBlockForSlotId(slot_id:mapper:)")));
+- (UnflowRuntimeQuery<id> *)selectBlockForSlotIdSlot_id:(int64_t)slot_id mapper:(id (^)(UnflowLong *, UnflowLong *, UnflowInt *, NSString *, NSString *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectBlockForSlotId(slot_id:mapper:)")));
 - (UnflowRuntimeQuery<UnflowOpener_ *> *)selectOpenerForScreenIdScreen_id:(int64_t)screen_id __attribute__((swift_name("selectOpenerForScreenId(screen_id:)")));
-- (UnflowRuntimeQuery<id> *)selectOpenerForScreenIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, NSString *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectOpenerForScreenId(screen_id:mapper:)")));
+- (UnflowRuntimeQuery<id> *)selectOpenerForScreenIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, NSString *, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectOpenerForScreenId(screen_id:mapper:)")));
 - (UnflowRuntimeQuery<UnflowPage_ *> *)selectPageForScreenIdScreen_id:(int64_t)screen_id __attribute__((swift_name("selectPageForScreenId(screen_id:)")));
-- (UnflowRuntimeQuery<id> *)selectPageForScreenIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, UnflowLong *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectPageForScreenId(screen_id:mapper:)")));
+- (UnflowRuntimeQuery<id> *)selectPageForScreenIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, UnflowLong *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectPageForScreenId(screen_id:mapper:)")));
 - (UnflowRuntimeQuery<UnflowScreen_ *> *)selectScreenForIdScreen_id:(int64_t)screen_id __attribute__((swift_name("selectScreenForId(screen_id:)")));
 - (UnflowRuntimeQuery<id> *)selectScreenForIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, NSString *, NSString * _Nullable))mapper __attribute__((swift_name("selectScreenForId(screen_id:mapper:)")));
 - (UnflowRuntimeQuery<UnflowSlot_ *> *)selectSlotForPageIdPage_id:(int64_t)page_id __attribute__((swift_name("selectSlotForPageId(page_id:)")));
@@ -885,10 +977,35 @@ __attribute__((swift_name("Slot_")))
 @property (readonly) int64_t slot_id __attribute__((swift_name("slot_id")));
 @end;
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Theme_")))
+@interface UnflowTheme_ : UnflowBase
+- (instancetype)initWithName:(NSString *)name primary_color:(NSString *)primary_color on_primary_color:(NSString *)on_primary_color secondary_color:(NSString *)secondary_color on_secondary_color:(NSString *)on_secondary_color text_title_color:(NSString *)text_title_color text_body_color:(NSString *)text_body_color __attribute__((swift_name("init(name:primary_color:on_primary_color:secondary_color:on_secondary_color:text_title_color:text_body_color:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (NSString *)component4 __attribute__((swift_name("component4()")));
+- (NSString *)component5 __attribute__((swift_name("component5()")));
+- (NSString *)component6 __attribute__((swift_name("component6()")));
+- (NSString *)component7 __attribute__((swift_name("component7()")));
+- (UnflowTheme_ *)doCopyName:(NSString *)name primary_color:(NSString *)primary_color on_primary_color:(NSString *)on_primary_color secondary_color:(NSString *)secondary_color on_secondary_color:(NSString *)on_secondary_color text_title_color:(NSString *)text_title_color text_body_color:(NSString *)text_body_color __attribute__((swift_name("doCopy(name:primary_color:on_primary_color:secondary_color:on_secondary_color:text_title_color:text_body_color:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) NSString *on_primary_color __attribute__((swift_name("on_primary_color")));
+@property (readonly) NSString *on_secondary_color __attribute__((swift_name("on_secondary_color")));
+@property (readonly) NSString *primary_color __attribute__((swift_name("primary_color")));
+@property (readonly) NSString *secondary_color __attribute__((swift_name("secondary_color")));
+@property (readonly) NSString *text_body_color __attribute__((swift_name("text_body_color")));
+@property (readonly) NSString *text_title_color __attribute__((swift_name("text_title_color")));
+@end;
+
 __attribute__((swift_name("UnflowDatabase")))
 @protocol UnflowUnflowDatabase <UnflowRuntimeTransacter>
 @required
 @property (readonly) id<UnflowAppStyleQueries> appStyleQueries __attribute__((swift_name("appStyleQueries")));
+@property (readonly) id<UnflowLinkQueries> linkQueries __attribute__((swift_name("linkQueries")));
 @property (readonly) id<UnflowScreenQueries> screenQueries __attribute__((swift_name("screenQueries")));
 @end;
 
