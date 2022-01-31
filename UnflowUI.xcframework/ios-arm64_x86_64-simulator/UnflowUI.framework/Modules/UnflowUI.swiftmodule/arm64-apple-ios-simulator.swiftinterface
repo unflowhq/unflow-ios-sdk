@@ -3,7 +3,6 @@
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnflowUI
 import Combine
 import Foundation
-import Nuke
 import SafariServices
 import StoreKit
 import Swift
@@ -32,40 +31,9 @@ extension UnflowUI.UnflowSDK {
   public static let client: UnflowUI.UnflowSDK
   public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: UnflowUI.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
 }
-@available(iOS 13.0, *)
-@_Concurrency.MainActor(unsafe) public struct RemoteImage : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(imageURL: Foundation.URL, contentMode: SwiftUI.ContentMode = .fill)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI11RemoteImageV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct ImageBlock : SwiftUI.View {
-  public init(block: UnflowUI.Block.Image)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10ImageBlockV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct TextBlock : SwiftUI.View {
-  public init(block: UnflowUI.Block.Text)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI9TextBlockV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct OpenerRail : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerRailV4bodyQrvp", 0) __
-}
 @available(iOS 13, *)
 public struct OpenerView : SwiftUI.View {
-  public init(subscriptionID: Swift.String? = nil)
+  public init(subscriptionID: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -74,71 +42,6 @@ public struct OpenerView : SwiftUI.View {
 @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 public class UnflowServices {
   @objc deinit
-}
-public enum Block : Swift.Hashable {
-  case author(UnflowUI.Block.Author)
-  case button(UnflowUI.Block.Button)
-  case image(UnflowUI.Block.Image)
-  case rating(UnflowUI.Block.Rating)
-  case spacer(UnflowUI.Block.Spacer)
-  case text(UnflowUI.Block.Text)
-  case video(UnflowUI.Block.Video)
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: UnflowUI.Block, b: UnflowUI.Block) -> Swift.Bool
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension UnflowUI.Block {
-  public struct Author : Swift.Hashable {
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: UnflowUI.Block.Author, b: UnflowUI.Block.Author) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct Button : Swift.Hashable {
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: UnflowUI.Block.Button, b: UnflowUI.Block.Button) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct Image : Swift.Hashable {
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: UnflowUI.Block.Image, b: UnflowUI.Block.Image) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct Rating : Swift.Hashable {
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: UnflowUI.Block.Rating, b: UnflowUI.Block.Rating) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct Spacer : Swift.Hashable {
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: UnflowUI.Block.Spacer, b: UnflowUI.Block.Spacer) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct Text : Swift.Hashable {
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: UnflowUI.Block.Text, b: UnflowUI.Block.Text) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct Video : Swift.Hashable {
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: UnflowUI.Block.Video, b: UnflowUI.Block.Video) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class OpenerViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
@@ -155,20 +58,6 @@ public struct AuthorBlock : SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI11AuthorBlockV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct Paginator : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI9PaginatorV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct OpenerBanner : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI12OpenerBannerV4bodyQrvp", 0) __
 }
 public struct UnflowEvent {
   public var name: Swift.String
