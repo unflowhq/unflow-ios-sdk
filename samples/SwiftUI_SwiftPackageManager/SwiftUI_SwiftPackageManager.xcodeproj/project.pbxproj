@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63AAABF727A80B1200ECD866 /* Unflow in Frameworks */ = {isa = PBXBuildFile; productRef = 63AAABF627A80B1200ECD866 /* Unflow */; };
+		63E89AA527B3E3F800E9827E /* Unflow in Frameworks */ = {isa = PBXBuildFile; productRef = 63E89AA427B3E3F800E9827E /* Unflow */; };
 		C73C76542703C84E003A1B18 /* SwiftUIUnflowExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73C76532703C84E003A1B18 /* SwiftUIUnflowExampleApp.swift */; };
 		C73C76562703C84E003A1B18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73C76552703C84E003A1B18 /* ContentView.swift */; };
 		C73C76582703C851003A1B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73C76572703C851003A1B18 /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63AAABF727A80B1200ECD866 /* Unflow in Frameworks */,
+				63E89AA527B3E3F800E9827E /* Unflow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			);
 			name = SwiftUI_SwiftPackageManager;
 			packageProductDependencies = (
-				63AAABF627A80B1200ECD866 /* Unflow */,
+				63E89AA427B3E3F800E9827E /* Unflow */,
 			);
 			productName = SwiftUIAnymoExample;
 			productReference = C73C76502703C84E003A1B18 /* SwiftUI_SwiftPackageManager.app */;
@@ -117,7 +117,7 @@
 			);
 			mainGroup = C73C76472703C84E003A1B18;
 			packageReferences = (
-				63AAABF527A80B1200ECD866 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */,
+				63E89AA327B3E3F800E9827E /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */,
 			);
 			productRefGroup = C73C76512703C84E003A1B18 /* Products */;
 			projectDirPath = "";
@@ -353,20 +353,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		63AAABF527A80B1200ECD866 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */ = {
+		63E89AA327B3E3F800E9827E /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/unflowhq/unflow-ios-sdk";
 			requirement = {
-				branch = release/1.3.0;
-				kind = branch;
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.3.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		63AAABF627A80B1200ECD866 /* Unflow */ = {
+		63E89AA427B3E3F800E9827E /* Unflow */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 63AAABF527A80B1200ECD866 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */;
+			package = 63E89AA327B3E3F800E9827E /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */;
 			productName = Unflow;
 		};
 /* End XCSwiftPackageProductDependency section */
