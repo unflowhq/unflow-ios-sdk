@@ -3,77 +3,45 @@
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnflowUI
 import Combine
 import Foundation
-import Nuke
 import SafariServices
+import StoreKit
 import Swift
 import SwiftUI
 import UIKit
 import Unflow
 @_exported import UnflowUI
+import _AVKit_SwiftUI
 import _Concurrency
-@_hasMissingDesignatedInitializers public class UnflowSDK {
-  public var isInitialized: Swift.Bool
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class UnflowSDK {
+  public func openScreen(withID screenID: Swift.Int) throws
   public func setUserId(userId: Swift.String)
   public func setAttributes(attributes: [Swift.String : Swift.String])
-  @available(iOS 13.0, *)
   public func setCustomFonts(fonts: UnflowUI.Fonts)
-  @available(iOS 13.0, *)
+  public func trackEvent<T>(_ key: Swift.String, attributes: T?) where T : Swift.Decodable, T : Swift.Encodable
+  public func trackEvent(_ key: Swift.String)
   public func sync()
   @objc deinit
 }
+@available(iOS 13.0, *)
 extension UnflowUI.UnflowSDK {
   public struct Config {
     public init(apiKey: Swift.String, enableLogging: Swift.Bool)
   }
   public static let client: UnflowUI.UnflowSDK
-  public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: Unflow.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
+  public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: UnflowUI.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
 }
-@available(iOS 13.0, *)
-@_Concurrency.MainActor(unsafe) public struct RemoteImage : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(uri: Swift.String, contentMode: SwiftUI.ContentMode = .fill)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI11RemoteImageV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct ImageBlock : SwiftUI.View {
-  public init(block: Unflow.Block.Image)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10ImageBlockV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-@_Concurrency.MainActor(unsafe) public struct TextBlock : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(block: Unflow.Block.Text)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI9TextBlockV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct OpenerRail : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerRailV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct BlockView : SwiftUI.View {
-  public init(block: Unflow.Block)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI9BlockViewV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-@_Concurrency.MainActor(unsafe) public struct OpenerView : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(subscriptionId: Swift.String = UnflowSdk.shared.SUBSCRIPTION_ID_DEFAULT)
+@available(iOS 13, *)
+public struct OpenerView : SwiftUI.View {
+  public init(subscriptionID: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerViewV4bodyQrvp", 0) __
+}
+@_hasMissingDesignatedInitializers @available(iOS 13.0, *)
+public class UnflowServices {
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class OpenerViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
@@ -81,38 +49,37 @@ public struct BlockView : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+public protocol AnalyticsListener {
+  func onEvent(event: UnflowUI.UnflowEvent)
+}
 @available(iOS 13.0, *)
 public struct AuthorBlock : SwiftUI.View {
-  public init(block: Unflow.Block.Author)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI11AuthorBlockV4bodyQrvp", 0) __
 }
-@available(iOS 13.0, *)
-public struct Paginator : SwiftUI.View {
-  public init(numDots: Swift.Int, activeIndex: Swift.Int, pageTheme: Unflow.Theme)
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI9PaginatorV4bodyQrvp", 0) __
+public struct UnflowEvent {
+  public var name: Swift.String
+  public var type: Swift.String
+  public var attributes: [Swift.String : Any]
 }
 @available(iOS 13.0, *)
-public struct OpenerBanner : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+public struct Typography : Swift.Hashable {
+  public static func == (a: UnflowUI.Typography, b: UnflowUI.Typography) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI12OpenerBannerV4bodyQrvp", 0) __
-}
-@available(iOS 13.0, *)
-public struct Typography {
 }
 @available(iOS 13.0, *)
 public struct Fonts {
   public var title: SwiftUI.Font?
+  public var subtitle: SwiftUI.Font?
   public var body: SwiftUI.Font?
+  public var bodyBold: SwiftUI.Font?
   public var button: SwiftUI.Font?
   public var openerTitle: SwiftUI.Font?
   public var openerSubtitle: SwiftUI.Font?
-  public init(title: SwiftUI.Font? = nil, body: SwiftUI.Font? = nil, button: SwiftUI.Font? = nil, openerTitle: SwiftUI.Font? = nil, openerSubtitle: SwiftUI.Font? = nil)
+  public init(title: SwiftUI.Font? = nil, subtitle: SwiftUI.Font? = nil, body: SwiftUI.Font? = nil, bodyBold: SwiftUI.Font? = nil, button: SwiftUI.Font? = nil, openerTitle: SwiftUI.Font? = nil, openerSubtitle: SwiftUI.Font? = nil)
 }
