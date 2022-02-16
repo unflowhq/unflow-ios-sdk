@@ -7,14 +7,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let client = UnflowSDK.initialize(
-            config: UnflowSDK.Config(
-                apiKey: "<YOUR_API_KEY>",
-                enableLogging: true
-            ),
-            analyticsListener: nil
-        )
         if #available(iOS 13.0, *) {
+            let client = UnflowSDK.initialize(
+                config: UnflowSDK.Config(
+                    apiKey: "<YOUR_API_KEY>",
+                    enableLogging: true
+                ),
+                analyticsListener: nil
+            )
+
             client.sync()
         }
         
