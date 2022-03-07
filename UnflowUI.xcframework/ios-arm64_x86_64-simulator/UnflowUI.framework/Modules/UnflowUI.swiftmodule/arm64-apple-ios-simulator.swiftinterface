@@ -31,17 +31,58 @@ extension UnflowUI.UnflowSDK {
   public static let client: UnflowUI.UnflowSDK
   public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: UnflowUI.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
 }
-@available(iOS 13, *)
-public struct OpenerView : SwiftUI.View {
-  public init(subscriptionID: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client)
+@available(iOS 13.0, *)
+public struct OpenerRail<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerViewV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerRailV4bodyQrvp", 0) __<Content>
+}
+public struct OpenerItemState {
+  public let opener: UnflowUI.Opener
+  public let maxWidth: CoreGraphics.CGFloat
+  public let numberOfOpeners: Swift.Int
+}
+@available(iOS 13, *)
+@_Concurrency.MainActor(unsafe) public struct OpenerView<Content, ItemContent> : SwiftUI.View where Content : SwiftUI.View, ItemContent : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(subscriptionID: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client, @SwiftUI.ViewBuilder openerHost: @escaping ([UnflowUI.Opener]) -> Content)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerViewV4bodyQrvp", 0) __<Content, ItemContent>
+}
+@available(iOS 13, *)
+extension UnflowUI.OpenerView where Content == UnflowUI.OpenerHost<UnflowUI.OpenerRail<UnflowUI.OpenerBanner>>, ItemContent == UnflowUI.OpenerBanner {
+  @_Concurrency.MainActor(unsafe) public init()
+}
+@available(iOS 13, *)
+extension UnflowUI.OpenerView where Content == UnflowUI.OpenerRail<ItemContent> {
+  @_Concurrency.MainActor(unsafe) public init(contentPadding: CoreGraphics.CGFloat? = 16.0, itemContent: @escaping (UnflowUI.OpenerItemState) -> ItemContent)
+}
+extension CoreGraphics.CGFloat {
+  public func pixelsToPoints() -> CoreGraphics.CGFloat
 }
 @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 public class UnflowServices {
   @objc deinit
+}
+@available(iOS 13, *)
+extension SwiftUI.View {
+  @_disfavoredOverload public func onChange<V>(of value: V, perform action: @escaping (V) -> Swift.Void) -> some SwiftUI.View where V : Swift.Equatable
+  
+}
+public struct Opener : Swift.Hashable, Swift.Identifiable {
+  public var id: Swift.Int
+  public var priority: Swift.Int
+  public var title: Swift.String
+  public var subtitle: Swift.String?
+  public var imageURL: Swift.String?
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: UnflowUI.Opener, b: UnflowUI.Opener) -> Swift.Bool
+  public typealias ID = Swift.Int
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class OpenerViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
@@ -49,15 +90,22 @@ public class UnflowServices {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@available(iOS 13, *)
+public struct OpenerHost<Content> : SwiftUI.View where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerHostV4bodyQrvp", 0) __<Content>
+}
 public protocol AnalyticsListener {
   func onEvent(event: UnflowUI.UnflowEvent)
 }
 @available(iOS 13.0, *)
-public struct AuthorBlock : SwiftUI.View {
+public struct OpenerBanner : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI11AuthorBlockV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI12OpenerBannerV4bodyQrvp", 0) __
 }
 public struct UnflowEvent {
   public var name: Swift.String
