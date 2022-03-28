@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class UnflowUnflowEvent, UnflowUnflowEventCompanion, UnflowUnflowEventActionInteraction, UnflowUnflowEventAction, UnflowKotlinEnumCompanion, UnflowKotlinEnum<E>, UnflowKotlinArray<T>, UnflowUnflowEventScreen, UnflowKotlinPair<__covariant A, __covariant B>, UnflowUnflowSdk, UnflowUnflowSdkConfig, UnflowDatabaseDriverFactory, UnflowSettingsFactory, UnflowEvent, UnflowKotlinUnit, UnflowUnflowComponent, UnflowLink, UnflowLinkActionCompanion, UnflowLinkAction, UnflowLinkActionClose, UnflowLinkLinkIdCompanion, UnflowLinkLinkId, UnflowLinkNavigable, UnflowLinkNavigableHttp, UnflowLinkNavigableOther, UnflowLinkShareCompanion, UnflowLinkShare, UnflowAppStyle, UnflowCommonFlow<T>, UnflowAppMetadata, UnflowOpener, UnflowScreen, UnflowBlock, UnflowTheme, UnflowBlockAuthor, UnflowBlockButtonStyle, UnflowBlockButton, UnflowBlockButtonStyleCompanion, UnflowBlockImage, UnflowBlockRatingStyle, UnflowBlockRating, UnflowBlockRatingStyleCompanion, UnflowBlockSpacer, UnflowBlockTextStyle, UnflowHorizontalAlignment, UnflowBlockText, UnflowBlockTextStyleCompanion, UnflowBlockVideo, UnflowBlockTypeCompanion, UnflowBlockType, UnflowHorizontalAlignmentCompanion, UnflowImage, UnflowSlot, UnflowPage, UnflowScreenContentType, UnflowScreenLayout, UnflowScreenPresentationStyle, UnflowScreenContentTypeCompanion, UnflowScreenLayoutCompanion, UnflowScreenPresentationStyleCompanion, UnflowAppStyleThemePalette, UnflowThemeCompanion, UnflowAppMetadata_, UnflowRuntimeQuery<__covariant RowType>, UnflowAppStyle_, UnflowTheme_, UnflowBlock_, UnflowRuntimeAfterVersionWithDriver, UnflowImage_, UnflowLink_, UnflowOpener_, UnflowPage_, UnflowPendingScreen, UnflowScreen_, UnflowSlot_, UnflowUnflowDatabaseCompanion, UnflowKotlinThrowable, UnflowKotlinException, UnflowKotlinRuntimeException, UnflowKotlinIllegalStateException, UnflowRuntimeTransacterTransaction, UnflowKotlinByteArray, UnflowKotlinByteIterator;
+@class UnflowUnflowEvent, UnflowUnflowSdk, UnflowUnflowSdkConfig, UnflowDatabaseDriverFactory, UnflowSettingsFactory, UnflowKotlinUnit, UnflowTrackUnflowEventUseCase, UnflowTrackAnalyticsEventUseCase, UnflowUnflowComponent, UnflowLink, UnflowLinkActionCompanion, UnflowLinkAction, UnflowLinkActionClose, UnflowLinkLinkIdCompanion, UnflowLinkLinkId, UnflowLinkNavigable, UnflowLinkNavigableHttp, UnflowLinkNavigableOther, UnflowLinkShareCompanion, UnflowLinkShare, UnflowAppStyle, UnflowCommonFlow<T>, UnflowAppMetadata, UnflowOpener, UnflowScreen, UnflowBlock, UnflowTheme, UnflowBlockAuthor, UnflowBlockButtonStyle, UnflowBlockButton, UnflowKotlinEnumCompanion, UnflowKotlinEnum<E>, UnflowBlockButtonStyleCompanion, UnflowKotlinArray<T>, UnflowBlockImage, UnflowBlockRatingStyle, UnflowBlockRating, UnflowBlockRatingStyleCompanion, UnflowBlockSpacer, UnflowBlockTextStyle, UnflowHorizontalAlignment, UnflowBlockText, UnflowBlockTextStyleCompanion, UnflowBlockVideo, UnflowBlockTypeCompanion, UnflowBlockType, UnflowHorizontalAlignmentCompanion, UnflowImage, UnflowSlot, UnflowPage, UnflowScreenContentType, UnflowScreenLayout, UnflowScreenPresentationStyle, UnflowScreenContentTypeCompanion, UnflowScreenLayoutCompanion, UnflowScreenPresentationStyleCompanion, UnflowAppStyleThemePalette, UnflowThemeCompanion, UnflowKtor_client_coreHttpClient, UnflowKtor_client_coreHttpClientConfig<T>, UnflowAppMetadata_, UnflowRuntimeQuery<__covariant RowType>, UnflowAppStyle_, UnflowTheme_, UnflowBlock_, UnflowRuntimeAfterVersionWithDriver, UnflowImage_, UnflowLink_, UnflowOpener_, UnflowPage_, UnflowPendingScreen, UnflowScreen_, UnflowSlot_, UnflowUnflowDatabaseCompanion, UnflowKtor_httpHeadersBuilder, UnflowKtor_client_coreHttpRequestBuilderCompanion, UnflowKtor_client_coreHttpRequestData, UnflowKtor_client_coreHttpRequestBuilder, UnflowKtor_httpURLBuilder, UnflowKtor_utilsTypeInfo, UnflowKtor_httpHttpMethod, UnflowKotlinThrowable, UnflowKotlinException, UnflowKotlinRuntimeException, UnflowKotlinIllegalStateException, UnflowKtor_client_coreHttpClientEngineConfig, UnflowKtor_eventsEvents, UnflowKtor_client_coreHttpReceivePipeline, UnflowKtor_client_coreHttpRequestPipeline, UnflowKtor_client_coreHttpResponsePipeline, UnflowKtor_client_coreHttpSendPipeline, UnflowRuntimeTransacterTransaction, UnflowKtor_utilsStringValuesBuilderImpl, UnflowKtor_httpUrl, UnflowKtor_httpOutgoingContent, UnflowKtor_utilsAttributeKey<T>, UnflowKtor_httpURLProtocol, UnflowKtor_httpURLBuilderCompanion, UnflowKotlinCancellationException, UnflowKtor_httpHttpMethodCompanion, UnflowKtor_client_coreHttpResponseData, UnflowKotlinx_coroutines_coreCoroutineDispatcher, UnflowKtor_client_coreProxyConfig, UnflowKtor_eventsEventDefinition<T>, UnflowKtor_utilsPipelinePhase, UnflowKtor_utilsPipeline<TSubject, TContext>, UnflowKtor_client_coreHttpReceivePipelinePhases, UnflowKtor_client_coreHttpResponse, UnflowKtor_client_coreHttpRequestPipelinePhases, UnflowKtor_client_coreHttpResponsePipelinePhases, UnflowKtor_client_coreHttpResponseContainer, UnflowKtor_client_coreHttpClientCall, UnflowKtor_client_coreHttpSendPipelinePhases, UnflowKotlinByteArray, UnflowKtor_httpUrlCompanion, UnflowKtor_httpContentType, UnflowKtor_httpHttpStatusCode, UnflowKtor_httpURLProtocolCompanion, UnflowKotlinKTypeProjection, UnflowKtor_utilsGMTDate, UnflowKtor_httpHttpProtocolVersion, UnflowKotlinAbstractCoroutineContextElement, UnflowKotlinx_coroutines_coreCoroutineDispatcherKey, UnflowKtor_client_coreHttpClientCallCompanion, UnflowKotlinByteIterator, UnflowKtor_httpHeaderValueParam, UnflowKtor_httpHeaderValueWithParametersCompanion, UnflowKtor_httpHeaderValueWithParameters, UnflowKtor_httpContentTypeCompanion, UnflowKtor_httpHttpStatusCodeCompanion, UnflowKotlinKVariance, UnflowKotlinKTypeProjectionCompanion, UnflowKotlinx_coroutines_coreAtomicDesc, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, UnflowKtor_utilsGMTDateCompanion, UnflowKtor_utilsWeekDay, UnflowKtor_utilsMonth, UnflowKtor_httpHttpProtocolVersionCompanion, UnflowKotlinAbstractCoroutineContextKey<B, E>, UnflowKtor_ioMemory, UnflowKtor_ioChunkBuffer, UnflowKtor_ioByteReadPacket, UnflowKotlinx_coroutines_coreAtomicOp<__contravariant T>, UnflowKotlinx_coroutines_coreOpDescriptor, UnflowKotlinx_coroutines_coreLockFreeLinkedListNode, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, UnflowKtor_utilsWeekDayCompanion, UnflowKtor_utilsMonthCompanion, UnflowKtor_ioMemoryCompanion, UnflowKtor_ioBufferCompanion, UnflowKtor_ioBuffer, UnflowKtor_ioChunkBufferCompanion, UnflowKtor_ioInputCompanion, UnflowKtor_ioInput, UnflowKtor_ioByteReadPacketCompanion, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>;
 
-@protocol UnflowKotlinComparable, UnflowAnalyticsListener, UnflowAnalytics, UnflowAnalyticsLocalDataSource, UnflowEventRepository, UnflowUnflowRepository, UnflowKotlinx_coroutines_coreFlowCollector, UnflowKotlinx_coroutines_coreFlow, UnflowKtor_ioCloseable, UnflowAlignment, UnflowKotlinKClass, UnflowMultiplatform_settings_coroutinesFlowSettings, UnflowRuntimeTransactionWithoutReturn, UnflowRuntimeTransactionWithReturn, UnflowRuntimeTransacter, UnflowRuntimeSqlDriver, UnflowAppMetadataQueries, UnflowAppStyleQueries, UnflowLinkQueries, UnflowScreenQueries, UnflowTriggerQueries, UnflowUnflowDatabase, UnflowRuntimeSqlDriverSchema, UnflowGenericStorage, UnflowKotlinIterator, UnflowKotlinKDeclarationContainer, UnflowKotlinKAnnotatedElement, UnflowKotlinKClassifier, UnflowMultiplatform_settings_coroutinesSuspendSettings, UnflowRuntimeSqlCursor, UnflowRuntimeQueryListener, UnflowRuntimeTransactionCallbacks, UnflowRuntimeSqlPreparedStatement, UnflowRuntimeCloseable;
+@protocol UnflowAnalyticsListener, UnflowAnalytics, UnflowEventRepository, UnflowAnalyticsLocalDataSource, UnflowUnflowRepository, UnflowKotlinx_coroutines_coreFlowCollector, UnflowKotlinx_coroutines_coreFlow, UnflowKtor_ioCloseable, UnflowKotlinComparable, UnflowAlignment, UnflowKotlinKClass, UnflowMultiplatform_settings_coroutinesFlowSettings, UnflowRuntimeTransactionWithoutReturn, UnflowRuntimeTransactionWithReturn, UnflowRuntimeTransacter, UnflowRuntimeSqlDriver, UnflowAppMetadataQueries, UnflowAppStyleQueries, UnflowLinkQueries, UnflowScreenQueries, UnflowTriggerQueries, UnflowUnflowDatabase, UnflowRuntimeSqlDriverSchema, UnflowKtor_httpHttpMessageBuilder, UnflowKtor_client_coreHttpClientEngineCapability, UnflowKtor_utilsAttributes, UnflowKotlinx_coroutines_coreJob, UnflowGenericStorage, UnflowKotlinIterator, UnflowKotlinCoroutineContext, UnflowKotlinx_coroutines_coreCoroutineScope, UnflowKtor_client_coreHttpClientEngine, UnflowKtor_client_coreHttpClientPlugin, UnflowKotlinKDeclarationContainer, UnflowKotlinKAnnotatedElement, UnflowKotlinKClassifier, UnflowMultiplatform_settings_coroutinesSuspendSettings, UnflowRuntimeSqlCursor, UnflowRuntimeQueryListener, UnflowRuntimeTransactionCallbacks, UnflowRuntimeSqlPreparedStatement, UnflowRuntimeCloseable, UnflowKtor_utilsStringValues, UnflowKotlinMapEntry, UnflowKtor_utilsStringValuesBuilder, UnflowKtor_httpHeaders, UnflowKtor_httpParameters, UnflowKtor_httpParametersBuilder, UnflowKotlinKType, UnflowKotlinx_coroutines_coreChildHandle, UnflowKotlinx_coroutines_coreChildJob, UnflowKotlinx_coroutines_coreDisposableHandle, UnflowKotlinSequence, UnflowKotlinx_coroutines_coreSelectClause0, UnflowKotlinCoroutineContextKey, UnflowKotlinCoroutineContextElement, UnflowKotlinSuspendFunction2, UnflowKotlinx_coroutines_coreParentJob, UnflowKotlinx_coroutines_coreSelectInstance, UnflowKotlinSuspendFunction0, UnflowKotlinContinuation, UnflowKotlinContinuationInterceptor, UnflowKotlinx_coroutines_coreRunnable, UnflowKotlinFunction, UnflowKtor_httpHttpMessage, UnflowKtor_ioByteReadChannel, UnflowKtor_client_coreHttpRequest, UnflowKtor_ioReadSession, UnflowKotlinSuspendFunction1, UnflowKotlinAppendable, UnflowKtor_ioObjectPool;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -150,95 +150,22 @@ __attribute__((swift_name("AnalyticsListener")))
 - (void)onEventEvent:(UnflowUnflowEvent *)event __attribute__((swift_name("onEvent(event:)")));
 @end;
 
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("UnflowEvent")))
 @interface UnflowUnflowEvent : UnflowBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@property (class, readonly, getter=companion) UnflowUnflowEventCompanion *companion __attribute__((swift_name("companion")));
-- (NSDictionary<NSString *, id> *)allAttributes __attribute__((swift_name("allAttributes()")));
-@property (readonly) NSDictionary<NSString *, id> *attributes __attribute__((swift_name("attributes")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) NSString *type __attribute__((swift_name("type")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnflowEvent.Action")))
-@interface UnflowUnflowEventAction : UnflowUnflowEvent
-- (instancetype)initWithName:(NSString *)name interaction:(UnflowUnflowEventActionInteraction *)interaction attributes:(NSDictionary<NSString *, id> *)attributes __attribute__((swift_name("init(name:interaction:attributes:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-+ (instancetype)new __attribute__((unavailable));
-- (NSDictionary<NSString *, id> *)allAttributes __attribute__((swift_name("allAttributes()")));
+- (instancetype)initWithName:(NSString *)name id:(NSString *)id occurredAt:(int64_t)occurredAt metadata:(NSDictionary<NSString *, id> *)metadata __attribute__((swift_name("init(name:id:occurredAt:metadata:)"))) __attribute__((objc_designated_initializer));
 - (NSString *)component1 __attribute__((swift_name("component1()")));
-- (UnflowUnflowEventActionInteraction *)component2 __attribute__((swift_name("component2()")));
-- (NSDictionary<NSString *, id> *)component3 __attribute__((swift_name("component3()")));
-- (UnflowUnflowEventAction *)doCopyName:(NSString *)name interaction:(UnflowUnflowEventActionInteraction *)interaction attributes:(NSDictionary<NSString *, id> *)attributes __attribute__((swift_name("doCopy(name:interaction:attributes:)")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (int64_t)component3 __attribute__((swift_name("component3()")));
+- (NSDictionary<NSString *, id> *)component4 __attribute__((swift_name("component4()")));
+- (UnflowUnflowEvent *)doCopyName:(NSString *)name id:(NSString *)id occurredAt:(int64_t)occurredAt metadata:(NSDictionary<NSString *, id> *)metadata __attribute__((swift_name("doCopy(name:id:occurredAt:metadata:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSDictionary<NSString *, id> *attributes __attribute__((swift_name("attributes")));
-@property (readonly) UnflowUnflowEventActionInteraction *interaction __attribute__((swift_name("interaction")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) NSDictionary<NSString *, id> *metadata __attribute__((swift_name("metadata")));
 @property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) NSString *type __attribute__((swift_name("type")));
-@end;
-
-__attribute__((swift_name("KotlinComparable")))
-@protocol UnflowKotlinComparable
-@required
-- (int32_t)compareToOther:(id _Nullable)other __attribute__((swift_name("compareTo(other:)")));
-@end;
-
-__attribute__((swift_name("KotlinEnum")))
-@interface UnflowKotlinEnum<E> : UnflowBase <UnflowKotlinComparable>
-- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) UnflowKotlinEnumCompanion *companion __attribute__((swift_name("companion")));
-- (int32_t)compareToOther:(E)other __attribute__((swift_name("compareTo(other:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnflowEvent.ActionInteraction")))
-@interface UnflowUnflowEventActionInteraction : UnflowKotlinEnum<UnflowUnflowEventActionInteraction *>
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-@property (class, readonly) UnflowUnflowEventActionInteraction *tap __attribute__((swift_name("tap")));
-@property (class, readonly) UnflowUnflowEventActionInteraction *swipe __attribute__((swift_name("swipe")));
-+ (UnflowKotlinArray<UnflowUnflowEventActionInteraction *> *)values __attribute__((swift_name("values()")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnflowEvent.Companion")))
-@interface UnflowUnflowEventCompanion : UnflowBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UnflowUnflowEventCompanion *shared __attribute__((swift_name("shared")));
-- (UnflowUnflowEventScreen *)screenName:(NSString *)name screenId:(int64_t)screenId parameters:(UnflowKotlinArray<UnflowKotlinPair<NSString *, id> *> *)parameters __attribute__((swift_name("screen(name:screenId:parameters:)")));
-- (UnflowUnflowEventAction *)tapName:(NSString *)name parameters:(UnflowKotlinArray<UnflowKotlinPair<NSString *, id> *> *)parameters __attribute__((swift_name("tap(name:parameters:)")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("UnflowEvent.Screen")))
-@interface UnflowUnflowEventScreen : UnflowUnflowEvent
-- (instancetype)initWithName:(NSString *)name screenId:(int64_t)screenId attributes:(NSDictionary<NSString *, id> *)attributes __attribute__((swift_name("init(name:screenId:attributes:)"))) __attribute__((objc_designated_initializer));
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-+ (instancetype)new __attribute__((unavailable));
-- (NSDictionary<NSString *, id> *)allAttributes __attribute__((swift_name("allAttributes()")));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (int64_t)component2 __attribute__((swift_name("component2()")));
-- (NSDictionary<NSString *, id> *)component3 __attribute__((swift_name("component3()")));
-- (UnflowUnflowEventScreen *)doCopyName:(NSString *)name screenId:(int64_t)screenId attributes:(NSDictionary<NSString *, id> *)attributes __attribute__((swift_name("doCopy(name:screenId:attributes:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSDictionary<NSString *, id> *attributes __attribute__((swift_name("attributes")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@property (readonly) int64_t screenId __attribute__((swift_name("screenId")));
-@property (readonly) NSString *type __attribute__((swift_name("type")));
+@property (readonly) int64_t occurredAt __attribute__((swift_name("occurredAt")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -274,27 +201,38 @@ __attribute__((swift_name("EventRepository")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)trackEventEvent:(UnflowEvent *)event completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackEvent(event:completionHandler:)")));
+- (void)trackEventEvent:(UnflowUnflowEvent *)event completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackEvent(event:completionHandler:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TrackAnalyticsEventUseCase")))
+@interface UnflowTrackAnalyticsEventUseCase : UnflowBase
+- (instancetype)initWithAnalytics:(id<UnflowAnalytics>)analytics __attribute__((swift_name("init(analytics:)"))) __attribute__((objc_designated_initializer));
+- (void)invokeName:(NSString *)name metadata:(NSDictionary<NSString *, id> *)metadata __attribute__((swift_name("invoke(name:metadata:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TrackEventUseCase")))
+@interface UnflowTrackEventUseCase : UnflowBase
+- (instancetype)initWithTrackUnflowEventUseCase:(UnflowTrackUnflowEventUseCase *)trackUnflowEventUseCase trackAnalyticsEventUseCase:(UnflowTrackAnalyticsEventUseCase *)trackAnalyticsEventUseCase __attribute__((swift_name("init(trackUnflowEventUseCase:trackAnalyticsEventUseCase:)"))) __attribute__((objc_designated_initializer));
 
 /**
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
-- (void)trackScreenEventKey:(NSString *)key screenId:(int64_t)screenId metadata:(NSDictionary<NSString *, id> *)metadata completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("trackScreenEvent(key:screenId:metadata:completionHandler:)")));
+- (void)invokeName:(NSString *)name metadata:(NSDictionary<NSString *, id> *)metadata completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(name:metadata:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Event")))
-@interface UnflowEvent : UnflowBase
-- (instancetype)initWithKey:(NSString *)key metadata:(NSDictionary<NSString *, id> *)metadata __attribute__((swift_name("init(key:metadata:)"))) __attribute__((objc_designated_initializer));
-- (NSString *)component1 __attribute__((swift_name("component1()")));
-- (NSDictionary<NSString *, id> *)component2 __attribute__((swift_name("component2()")));
-- (UnflowEvent *)doCopyKey:(NSString *)key metadata:(NSDictionary<NSString *, id> *)metadata __attribute__((swift_name("doCopy(key:metadata:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *key __attribute__((swift_name("key")));
-@property (readonly) NSDictionary<NSString *, id> *metadata __attribute__((swift_name("metadata")));
+__attribute__((swift_name("TrackUnflowEventUseCase")))
+@interface UnflowTrackUnflowEventUseCase : UnflowBase
+- (instancetype)initWithEventRepository:(id<UnflowEventRepository>)eventRepository __attribute__((swift_name("init(eventRepository:)"))) __attribute__((objc_designated_initializer));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeName:(NSString *)name metadata:(NSDictionary<NSString *, id> *)metadata completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(name:metadata:completionHandler:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -569,6 +507,24 @@ __attribute__((swift_name("Block.Button")))
 @property (readonly) UnflowBlockButtonStyle *style __attribute__((swift_name("style")));
 @property (readonly) NSString *text __attribute__((swift_name("text")));
 @property (readonly) UnflowTheme *theme __attribute__((swift_name("theme")));
+@end;
+
+__attribute__((swift_name("KotlinComparable")))
+@protocol UnflowKotlinComparable
+@required
+- (int32_t)compareToOther:(id _Nullable)other __attribute__((swift_name("compareTo(other:)")));
+@end;
+
+__attribute__((swift_name("KotlinEnum")))
+@interface UnflowKotlinEnum<E> : UnflowBase <UnflowKotlinComparable>
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKotlinEnumCompanion *companion __attribute__((swift_name("companion")));
+- (int32_t)compareToOther:(E)other __attribute__((swift_name("compareTo(other:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) int32_t ordinal __attribute__((swift_name("ordinal")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -869,22 +825,22 @@ __attribute__((swift_name("Page")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Screen")))
 @interface UnflowScreen : UnflowBase
-- (instancetype)initWithId:(int64_t)id subscriptionId:(NSString * _Nullable)subscriptionId contentType:(UnflowScreenContentType * _Nullable)contentType layout:(UnflowScreenLayout *)layout presentationStyle:(UnflowScreenPresentationStyle *)presentationStyle opener:(UnflowOpener *)opener pages:(NSArray<UnflowPage *> *)pages __attribute__((swift_name("init(id:subscriptionId:contentType:layout:presentationStyle:opener:pages:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id subscriptionId:(NSString * _Nullable)subscriptionId contentType:(UnflowScreenContentType * _Nullable)contentType layout:(UnflowScreenLayout *)layout presentationStyle:(UnflowScreenPresentationStyle *)presentationStyle opener:(UnflowOpener * _Nullable)opener pages:(NSArray<UnflowPage *> *)pages __attribute__((swift_name("init(id:subscriptionId:contentType:layout:presentationStyle:opener:pages:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
 - (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
 - (UnflowScreenContentType * _Nullable)component3 __attribute__((swift_name("component3()")));
 - (UnflowScreenLayout *)component4 __attribute__((swift_name("component4()")));
 - (UnflowScreenPresentationStyle *)component5 __attribute__((swift_name("component5()")));
-- (UnflowOpener *)component6 __attribute__((swift_name("component6()")));
+- (UnflowOpener * _Nullable)component6 __attribute__((swift_name("component6()")));
 - (NSArray<UnflowPage *> *)component7 __attribute__((swift_name("component7()")));
-- (UnflowScreen *)doCopyId:(int64_t)id subscriptionId:(NSString * _Nullable)subscriptionId contentType:(UnflowScreenContentType * _Nullable)contentType layout:(UnflowScreenLayout *)layout presentationStyle:(UnflowScreenPresentationStyle *)presentationStyle opener:(UnflowOpener *)opener pages:(NSArray<UnflowPage *> *)pages __attribute__((swift_name("doCopy(id:subscriptionId:contentType:layout:presentationStyle:opener:pages:)")));
+- (UnflowScreen *)doCopyId:(int64_t)id subscriptionId:(NSString * _Nullable)subscriptionId contentType:(UnflowScreenContentType * _Nullable)contentType layout:(UnflowScreenLayout *)layout presentationStyle:(UnflowScreenPresentationStyle *)presentationStyle opener:(UnflowOpener * _Nullable)opener pages:(NSArray<UnflowPage *> *)pages __attribute__((swift_name("doCopy(id:subscriptionId:contentType:layout:presentationStyle:opener:pages:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) UnflowScreenContentType * _Nullable contentType __attribute__((swift_name("contentType")));
 @property (readonly) int64_t id __attribute__((swift_name("id")));
 @property (readonly) UnflowScreenLayout *layout __attribute__((swift_name("layout")));
-@property (readonly) UnflowOpener *opener __attribute__((swift_name("opener")));
+@property (readonly) UnflowOpener * _Nullable opener __attribute__((swift_name("opener")));
 @property (readonly) NSArray<UnflowPage *> *pages __attribute__((swift_name("pages")));
 @property (readonly) UnflowScreenPresentationStyle *presentationStyle __attribute__((swift_name("presentationStyle")));
 @property (readonly) NSString * _Nullable subscriptionId __attribute__((swift_name("subscriptionId")));
@@ -1030,6 +986,14 @@ __attribute__((swift_name("Theme.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UnflowThemeCompanion *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HttpClientProvider")))
+@interface UnflowHttpClientProvider : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (UnflowKtor_client_coreHttpClient *)httpClientIsNetworkLoggingEnabled:(BOOL)isNetworkLoggingEnabled config:(void (^)(UnflowKtor_client_coreHttpClientConfig<id> *))config __attribute__((swift_name("httpClient(isNetworkLoggingEnabled:config:)")));
 @end;
 
 __attribute__((swift_name("GenericStorage")))
@@ -1414,6 +1378,44 @@ __attribute__((swift_name("AnalyticsLocalDataSource")))
 @property NSString * _Nullable userId __attribute__((swift_name("userId")));
 @end;
 
+__attribute__((swift_name("Ktor_httpHttpMessageBuilder")))
+@protocol UnflowKtor_httpHttpMessageBuilder
+@required
+@property (readonly) UnflowKtor_httpHeadersBuilder *headers __attribute__((swift_name("headers")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpRequestBuilder")))
+@interface UnflowKtor_client_coreHttpRequestBuilder : UnflowBase <UnflowKtor_httpHttpMessageBuilder>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) UnflowKtor_client_coreHttpRequestBuilderCompanion *companion __attribute__((swift_name("companion")));
+- (UnflowKtor_client_coreHttpRequestData *)build __attribute__((swift_name("build()")));
+- (id _Nullable)getCapabilityOrNullKey:(id<UnflowKtor_client_coreHttpClientEngineCapability>)key __attribute__((swift_name("getCapabilityOrNull(key:)")));
+- (void)setAttributesBlock:(void (^)(id<UnflowKtor_utilsAttributes>))block __attribute__((swift_name("setAttributes(block:)")));
+- (void)setCapabilityKey:(id<UnflowKtor_client_coreHttpClientEngineCapability>)key capability:(id)capability __attribute__((swift_name("setCapability(key:capability:)")));
+- (UnflowKtor_client_coreHttpRequestBuilder *)takeFromBuilder:(UnflowKtor_client_coreHttpRequestBuilder *)builder __attribute__((swift_name("takeFrom(builder:)")));
+- (UnflowKtor_client_coreHttpRequestBuilder *)takeFromWithExecutionContextBuilder:(UnflowKtor_client_coreHttpRequestBuilder *)builder __attribute__((swift_name("takeFromWithExecutionContext(builder:)")));
+- (void)urlBlock:(void (^)(UnflowKtor_httpURLBuilder *, UnflowKtor_httpURLBuilder *))block __attribute__((swift_name("url(block:)")));
+@property (readonly) id<UnflowKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property id body __attribute__((swift_name("body")));
+@property UnflowKtor_utilsTypeInfo * _Nullable bodyType __attribute__((swift_name("bodyType")));
+@property (readonly) id<UnflowKotlinx_coroutines_coreJob> executionContext __attribute__((swift_name("executionContext")));
+@property (readonly) UnflowKtor_httpHeadersBuilder *headers __attribute__((swift_name("headers")));
+@property UnflowKtor_httpHttpMethod *method __attribute__((swift_name("method")));
+@property (readonly) UnflowKtor_httpURLBuilder *url __attribute__((swift_name("url")));
+@end;
+
+@interface UnflowKtor_client_coreHttpRequestBuilder (Extensions)
+- (void)fromEndpointPath:(NSString *)path __attribute__((swift_name("fromEndpoint(path:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ExhaustiveKt")))
+@interface UnflowExhaustiveKt : UnflowBase
++ (void)doNothing __attribute__((swift_name("doNothing()")));
+@end;
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("FlowKt")))
 @interface UnflowFlowKt : UnflowBase
@@ -1436,41 +1438,6 @@ __attribute__((swift_name("GenericStorageKt")))
 */
 + (void)putValue:(id<UnflowGenericStorage>)receiver key:(NSString *)key value:(id)value completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("putValue(_:key:value:completionHandler:)")));
 + (id<UnflowKotlinx_coroutines_coreFlow>)values:(id<UnflowGenericStorage>)receiver key:(NSString *)key defaultValue:(id _Nullable)defaultValue __attribute__((swift_name("values(_:key:defaultValue:)")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinEnumCompanion")))
-@interface UnflowKotlinEnumCompanion : UnflowBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) UnflowKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinArray")))
-@interface UnflowKotlinArray<T> : UnflowBase
-+ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(UnflowInt *))init __attribute__((swift_name("init(size:init:)")));
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
-- (id<UnflowKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
-- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
-@property (readonly) int32_t size __attribute__((swift_name("size")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("KotlinPair")))
-@interface UnflowKotlinPair<__covariant A, __covariant B> : UnflowBase
-- (instancetype)initWithFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("init(first:second:)"))) __attribute__((objc_designated_initializer));
-- (A _Nullable)component1 __attribute__((swift_name("component1()")));
-- (B _Nullable)component2 __attribute__((swift_name("component2()")));
-- (UnflowKotlinPair<A, B> *)doCopyFirst:(A _Nullable)first second:(B _Nullable)second __attribute__((swift_name("doCopy(first:second:)")));
-- (BOOL)equalsOther:(id _Nullable)other __attribute__((swift_name("equals(other:)")));
-- (int32_t)hashCode __attribute__((swift_name("hashCode()")));
-- (NSString *)toString __attribute__((swift_name("toString()")));
-@property (readonly) A _Nullable first __attribute__((swift_name("first")));
-@property (readonly) B _Nullable second __attribute__((swift_name("second")));
 @end;
 
 __attribute__((swift_name("KotlinThrowable")))
@@ -1549,6 +1516,69 @@ __attribute__((swift_name("Ktor_ioCloseable")))
 @protocol UnflowKtor_ioCloseable
 @required
 - (void)close __attribute__((swift_name("close()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinEnumCompanion")))
+@interface UnflowKotlinEnumCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKotlinEnumCompanion *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinArray")))
+@interface UnflowKotlinArray<T> : UnflowBase
++ (instancetype)arrayWithSize:(int32_t)size init:(T _Nullable (^)(UnflowInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (T _Nullable)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (id<UnflowKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreCoroutineScope")))
+@protocol UnflowKotlinx_coroutines_coreCoroutineScope
+@required
+@property (readonly) id<UnflowKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpClient")))
+@interface UnflowKtor_client_coreHttpClient : UnflowBase <UnflowKotlinx_coroutines_coreCoroutineScope, UnflowKtor_ioCloseable>
+- (instancetype)initWithEngine:(id<UnflowKtor_client_coreHttpClientEngine>)engine userConfig:(UnflowKtor_client_coreHttpClientConfig<UnflowKtor_client_coreHttpClientEngineConfig *> *)userConfig __attribute__((swift_name("init(engine:userConfig:)"))) __attribute__((objc_designated_initializer));
+- (void)close __attribute__((swift_name("close()")));
+- (UnflowKtor_client_coreHttpClient *)configBlock:(void (^)(UnflowKtor_client_coreHttpClientConfig<id> *))block __attribute__((swift_name("config(block:)")));
+- (BOOL)isSupportedCapability:(id<UnflowKtor_client_coreHttpClientEngineCapability>)capability __attribute__((swift_name("isSupported(capability:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<UnflowKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) id<UnflowKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
+@property (readonly) id<UnflowKtor_client_coreHttpClientEngine> engine __attribute__((swift_name("engine")));
+@property (readonly) UnflowKtor_client_coreHttpClientEngineConfig *engineConfig __attribute__((swift_name("engineConfig")));
+@property (readonly) UnflowKtor_eventsEvents *monitor __attribute__((swift_name("monitor")));
+@property (readonly) UnflowKtor_client_coreHttpReceivePipeline *receivePipeline __attribute__((swift_name("receivePipeline")));
+@property (readonly) UnflowKtor_client_coreHttpRequestPipeline *requestPipeline __attribute__((swift_name("requestPipeline")));
+@property (readonly) UnflowKtor_client_coreHttpResponsePipeline *responsePipeline __attribute__((swift_name("responsePipeline")));
+@property (readonly) UnflowKtor_client_coreHttpSendPipeline *sendPipeline __attribute__((swift_name("sendPipeline")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpClientConfig")))
+@interface UnflowKtor_client_coreHttpClientConfig<T> : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (UnflowKtor_client_coreHttpClientConfig<T> *)clone __attribute__((swift_name("clone()")));
+- (void)engineBlock:(void (^)(T))block __attribute__((swift_name("engine(block:)")));
+- (void)installClient:(UnflowKtor_client_coreHttpClient *)client __attribute__((swift_name("install(client:)")));
+- (void)installPlugin:(id<UnflowKtor_client_coreHttpClientPlugin>)plugin configure:(void (^)(id))configure __attribute__((swift_name("install(plugin:configure:)")));
+- (void)installKey:(NSString *)key block:(void (^)(UnflowKtor_client_coreHttpClient *))block __attribute__((swift_name("install(key:block:)")));
+- (void)plusAssignOther:(UnflowKtor_client_coreHttpClientConfig<T> *)other __attribute__((swift_name("plusAssign(other:)")));
+@property BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@property BOOL expectSuccess __attribute__((swift_name("expectSuccess")));
+@property BOOL followRedirects __attribute__((swift_name("followRedirects")));
+@property BOOL useDefaultTransformers __attribute__((swift_name("useDefaultTransformers")));
 @end;
 
 __attribute__((swift_name("KotlinKDeclarationContainer")))
@@ -1797,11 +1827,310 @@ __attribute__((swift_name("RuntimeSqlDriverSchema")))
 @property (readonly) int32_t version __attribute__((swift_name("version")));
 @end;
 
+__attribute__((swift_name("Ktor_utilsStringValuesBuilder")))
+@protocol UnflowKtor_utilsStringValuesBuilder
+@required
+- (void)appendName:(NSString *)name value:(NSString *)value __attribute__((swift_name("append(name:value:)")));
+- (void)appendAllStringValues:(id<UnflowKtor_utilsStringValues>)stringValues __attribute__((swift_name("appendAll(stringValues:)")));
+- (void)appendAllName:(NSString *)name values:(id)values __attribute__((swift_name("appendAll(name:values:)")));
+- (void)appendMissingStringValues:(id<UnflowKtor_utilsStringValues>)stringValues __attribute__((swift_name("appendMissing(stringValues:)")));
+- (void)appendMissingName:(NSString *)name values:(id)values __attribute__((swift_name("appendMissing(name:values:)")));
+- (id<UnflowKtor_utilsStringValues>)build __attribute__((swift_name("build()")));
+- (void)clear __attribute__((swift_name("clear()")));
+- (BOOL)containsName:(NSString *)name __attribute__((swift_name("contains(name:)")));
+- (BOOL)containsName:(NSString *)name value:(NSString *)value __attribute__((swift_name("contains(name:value:)")));
+- (NSSet<id<UnflowKotlinMapEntry>> *)entries __attribute__((swift_name("entries()")));
+- (NSString * _Nullable)getName:(NSString *)name __attribute__((swift_name("get(name:)")));
+- (NSArray<NSString *> * _Nullable)getAllName:(NSString *)name __attribute__((swift_name("getAll(name:)")));
+- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (NSSet<NSString *> *)names __attribute__((swift_name("names()")));
+- (void)removeName:(NSString *)name __attribute__((swift_name("remove(name:)")));
+- (BOOL)removeName:(NSString *)name value:(NSString *)value __attribute__((swift_name("remove(name:value:)")));
+- (void)removeKeysWithNoEntries __attribute__((swift_name("removeKeysWithNoEntries()")));
+- (void)setName:(NSString *)name value:(NSString *)value __attribute__((swift_name("set(name:value:)")));
+@property (readonly) BOOL caseInsensitiveName __attribute__((swift_name("caseInsensitiveName")));
+@end;
+
+__attribute__((swift_name("Ktor_utilsStringValuesBuilderImpl")))
+@interface UnflowKtor_utilsStringValuesBuilderImpl : UnflowBase <UnflowKtor_utilsStringValuesBuilder>
+- (instancetype)initWithCaseInsensitiveName:(BOOL)caseInsensitiveName size:(int32_t)size __attribute__((swift_name("init(caseInsensitiveName:size:)"))) __attribute__((objc_designated_initializer));
+- (void)appendName:(NSString *)name value:(NSString *)value __attribute__((swift_name("append(name:value:)")));
+- (void)appendAllStringValues:(id<UnflowKtor_utilsStringValues>)stringValues __attribute__((swift_name("appendAll(stringValues:)")));
+- (void)appendAllName:(NSString *)name values:(id)values __attribute__((swift_name("appendAll(name:values:)")));
+- (void)appendMissingStringValues:(id<UnflowKtor_utilsStringValues>)stringValues __attribute__((swift_name("appendMissing(stringValues:)")));
+- (void)appendMissingName:(NSString *)name values:(id)values __attribute__((swift_name("appendMissing(name:values:)")));
+- (id<UnflowKtor_utilsStringValues>)build __attribute__((swift_name("build()")));
+- (void)clear __attribute__((swift_name("clear()")));
+- (BOOL)containsName:(NSString *)name __attribute__((swift_name("contains(name:)")));
+- (BOOL)containsName:(NSString *)name value:(NSString *)value __attribute__((swift_name("contains(name:value:)")));
+- (NSSet<id<UnflowKotlinMapEntry>> *)entries __attribute__((swift_name("entries()")));
+- (NSString * _Nullable)getName:(NSString *)name __attribute__((swift_name("get(name:)")));
+- (NSArray<NSString *> * _Nullable)getAllName:(NSString *)name __attribute__((swift_name("getAll(name:)")));
+- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (NSSet<NSString *> *)names __attribute__((swift_name("names()")));
+- (void)removeName:(NSString *)name __attribute__((swift_name("remove(name:)")));
+- (BOOL)removeName:(NSString *)name value:(NSString *)value __attribute__((swift_name("remove(name:value:)")));
+- (void)removeKeysWithNoEntries __attribute__((swift_name("removeKeysWithNoEntries()")));
+- (void)setName:(NSString *)name value:(NSString *)value __attribute__((swift_name("set(name:value:)")));
+- (void)validateNameName:(NSString *)name __attribute__((swift_name("validateName(name:)")));
+- (void)validateValueValue:(NSString *)value __attribute__((swift_name("validateValue(value:)")));
+@property (readonly) BOOL caseInsensitiveName __attribute__((swift_name("caseInsensitiveName")));
+@property (readonly) UnflowMutableDictionary<NSString *, NSMutableArray<NSString *> *> *values __attribute__((swift_name("values")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHeadersBuilder")))
+@interface UnflowKtor_httpHeadersBuilder : UnflowKtor_utilsStringValuesBuilderImpl
+- (instancetype)initWithSize:(int32_t)size __attribute__((swift_name("init(size:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCaseInsensitiveName:(BOOL)caseInsensitiveName size:(int32_t)size __attribute__((swift_name("init(caseInsensitiveName:size:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (id<UnflowKtor_httpHeaders>)build __attribute__((swift_name("build()")));
+- (void)validateNameName:(NSString *)name __attribute__((swift_name("validateName(name:)")));
+- (void)validateValueValue:(NSString *)value __attribute__((swift_name("validateValue(value:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpRequestBuilder.Companion")))
+@interface UnflowKtor_client_coreHttpRequestBuilderCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_client_coreHttpRequestBuilderCompanion *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpRequestData")))
+@interface UnflowKtor_client_coreHttpRequestData : UnflowBase
+- (instancetype)initWithUrl:(UnflowKtor_httpUrl *)url method:(UnflowKtor_httpHttpMethod *)method headers:(id<UnflowKtor_httpHeaders>)headers body:(UnflowKtor_httpOutgoingContent *)body executionContext:(id<UnflowKotlinx_coroutines_coreJob>)executionContext attributes:(id<UnflowKtor_utilsAttributes>)attributes __attribute__((swift_name("init(url:method:headers:body:executionContext:attributes:)"))) __attribute__((objc_designated_initializer));
+- (id _Nullable)getCapabilityOrNullKey:(id<UnflowKtor_client_coreHttpClientEngineCapability>)key __attribute__((swift_name("getCapabilityOrNull(key:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<UnflowKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) UnflowKtor_httpOutgoingContent *body __attribute__((swift_name("body")));
+@property (readonly) id<UnflowKotlinx_coroutines_coreJob> executionContext __attribute__((swift_name("executionContext")));
+@property (readonly) id<UnflowKtor_httpHeaders> headers __attribute__((swift_name("headers")));
+@property (readonly) UnflowKtor_httpHttpMethod *method __attribute__((swift_name("method")));
+@property (readonly) UnflowKtor_httpUrl *url __attribute__((swift_name("url")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientEngineCapability")))
+@protocol UnflowKtor_client_coreHttpClientEngineCapability
+@required
+@end;
+
+__attribute__((swift_name("Ktor_utilsAttributes")))
+@protocol UnflowKtor_utilsAttributes
+@required
+- (id)computeIfAbsentKey:(UnflowKtor_utilsAttributeKey<id> *)key block:(id (^)(void))block __attribute__((swift_name("computeIfAbsent(key:block:)")));
+- (BOOL)containsKey:(UnflowKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("contains(key:)")));
+- (id)getKey:(UnflowKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("get(key:)")));
+- (id _Nullable)getOrNullKey:(UnflowKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("getOrNull(key:)")));
+- (void)putKey:(UnflowKtor_utilsAttributeKey<id> *)key value:(id)value __attribute__((swift_name("put(key:value:)")));
+- (void)removeKey:(UnflowKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("remove(key:)")));
+- (id)takeKey:(UnflowKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("take(key:)")));
+- (id _Nullable)takeOrNullKey:(UnflowKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("takeOrNull(key:)")));
+@property (readonly) NSArray<UnflowKtor_utilsAttributeKey<id> *> *allKeys __attribute__((swift_name("allKeys")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpURLBuilder")))
+@interface UnflowKtor_httpURLBuilder : UnflowBase
+- (instancetype)initWithProtocol:(UnflowKtor_httpURLProtocol *)protocol host:(NSString *)host port:(int32_t)port user:(NSString * _Nullable)user password:(NSString * _Nullable)password pathSegments:(NSArray<NSString *> *)pathSegments parameters:(id<UnflowKtor_httpParameters>)parameters fragment:(NSString *)fragment trailingQuery:(BOOL)trailingQuery __attribute__((swift_name("init(protocol:host:port:user:password:pathSegments:parameters:fragment:trailingQuery:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_httpURLBuilderCompanion *companion __attribute__((swift_name("companion")));
+- (UnflowKtor_httpUrl *)build __attribute__((swift_name("build()")));
+- (NSString *)buildString __attribute__((swift_name("buildString()")));
+@property NSString *encodedFragment __attribute__((swift_name("encodedFragment")));
+@property id<UnflowKtor_httpParametersBuilder> encodedParameters __attribute__((swift_name("encodedParameters")));
+@property NSString * _Nullable encodedPassword __attribute__((swift_name("encodedPassword")));
+@property NSArray<NSString *> *encodedPathSegments __attribute__((swift_name("encodedPathSegments")));
+@property NSString * _Nullable encodedUser __attribute__((swift_name("encodedUser")));
+@property NSString *fragment __attribute__((swift_name("fragment")));
+@property NSString *host __attribute__((swift_name("host")));
+@property (readonly) id<UnflowKtor_httpParametersBuilder> parameters __attribute__((swift_name("parameters")));
+@property NSString * _Nullable password __attribute__((swift_name("password")));
+@property NSArray<NSString *> *pathSegments __attribute__((swift_name("pathSegments")));
+@property int32_t port __attribute__((swift_name("port")));
+@property UnflowKtor_httpURLProtocol *protocol __attribute__((swift_name("protocol")));
+@property BOOL trailingQuery __attribute__((swift_name("trailingQuery")));
+@property NSString * _Nullable user __attribute__((swift_name("user")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsTypeInfo")))
+@interface UnflowKtor_utilsTypeInfo : UnflowBase
+- (instancetype)initWithType:(id<UnflowKotlinKClass>)type reifiedType:(id<UnflowKotlinKType>)reifiedType kotlinType:(id<UnflowKotlinKType> _Nullable)kotlinType __attribute__((swift_name("init(type:reifiedType:kotlinType:)"))) __attribute__((objc_designated_initializer));
+- (id<UnflowKotlinKClass>)component1 __attribute__((swift_name("component1()")));
+- (id<UnflowKotlinKType>)component2 __attribute__((swift_name("component2()")));
+- (id<UnflowKotlinKType> _Nullable)component3 __attribute__((swift_name("component3()")));
+- (UnflowKtor_utilsTypeInfo *)doCopyType:(id<UnflowKotlinKClass>)type reifiedType:(id<UnflowKotlinKType>)reifiedType kotlinType:(id<UnflowKotlinKType> _Nullable)kotlinType __attribute__((swift_name("doCopy(type:reifiedType:kotlinType:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<UnflowKotlinKType> _Nullable kotlinType __attribute__((swift_name("kotlinType")));
+@property (readonly) id<UnflowKotlinKType> reifiedType __attribute__((swift_name("reifiedType")));
+@property (readonly) id<UnflowKotlinKClass> type __attribute__((swift_name("type")));
+@end;
+
+__attribute__((swift_name("KotlinCoroutineContext")))
+@protocol UnflowKotlinCoroutineContext
+@required
+- (id _Nullable)foldInitial:(id _Nullable)initial operation:(id _Nullable (^)(id _Nullable, id<UnflowKotlinCoroutineContextElement>))operation __attribute__((swift_name("fold(initial:operation:)")));
+- (id<UnflowKotlinCoroutineContextElement> _Nullable)getKey_:(id<UnflowKotlinCoroutineContextKey>)key __attribute__((swift_name("get(key_:)")));
+- (id<UnflowKotlinCoroutineContext>)minusKeyKey:(id<UnflowKotlinCoroutineContextKey>)key __attribute__((swift_name("minusKey(key:)")));
+- (id<UnflowKotlinCoroutineContext>)plusContext:(id<UnflowKotlinCoroutineContext>)context __attribute__((swift_name("plus(context:)")));
+@end;
+
+__attribute__((swift_name("KotlinCoroutineContextElement")))
+@protocol UnflowKotlinCoroutineContextElement <UnflowKotlinCoroutineContext>
+@required
+@property (readonly) id<UnflowKotlinCoroutineContextKey> key __attribute__((swift_name("key")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreJob")))
+@protocol UnflowKotlinx_coroutines_coreJob <UnflowKotlinCoroutineContextElement>
+@required
+- (id<UnflowKotlinx_coroutines_coreChildHandle>)attachChildChild:(id<UnflowKotlinx_coroutines_coreChildJob>)child __attribute__((swift_name("attachChild(child:)")));
+- (void)cancelCause:(UnflowKotlinCancellationException * _Nullable)cause __attribute__((swift_name("cancel(cause:)")));
+- (UnflowKotlinCancellationException *)getCancellationException __attribute__((swift_name("getCancellationException()")));
+- (id<UnflowKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionOnCancelling:(BOOL)onCancelling invokeImmediately:(BOOL)invokeImmediately handler:(void (^)(UnflowKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(onCancelling:invokeImmediately:handler:)")));
+- (id<UnflowKotlinx_coroutines_coreDisposableHandle>)invokeOnCompletionHandler:(void (^)(UnflowKotlinThrowable * _Nullable))handler __attribute__((swift_name("invokeOnCompletion(handler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)joinWithCompletionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("join(completionHandler:)")));
+- (id<UnflowKotlinx_coroutines_coreJob>)plusOther:(id<UnflowKotlinx_coroutines_coreJob>)other __attribute__((swift_name("plus(other:)"))) __attribute__((unavailable("Operator '+' on two Job objects is meaningless. Job is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The job to the right of `+` just replaces the job the left of `+`.")));
+- (BOOL)start __attribute__((swift_name("start()")));
+@property (readonly) id<UnflowKotlinSequence> children __attribute__((swift_name("children")));
+@property (readonly) BOOL isActive __attribute__((swift_name("isActive")));
+@property (readonly) BOOL isCancelled __attribute__((swift_name("isCancelled")));
+@property (readonly) BOOL isCompleted __attribute__((swift_name("isCompleted")));
+@property (readonly) id<UnflowKotlinx_coroutines_coreSelectClause0> onJoin __attribute__((swift_name("onJoin")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpMethod")))
+@interface UnflowKtor_httpHttpMethod : UnflowBase
+- (instancetype)initWithValue:(NSString *)value __attribute__((swift_name("init(value:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_httpHttpMethodCompanion *companion __attribute__((swift_name("companion")));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (UnflowKtor_httpHttpMethod *)doCopyValue:(NSString *)value __attribute__((swift_name("doCopy(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end;
+
 __attribute__((swift_name("KotlinIterator")))
 @protocol UnflowKotlinIterator
 @required
 - (BOOL)hasNext __attribute__((swift_name("hasNext()")));
 - (id _Nullable)next __attribute__((swift_name("next()")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientEngine")))
+@protocol UnflowKtor_client_coreHttpClientEngine <UnflowKotlinx_coroutines_coreCoroutineScope, UnflowKtor_ioCloseable>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)executeData:(UnflowKtor_client_coreHttpRequestData *)data completionHandler:(void (^)(UnflowKtor_client_coreHttpResponseData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("execute(data:completionHandler:)")));
+- (void)installClient:(UnflowKtor_client_coreHttpClient *)client __attribute__((swift_name("install(client:)")));
+@property (readonly) UnflowKtor_client_coreHttpClientEngineConfig *config __attribute__((swift_name("config")));
+@property (readonly) UnflowKotlinx_coroutines_coreCoroutineDispatcher *dispatcher __attribute__((swift_name("dispatcher")));
+@property (readonly) NSSet<id<UnflowKtor_client_coreHttpClientEngineCapability>> *supportedCapabilities __attribute__((swift_name("supportedCapabilities")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientEngineConfig")))
+@interface UnflowKtor_client_coreHttpClientEngineConfig : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property BOOL pipelining __attribute__((swift_name("pipelining")));
+@property UnflowKtor_client_coreProxyConfig * _Nullable proxy __attribute__((swift_name("proxy")));
+@property int32_t threadsCount __attribute__((swift_name("threadsCount")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_eventsEvents")))
+@interface UnflowKtor_eventsEvents : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)raiseDefinition:(UnflowKtor_eventsEventDefinition<id> *)definition value:(id _Nullable)value __attribute__((swift_name("raise(definition:value:)")));
+- (id<UnflowKotlinx_coroutines_coreDisposableHandle>)subscribeDefinition:(UnflowKtor_eventsEventDefinition<id> *)definition handler:(void (^)(id _Nullable))handler __attribute__((swift_name("subscribe(definition:handler:)")));
+- (void)unsubscribeDefinition:(UnflowKtor_eventsEventDefinition<id> *)definition handler:(void (^)(id _Nullable))handler __attribute__((swift_name("unsubscribe(definition:handler:)")));
+@end;
+
+__attribute__((swift_name("Ktor_utilsPipeline")))
+@interface UnflowKtor_utilsPipeline<TSubject, TContext> : UnflowBase
+- (instancetype)initWithPhase:(UnflowKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<UnflowKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhases:(UnflowKotlinArray<UnflowKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer));
+- (void)addPhasePhase:(UnflowKtor_utilsPipelinePhase *)phase __attribute__((swift_name("addPhase(phase:)")));
+- (void)afterIntercepted __attribute__((swift_name("afterIntercepted()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)executeContext:(TContext)context subject:(TSubject)subject completionHandler:(void (^)(TSubject _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("execute(context:subject:completionHandler:)")));
+- (void)insertPhaseAfterReference:(UnflowKtor_utilsPipelinePhase *)reference phase:(UnflowKtor_utilsPipelinePhase *)phase __attribute__((swift_name("insertPhaseAfter(reference:phase:)")));
+- (void)insertPhaseBeforeReference:(UnflowKtor_utilsPipelinePhase *)reference phase:(UnflowKtor_utilsPipelinePhase *)phase __attribute__((swift_name("insertPhaseBefore(reference:phase:)")));
+- (void)interceptPhase:(UnflowKtor_utilsPipelinePhase *)phase block:(id<UnflowKotlinSuspendFunction2>)block __attribute__((swift_name("intercept(phase:block:)")));
+- (NSArray<id<UnflowKotlinSuspendFunction2>> *)interceptorsForPhasePhase:(UnflowKtor_utilsPipelinePhase *)phase __attribute__((swift_name("interceptorsForPhase(phase:)")));
+- (void)mergeFrom:(UnflowKtor_utilsPipeline<TSubject, TContext> *)from __attribute__((swift_name("merge(from:)")));
+- (void)mergePhasesFrom:(UnflowKtor_utilsPipeline<TSubject, TContext> *)from __attribute__((swift_name("mergePhases(from:)")));
+@property (readonly) id<UnflowKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@property (readonly, getter=isEmpty_) BOOL isEmpty __attribute__((swift_name("isEmpty")));
+@property (readonly) NSArray<UnflowKtor_utilsPipelinePhase *> *items __attribute__((swift_name("items")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpReceivePipeline")))
+@interface UnflowKtor_client_coreHttpReceivePipeline : UnflowKtor_utilsPipeline<UnflowKtor_client_coreHttpResponse *, UnflowKotlinUnit *>
+- (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(UnflowKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<UnflowKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhases:(UnflowKotlinArray<UnflowKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_client_coreHttpReceivePipelinePhases *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpRequestPipeline")))
+@interface UnflowKtor_client_coreHttpRequestPipeline : UnflowKtor_utilsPipeline<id, UnflowKtor_client_coreHttpRequestBuilder *>
+- (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(UnflowKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<UnflowKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhases:(UnflowKotlinArray<UnflowKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_client_coreHttpRequestPipelinePhases *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpResponsePipeline")))
+@interface UnflowKtor_client_coreHttpResponsePipeline : UnflowKtor_utilsPipeline<UnflowKtor_client_coreHttpResponseContainer *, UnflowKtor_client_coreHttpClientCall *>
+- (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(UnflowKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<UnflowKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhases:(UnflowKotlinArray<UnflowKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_client_coreHttpResponsePipelinePhases *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpSendPipeline")))
+@interface UnflowKtor_client_coreHttpSendPipeline : UnflowKtor_utilsPipeline<id, UnflowKtor_client_coreHttpRequestBuilder *>
+- (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(UnflowKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<UnflowKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhases:(UnflowKotlinArray<UnflowKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_client_coreHttpSendPipelinePhases *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientPlugin")))
+@protocol UnflowKtor_client_coreHttpClientPlugin
+@required
+- (void)installPlugin:(id)plugin scope:(UnflowKtor_client_coreHttpClient *)scope __attribute__((swift_name("install(plugin:scope:)")));
+- (id)prepareBlock:(void (^)(id))block __attribute__((swift_name("prepare(block:)")));
+@property (readonly) UnflowKtor_utilsAttributeKey<id> *key __attribute__((swift_name("key")));
 @end;
 
 __attribute__((swift_name("RuntimeSqlCursor")))
@@ -1839,6 +2168,368 @@ __attribute__((swift_name("RuntimeSqlPreparedStatement")))
 - (void)bindStringIndex:(int32_t)index string:(NSString * _Nullable)string __attribute__((swift_name("bindString(index:string:)")));
 @end;
 
+__attribute__((swift_name("Ktor_utilsStringValues")))
+@protocol UnflowKtor_utilsStringValues
+@required
+- (BOOL)containsName:(NSString *)name __attribute__((swift_name("contains(name:)")));
+- (BOOL)containsName:(NSString *)name value:(NSString *)value __attribute__((swift_name("contains(name:value:)")));
+- (NSSet<id<UnflowKotlinMapEntry>> *)entries __attribute__((swift_name("entries()")));
+- (void)forEachBody:(void (^)(NSString *, NSArray<NSString *> *))body __attribute__((swift_name("forEach(body:)")));
+- (NSString * _Nullable)getName:(NSString *)name __attribute__((swift_name("get(name:)")));
+- (NSArray<NSString *> * _Nullable)getAllName:(NSString *)name __attribute__((swift_name("getAll(name:)")));
+- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (NSSet<NSString *> *)names __attribute__((swift_name("names()")));
+@property (readonly) BOOL caseInsensitiveName __attribute__((swift_name("caseInsensitiveName")));
+@end;
+
+__attribute__((swift_name("KotlinMapEntry")))
+@protocol UnflowKotlinMapEntry
+@required
+@property (readonly) id _Nullable key __attribute__((swift_name("key")));
+@property (readonly) id _Nullable value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((swift_name("Ktor_httpHeaders")))
+@protocol UnflowKtor_httpHeaders <UnflowKtor_utilsStringValues>
+@required
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpUrl")))
+@interface UnflowKtor_httpUrl : UnflowBase
+@property (class, readonly, getter=companion) UnflowKtor_httpUrlCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *encodedFragment __attribute__((swift_name("encodedFragment")));
+@property (readonly) NSString * _Nullable encodedPassword __attribute__((swift_name("encodedPassword")));
+@property (readonly) NSString *encodedPath __attribute__((swift_name("encodedPath")));
+@property (readonly) NSString *encodedPathAndQuery __attribute__((swift_name("encodedPathAndQuery")));
+@property (readonly) NSString *encodedQuery __attribute__((swift_name("encodedQuery")));
+@property (readonly) NSString * _Nullable encodedUser __attribute__((swift_name("encodedUser")));
+@property (readonly) NSString *fragment __attribute__((swift_name("fragment")));
+@property (readonly) NSString *host __attribute__((swift_name("host")));
+@property (readonly) id<UnflowKtor_httpParameters> parameters __attribute__((swift_name("parameters")));
+@property (readonly) NSString * _Nullable password __attribute__((swift_name("password")));
+@property (readonly) NSArray<NSString *> *pathSegments __attribute__((swift_name("pathSegments")));
+@property (readonly) int32_t port __attribute__((swift_name("port")));
+@property (readonly) UnflowKtor_httpURLProtocol *protocol __attribute__((swift_name("protocol")));
+@property (readonly) int32_t specifiedPort __attribute__((swift_name("specifiedPort")));
+@property (readonly) BOOL trailingQuery __attribute__((swift_name("trailingQuery")));
+@property (readonly) NSString * _Nullable user __attribute__((swift_name("user")));
+@end;
+
+__attribute__((swift_name("Ktor_httpOutgoingContent")))
+@interface UnflowKtor_httpOutgoingContent : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (id _Nullable)getPropertyKey:(UnflowKtor_utilsAttributeKey<id> *)key __attribute__((swift_name("getProperty(key:)")));
+- (void)setPropertyKey:(UnflowKtor_utilsAttributeKey<id> *)key value:(id _Nullable)value __attribute__((swift_name("setProperty(key:value:)")));
+- (id<UnflowKtor_httpHeaders> _Nullable)trailers __attribute__((swift_name("trailers()")));
+@property (readonly) UnflowLong * _Nullable contentLength __attribute__((swift_name("contentLength")));
+@property (readonly) UnflowKtor_httpContentType * _Nullable contentType __attribute__((swift_name("contentType")));
+@property (readonly) id<UnflowKtor_httpHeaders> headers __attribute__((swift_name("headers")));
+@property (readonly) UnflowKtor_httpHttpStatusCode * _Nullable status __attribute__((swift_name("status")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsAttributeKey")))
+@interface UnflowKtor_utilsAttributeKey<T> : UnflowBase
+- (instancetype)initWithName:(NSString *)name __attribute__((swift_name("init(name:)"))) __attribute__((objc_designated_initializer));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpURLProtocol")))
+@interface UnflowKtor_httpURLProtocol : UnflowBase
+- (instancetype)initWithName:(NSString *)name defaultPort:(int32_t)defaultPort __attribute__((swift_name("init(name:defaultPort:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_httpURLProtocolCompanion *companion __attribute__((swift_name("companion")));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (UnflowKtor_httpURLProtocol *)doCopyName:(NSString *)name defaultPort:(int32_t)defaultPort __attribute__((swift_name("doCopy(name:defaultPort:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t defaultPort __attribute__((swift_name("defaultPort")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end;
+
+__attribute__((swift_name("Ktor_httpParameters")))
+@protocol UnflowKtor_httpParameters <UnflowKtor_utilsStringValues>
+@required
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpURLBuilder.Companion")))
+@interface UnflowKtor_httpURLBuilderCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_httpURLBuilderCompanion *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((swift_name("Ktor_httpParametersBuilder")))
+@protocol UnflowKtor_httpParametersBuilder <UnflowKtor_utilsStringValuesBuilder>
+@required
+@end;
+
+__attribute__((swift_name("KotlinKType")))
+@protocol UnflowKotlinKType
+@required
+@property (readonly) NSArray<UnflowKotlinKTypeProjection *> *arguments __attribute__((swift_name("arguments")));
+@property (readonly) id<UnflowKotlinKClassifier> _Nullable classifier __attribute__((swift_name("classifier")));
+@property (readonly) BOOL isMarkedNullable __attribute__((swift_name("isMarkedNullable")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreDisposableHandle")))
+@protocol UnflowKotlinx_coroutines_coreDisposableHandle
+@required
+- (void)dispose __attribute__((swift_name("dispose()")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreChildHandle")))
+@protocol UnflowKotlinx_coroutines_coreChildHandle <UnflowKotlinx_coroutines_coreDisposableHandle>
+@required
+- (BOOL)childCancelledCause:(UnflowKotlinThrowable *)cause __attribute__((swift_name("childCancelled(cause:)")));
+@property (readonly) id<UnflowKotlinx_coroutines_coreJob> _Nullable parent __attribute__((swift_name("parent")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreChildJob")))
+@protocol UnflowKotlinx_coroutines_coreChildJob <UnflowKotlinx_coroutines_coreJob>
+@required
+- (void)parentCancelledParentJob:(id<UnflowKotlinx_coroutines_coreParentJob>)parentJob __attribute__((swift_name("parentCancelled(parentJob:)")));
+@end;
+
+__attribute__((swift_name("KotlinSequence")))
+@protocol UnflowKotlinSequence
+@required
+- (id<UnflowKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectClause0")))
+@protocol UnflowKotlinx_coroutines_coreSelectClause0
+@required
+- (void)registerSelectClause0Select:(id<UnflowKotlinx_coroutines_coreSelectInstance>)select block:(id<UnflowKotlinSuspendFunction0>)block __attribute__((swift_name("registerSelectClause0(select:block:)")));
+@end;
+
+__attribute__((swift_name("KotlinCoroutineContextKey")))
+@protocol UnflowKotlinCoroutineContextKey
+@required
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpMethod.Companion")))
+@interface UnflowKtor_httpHttpMethodCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_httpHttpMethodCompanion *shared __attribute__((swift_name("shared")));
+- (UnflowKtor_httpHttpMethod *)parseMethod:(NSString *)method __attribute__((swift_name("parse(method:)")));
+@property (readonly) NSArray<UnflowKtor_httpHttpMethod *> *DefaultMethods __attribute__((swift_name("DefaultMethods")));
+@property (readonly) UnflowKtor_httpHttpMethod *Delete __attribute__((swift_name("Delete")));
+@property (readonly) UnflowKtor_httpHttpMethod *Get __attribute__((swift_name("Get")));
+@property (readonly) UnflowKtor_httpHttpMethod *Head __attribute__((swift_name("Head")));
+@property (readonly) UnflowKtor_httpHttpMethod *Options __attribute__((swift_name("Options")));
+@property (readonly) UnflowKtor_httpHttpMethod *Patch __attribute__((swift_name("Patch")));
+@property (readonly) UnflowKtor_httpHttpMethod *Post __attribute__((swift_name("Post")));
+@property (readonly) UnflowKtor_httpHttpMethod *Put __attribute__((swift_name("Put")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpResponseData")))
+@interface UnflowKtor_client_coreHttpResponseData : UnflowBase
+- (instancetype)initWithStatusCode:(UnflowKtor_httpHttpStatusCode *)statusCode requestTime:(UnflowKtor_utilsGMTDate *)requestTime headers:(id<UnflowKtor_httpHeaders>)headers version:(UnflowKtor_httpHttpProtocolVersion *)version body:(id)body callContext:(id<UnflowKotlinCoroutineContext>)callContext __attribute__((swift_name("init(statusCode:requestTime:headers:version:body:callContext:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id body __attribute__((swift_name("body")));
+@property (readonly) id<UnflowKotlinCoroutineContext> callContext __attribute__((swift_name("callContext")));
+@property (readonly) id<UnflowKtor_httpHeaders> headers __attribute__((swift_name("headers")));
+@property (readonly) UnflowKtor_utilsGMTDate *requestTime __attribute__((swift_name("requestTime")));
+@property (readonly) UnflowKtor_utilsGMTDate *responseTime __attribute__((swift_name("responseTime")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *statusCode __attribute__((swift_name("statusCode")));
+@property (readonly) UnflowKtor_httpHttpProtocolVersion *version __attribute__((swift_name("version")));
+@end;
+
+__attribute__((swift_name("KotlinAbstractCoroutineContextElement")))
+@interface UnflowKotlinAbstractCoroutineContextElement : UnflowBase <UnflowKotlinCoroutineContextElement>
+- (instancetype)initWithKey:(id<UnflowKotlinCoroutineContextKey>)key __attribute__((swift_name("init(key:)"))) __attribute__((objc_designated_initializer));
+@property (readonly) id<UnflowKotlinCoroutineContextKey> key __attribute__((swift_name("key")));
+@end;
+
+__attribute__((swift_name("KotlinContinuationInterceptor")))
+@protocol UnflowKotlinContinuationInterceptor <UnflowKotlinCoroutineContextElement>
+@required
+- (id<UnflowKotlinContinuation>)interceptContinuationContinuation:(id<UnflowKotlinContinuation>)continuation __attribute__((swift_name("interceptContinuation(continuation:)")));
+- (void)releaseInterceptedContinuationContinuation:(id<UnflowKotlinContinuation>)continuation __attribute__((swift_name("releaseInterceptedContinuation(continuation:)")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreCoroutineDispatcher")))
+@interface UnflowKotlinx_coroutines_coreCoroutineDispatcher : UnflowKotlinAbstractCoroutineContextElement <UnflowKotlinContinuationInterceptor>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithKey:(id<UnflowKotlinCoroutineContextKey>)key __attribute__((swift_name("init(key:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKotlinx_coroutines_coreCoroutineDispatcherKey *companion __attribute__((swift_name("companion")));
+- (void)dispatchContext:(id<UnflowKotlinCoroutineContext>)context block:(id<UnflowKotlinx_coroutines_coreRunnable>)block __attribute__((swift_name("dispatch(context:block:)")));
+- (void)dispatchYieldContext:(id<UnflowKotlinCoroutineContext>)context block:(id<UnflowKotlinx_coroutines_coreRunnable>)block __attribute__((swift_name("dispatchYield(context:block:)")));
+- (id<UnflowKotlinContinuation>)interceptContinuationContinuation:(id<UnflowKotlinContinuation>)continuation __attribute__((swift_name("interceptContinuation(continuation:)")));
+- (BOOL)isDispatchNeededContext:(id<UnflowKotlinCoroutineContext>)context __attribute__((swift_name("isDispatchNeeded(context:)")));
+- (UnflowKotlinx_coroutines_coreCoroutineDispatcher *)limitedParallelismParallelism:(int32_t)parallelism __attribute__((swift_name("limitedParallelism(parallelism:)")));
+- (UnflowKotlinx_coroutines_coreCoroutineDispatcher *)plusOther_:(UnflowKotlinx_coroutines_coreCoroutineDispatcher *)other __attribute__((swift_name("plus(other_:)"))) __attribute__((unavailable("Operator '+' on two CoroutineDispatcher objects is meaningless. CoroutineDispatcher is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The dispatcher to the right of `+` just replaces the dispatcher to the left.")));
+- (void)releaseInterceptedContinuationContinuation:(id<UnflowKotlinContinuation>)continuation __attribute__((swift_name("releaseInterceptedContinuation(continuation:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreProxyConfig")))
+@interface UnflowKtor_client_coreProxyConfig : UnflowBase
+- (instancetype)initWithUrl:(UnflowKtor_httpUrl *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) UnflowKtor_httpUrl *url __attribute__((swift_name("url")));
+@end;
+
+__attribute__((swift_name("Ktor_eventsEventDefinition")))
+@interface UnflowKtor_eventsEventDefinition<T> : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsPipelinePhase")))
+@interface UnflowKtor_utilsPipelinePhase : UnflowBase
+- (instancetype)initWithName:(NSString *)name __attribute__((swift_name("init(name:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end;
+
+__attribute__((swift_name("KotlinFunction")))
+@protocol UnflowKotlinFunction
+@required
+@end;
+
+__attribute__((swift_name("KotlinSuspendFunction2")))
+@protocol UnflowKotlinSuspendFunction2 <UnflowKotlinFunction>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeP1:(id _Nullable)p1 p2:(id _Nullable)p2 completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(p1:p2:completionHandler:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpReceivePipeline.Phases")))
+@interface UnflowKtor_client_coreHttpReceivePipelinePhases : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)phases __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_client_coreHttpReceivePipelinePhases *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *After __attribute__((swift_name("After")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Before __attribute__((swift_name("Before")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
+@end;
+
+__attribute__((swift_name("Ktor_httpHttpMessage")))
+@protocol UnflowKtor_httpHttpMessage
+@required
+@property (readonly) id<UnflowKtor_httpHeaders> headers __attribute__((swift_name("headers")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpResponse")))
+@interface UnflowKtor_client_coreHttpResponse : UnflowBase <UnflowKtor_httpHttpMessage, UnflowKotlinx_coroutines_coreCoroutineScope>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) UnflowKtor_client_coreHttpClientCall *call __attribute__((swift_name("call")));
+@property (readonly) id<UnflowKtor_ioByteReadChannel> content __attribute__((swift_name("content")));
+@property (readonly) UnflowKtor_utilsGMTDate *requestTime __attribute__((swift_name("requestTime")));
+@property (readonly) UnflowKtor_utilsGMTDate *responseTime __attribute__((swift_name("responseTime")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *status __attribute__((swift_name("status")));
+@property (readonly) UnflowKtor_httpHttpProtocolVersion *version_ __attribute__((swift_name("version_")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpRequestPipeline.Phases")))
+@interface UnflowKtor_client_coreHttpRequestPipelinePhases : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)phases __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_client_coreHttpRequestPipelinePhases *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Before __attribute__((swift_name("Before")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Render __attribute__((swift_name("Render")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Send __attribute__((swift_name("Send")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Transform __attribute__((swift_name("Transform")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpResponsePipeline.Phases")))
+@interface UnflowKtor_client_coreHttpResponsePipelinePhases : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)phases __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_client_coreHttpResponsePipelinePhases *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *After __attribute__((swift_name("After")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Parse __attribute__((swift_name("Parse")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Receive __attribute__((swift_name("Receive")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Transform __attribute__((swift_name("Transform")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpResponseContainer")))
+@interface UnflowKtor_client_coreHttpResponseContainer : UnflowBase
+- (instancetype)initWithExpectedType:(UnflowKtor_utilsTypeInfo *)expectedType response:(id)response __attribute__((swift_name("init(expectedType:response:)"))) __attribute__((objc_designated_initializer));
+- (UnflowKtor_utilsTypeInfo *)component1 __attribute__((swift_name("component1()")));
+- (id)component2 __attribute__((swift_name("component2()")));
+- (UnflowKtor_client_coreHttpResponseContainer *)doCopyExpectedType:(UnflowKtor_utilsTypeInfo *)expectedType response:(id)response __attribute__((swift_name("doCopy(expectedType:response:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) UnflowKtor_utilsTypeInfo *expectedType __attribute__((swift_name("expectedType")));
+@property (readonly) id response __attribute__((swift_name("response")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientCall")))
+@interface UnflowKtor_client_coreHttpClientCall : UnflowBase <UnflowKotlinx_coroutines_coreCoroutineScope>
+@property (class, readonly, getter=companion) UnflowKtor_client_coreHttpClientCallCompanion *companion __attribute__((swift_name("companion")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)bodyInfo:(UnflowKtor_utilsTypeInfo *)info completionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("body(info:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getResponseContentWithCompletionHandler:(void (^)(id<UnflowKtor_ioByteReadChannel> _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getResponseContent(completionHandler:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) BOOL allowDoubleReceive __attribute__((swift_name("allowDoubleReceive")));
+@property (readonly) id<UnflowKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) UnflowKtor_client_coreHttpClient * _Nullable client __attribute__((swift_name("client")));
+@property (readonly) id<UnflowKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
+@property (readonly) id<UnflowKtor_client_coreHttpRequest> request __attribute__((swift_name("request")));
+@property (readonly) UnflowKtor_client_coreHttpResponse *response __attribute__((swift_name("response")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpSendPipeline.Phases")))
+@interface UnflowKtor_client_coreHttpSendPipelinePhases : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)phases __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_client_coreHttpSendPipelinePhases *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Before __attribute__((swift_name("Before")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Engine __attribute__((swift_name("Engine")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Monitoring __attribute__((swift_name("Monitoring")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *Receive __attribute__((swift_name("Receive")));
+@property (readonly) UnflowKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
+@end;
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinByteArray")))
 @interface UnflowKotlinByteArray : UnflowBase
@@ -1852,12 +2543,888 @@ __attribute__((swift_name("KotlinByteArray")))
 @property (readonly) int32_t size __attribute__((swift_name("size")));
 @end;
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpUrl.Companion")))
+@interface UnflowKtor_httpUrlCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_httpUrlCompanion *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((swift_name("Ktor_httpHeaderValueWithParameters")))
+@interface UnflowKtor_httpHeaderValueWithParameters : UnflowBase
+- (instancetype)initWithContent:(NSString *)content parameters:(NSArray<UnflowKtor_httpHeaderValueParam *> *)parameters __attribute__((swift_name("init(content:parameters:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_httpHeaderValueWithParametersCompanion *companion __attribute__((swift_name("companion")));
+- (NSString * _Nullable)parameterName:(NSString *)name __attribute__((swift_name("parameter(name:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *content __attribute__((swift_name("content")));
+@property (readonly) NSArray<UnflowKtor_httpHeaderValueParam *> *parameters __attribute__((swift_name("parameters")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpContentType")))
+@interface UnflowKtor_httpContentType : UnflowKtor_httpHeaderValueWithParameters
+- (instancetype)initWithContentType:(NSString *)contentType contentSubtype:(NSString *)contentSubtype parameters:(NSArray<UnflowKtor_httpHeaderValueParam *> *)parameters __attribute__((swift_name("init(contentType:contentSubtype:parameters:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithContent:(NSString *)content parameters:(NSArray<UnflowKtor_httpHeaderValueParam *> *)parameters __attribute__((swift_name("init(content:parameters:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_httpContentTypeCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (BOOL)matchPattern:(UnflowKtor_httpContentType *)pattern __attribute__((swift_name("match(pattern:)")));
+- (BOOL)matchPattern_:(NSString *)pattern __attribute__((swift_name("match(pattern_:)")));
+- (UnflowKtor_httpContentType *)withParameterName:(NSString *)name value:(NSString *)value __attribute__((swift_name("withParameter(name:value:)")));
+- (UnflowKtor_httpContentType *)withoutParameters __attribute__((swift_name("withoutParameters()")));
+@property (readonly) NSString *contentSubtype __attribute__((swift_name("contentSubtype")));
+@property (readonly) NSString *contentType __attribute__((swift_name("contentType")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpStatusCode")))
+@interface UnflowKtor_httpHttpStatusCode : UnflowBase
+- (instancetype)initWithValue:(int32_t)value description:(NSString *)description __attribute__((swift_name("init(value:description:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_httpHttpStatusCodeCompanion *companion __attribute__((swift_name("companion")));
+- (int32_t)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (UnflowKtor_httpHttpStatusCode *)doCopyValue:(int32_t)value description:(NSString *)description __attribute__((swift_name("doCopy(value:description:)")));
+- (UnflowKtor_httpHttpStatusCode *)descriptionValue:(NSString *)value __attribute__((swift_name("description(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *description_ __attribute__((swift_name("description_")));
+@property (readonly) int32_t value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpURLProtocol.Companion")))
+@interface UnflowKtor_httpURLProtocolCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_httpURLProtocolCompanion *shared __attribute__((swift_name("shared")));
+- (UnflowKtor_httpURLProtocol *)createOrDefaultName:(NSString *)name __attribute__((swift_name("createOrDefault(name:)")));
+@property (readonly) UnflowKtor_httpURLProtocol *HTTP __attribute__((swift_name("HTTP")));
+@property (readonly) UnflowKtor_httpURLProtocol *HTTPS __attribute__((swift_name("HTTPS")));
+@property (readonly) UnflowKtor_httpURLProtocol *SOCKS __attribute__((swift_name("SOCKS")));
+@property (readonly) UnflowKtor_httpURLProtocol *WS __attribute__((swift_name("WS")));
+@property (readonly) UnflowKtor_httpURLProtocol *WSS __attribute__((swift_name("WSS")));
+@property (readonly) NSDictionary<NSString *, UnflowKtor_httpURLProtocol *> *byName __attribute__((swift_name("byName")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinKTypeProjection")))
+@interface UnflowKotlinKTypeProjection : UnflowBase
+- (instancetype)initWithVariance:(UnflowKotlinKVariance * _Nullable)variance type:(id<UnflowKotlinKType> _Nullable)type __attribute__((swift_name("init(variance:type:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKotlinKTypeProjectionCompanion *companion __attribute__((swift_name("companion")));
+- (UnflowKotlinKVariance * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (id<UnflowKotlinKType> _Nullable)component2 __attribute__((swift_name("component2()")));
+- (UnflowKotlinKTypeProjection *)doCopyVariance:(UnflowKotlinKVariance * _Nullable)variance type:(id<UnflowKotlinKType> _Nullable)type __attribute__((swift_name("doCopy(variance:type:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<UnflowKotlinKType> _Nullable type __attribute__((swift_name("type")));
+@property (readonly) UnflowKotlinKVariance * _Nullable variance __attribute__((swift_name("variance")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreParentJob")))
+@protocol UnflowKotlinx_coroutines_coreParentJob <UnflowKotlinx_coroutines_coreJob>
+@required
+- (UnflowKotlinCancellationException *)getChildJobCancellationCause __attribute__((swift_name("getChildJobCancellationCause()")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
+@protocol UnflowKotlinx_coroutines_coreSelectInstance
+@required
+- (void)disposeOnSelectHandle:(id<UnflowKotlinx_coroutines_coreDisposableHandle>)handle __attribute__((swift_name("disposeOnSelect(handle:)")));
+- (id _Nullable)performAtomicTrySelectDesc:(UnflowKotlinx_coroutines_coreAtomicDesc *)desc __attribute__((swift_name("performAtomicTrySelect(desc:)")));
+- (void)resumeSelectWithExceptionException:(UnflowKotlinThrowable *)exception __attribute__((swift_name("resumeSelectWithException(exception:)")));
+- (BOOL)trySelect __attribute__((swift_name("trySelect()")));
+- (id _Nullable)trySelectOtherOtherOp:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp * _Nullable)otherOp __attribute__((swift_name("trySelectOther(otherOp:)")));
+@property (readonly) id<UnflowKotlinContinuation> completion __attribute__((swift_name("completion")));
+@property (readonly) BOOL isSelected __attribute__((swift_name("isSelected")));
+@end;
+
+__attribute__((swift_name("KotlinSuspendFunction0")))
+@protocol UnflowKotlinSuspendFunction0 <UnflowKotlinFunction>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeWithCompletionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(completionHandler:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsGMTDate")))
+@interface UnflowKtor_utilsGMTDate : UnflowBase <UnflowKotlinComparable>
+@property (class, readonly, getter=companion) UnflowKtor_utilsGMTDateCompanion *companion __attribute__((swift_name("companion")));
+- (int32_t)compareToOther:(UnflowKtor_utilsGMTDate *)other __attribute__((swift_name("compareTo(other:)")));
+- (int32_t)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (int32_t)component3 __attribute__((swift_name("component3()")));
+- (UnflowKtor_utilsWeekDay *)component4 __attribute__((swift_name("component4()")));
+- (int32_t)component5 __attribute__((swift_name("component5()")));
+- (int32_t)component6 __attribute__((swift_name("component6()")));
+- (UnflowKtor_utilsMonth *)component7 __attribute__((swift_name("component7()")));
+- (int32_t)component8 __attribute__((swift_name("component8()")));
+- (int64_t)component9 __attribute__((swift_name("component9()")));
+- (UnflowKtor_utilsGMTDate *)doCopySeconds:(int32_t)seconds minutes:(int32_t)minutes hours:(int32_t)hours dayOfWeek:(UnflowKtor_utilsWeekDay *)dayOfWeek dayOfMonth:(int32_t)dayOfMonth dayOfYear:(int32_t)dayOfYear month:(UnflowKtor_utilsMonth *)month year:(int32_t)year timestamp:(int64_t)timestamp __attribute__((swift_name("doCopy(seconds:minutes:hours:dayOfWeek:dayOfMonth:dayOfYear:month:year:timestamp:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t dayOfMonth __attribute__((swift_name("dayOfMonth")));
+@property (readonly) UnflowKtor_utilsWeekDay *dayOfWeek __attribute__((swift_name("dayOfWeek")));
+@property (readonly) int32_t dayOfYear __attribute__((swift_name("dayOfYear")));
+@property (readonly) int32_t hours __attribute__((swift_name("hours")));
+@property (readonly) int32_t minutes __attribute__((swift_name("minutes")));
+@property (readonly) UnflowKtor_utilsMonth *month __attribute__((swift_name("month")));
+@property (readonly) int32_t seconds __attribute__((swift_name("seconds")));
+@property (readonly) int64_t timestamp __attribute__((swift_name("timestamp")));
+@property (readonly) int32_t year __attribute__((swift_name("year")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpProtocolVersion")))
+@interface UnflowKtor_httpHttpProtocolVersion : UnflowBase
+- (instancetype)initWithName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("init(name:major:minor:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_httpHttpProtocolVersionCompanion *companion __attribute__((swift_name("companion")));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (int32_t)component3 __attribute__((swift_name("component3()")));
+- (UnflowKtor_httpHttpProtocolVersion *)doCopyName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("doCopy(name:major:minor:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t major __attribute__((swift_name("major")));
+@property (readonly) int32_t minor __attribute__((swift_name("minor")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end;
+
+__attribute__((swift_name("KotlinContinuation")))
+@protocol UnflowKotlinContinuation
+@required
+- (void)resumeWithResult:(id _Nullable)result __attribute__((swift_name("resumeWith(result:)")));
+@property (readonly) id<UnflowKotlinCoroutineContext> context __attribute__((swift_name("context")));
+@end;
+
+__attribute__((swift_name("KotlinAbstractCoroutineContextKey")))
+@interface UnflowKotlinAbstractCoroutineContextKey<B, E> : UnflowBase <UnflowKotlinCoroutineContextKey>
+- (instancetype)initWithBaseKey:(id<UnflowKotlinCoroutineContextKey>)baseKey safeCast:(E _Nullable (^)(id<UnflowKotlinCoroutineContextElement>))safeCast __attribute__((swift_name("init(baseKey:safeCast:)"))) __attribute__((objc_designated_initializer));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_coroutines_coreCoroutineDispatcher.Key")))
+@interface UnflowKotlinx_coroutines_coreCoroutineDispatcherKey : UnflowKotlinAbstractCoroutineContextKey<id<UnflowKotlinContinuationInterceptor>, UnflowKotlinx_coroutines_coreCoroutineDispatcher *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithBaseKey:(id<UnflowKotlinCoroutineContextKey>)baseKey safeCast:(id<UnflowKotlinCoroutineContextElement> _Nullable (^)(id<UnflowKotlinCoroutineContextElement>))safeCast __attribute__((swift_name("init(baseKey:safeCast:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)key __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKotlinx_coroutines_coreCoroutineDispatcherKey *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreRunnable")))
+@protocol UnflowKotlinx_coroutines_coreRunnable
+@required
+- (void)run __attribute__((swift_name("run()")));
+@end;
+
+__attribute__((swift_name("Ktor_ioByteReadChannel")))
+@protocol UnflowKtor_ioByteReadChannel
+@required
+- (BOOL)cancelCause_:(UnflowKotlinThrowable * _Nullable)cause __attribute__((swift_name("cancel(cause_:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)discardMax:(int64_t)max completionHandler:(void (^)(UnflowLong * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("discard(max:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)peekToDestination:(UnflowKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max completionHandler:(void (^)(UnflowLong * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("peekTo(destination:destinationOffset:offset:min:max:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readAvailableDst:(UnflowKtor_ioChunkBuffer *)dst completionHandler:(void (^)(UnflowInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readAvailableDst:(UnflowKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length completionHandler:(void (^)(UnflowInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:offset:length:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readAvailableDst:(void *)dst offset:(int32_t)offset length:(int32_t)length completionHandler_:(void (^)(UnflowInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:offset:length:completionHandler_:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readAvailableDst:(void *)dst offset:(int64_t)offset length:(int64_t)length completionHandler__:(void (^)(UnflowInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:offset:length:completionHandler__:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readBooleanWithCompletionHandler:(void (^)(UnflowBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readBoolean(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readByteWithCompletionHandler:(void (^)(UnflowByte * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readByte(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readDoubleWithCompletionHandler:(void (^)(UnflowDouble * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readDouble(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFloatWithCompletionHandler:(void (^)(UnflowFloat * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFloat(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFullyDst:(UnflowKtor_ioChunkBuffer *)dst n:(int32_t)n completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:n:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFullyDst:(UnflowKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFullyDst:(void *)dst offset:(int32_t)offset length:(int32_t)length completionHandler_:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler_:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFullyDst:(void *)dst offset:(int64_t)offset length:(int64_t)length completionHandler__:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler__:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readIntWithCompletionHandler:(void (^)(UnflowInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readInt(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readLongWithCompletionHandler:(void (^)(UnflowLong * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readLong(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readPacketSize:(int32_t)size headerSizeHint:(int32_t)headerSizeHint completionHandler:(void (^)(UnflowKtor_ioByteReadPacket * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readPacket(size:headerSizeHint:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readRemainingLimit:(int64_t)limit headerSizeHint:(int32_t)headerSizeHint completionHandler:(void (^)(UnflowKtor_ioByteReadPacket * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readRemaining(limit:headerSizeHint:completionHandler:)")));
+- (void)readSessionConsumer:(void (^)(id<UnflowKtor_ioReadSession>))consumer __attribute__((swift_name("readSession(consumer:)"))) __attribute__((deprecated("Use read { } instead.")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readShortWithCompletionHandler:(void (^)(UnflowShort * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readShort(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readSuspendableSessionConsumer:(id<UnflowKotlinSuspendFunction1>)consumer completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readSuspendableSession(consumer:completionHandler:)"))) __attribute__((deprecated("Use read { } instead.")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readUTF8LineLimit:(int32_t)limit completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("readUTF8Line(limit:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readUTF8LineToOut:(id<UnflowKotlinAppendable>)out limit:(int32_t)limit completionHandler:(void (^)(UnflowBoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readUTF8LineTo(out:limit:completionHandler:)")));
+@property (readonly) int32_t availableForRead __attribute__((swift_name("availableForRead")));
+@property (readonly) UnflowKotlinThrowable * _Nullable closedCause __attribute__((swift_name("closedCause")));
+@property (readonly) BOOL isClosedForRead __attribute__((swift_name("isClosedForRead")));
+@property (readonly) BOOL isClosedForWrite __attribute__((swift_name("isClosedForWrite")));
+@property (readonly) int64_t totalBytesRead __attribute__((swift_name("totalBytesRead")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpClientCall.Companion")))
+@interface UnflowKtor_client_coreHttpClientCallCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_client_coreHttpClientCallCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_utilsAttributeKey<id> *CustomResponse __attribute__((swift_name("CustomResponse"))) __attribute__((unavailable("This is going to be removed. Please file a ticket with clarification why and what for do you need it.")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpRequest")))
+@protocol UnflowKtor_client_coreHttpRequest <UnflowKtor_httpHttpMessage, UnflowKotlinx_coroutines_coreCoroutineScope>
+@required
+@property (readonly) id<UnflowKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) UnflowKtor_client_coreHttpClientCall *call __attribute__((swift_name("call")));
+@property (readonly) UnflowKtor_httpOutgoingContent *content __attribute__((swift_name("content")));
+@property (readonly) UnflowKtor_httpHttpMethod *method __attribute__((swift_name("method")));
+@property (readonly) UnflowKtor_httpUrl *url __attribute__((swift_name("url")));
+@end;
+
 __attribute__((swift_name("KotlinByteIterator")))
 @interface UnflowKotlinByteIterator : UnflowBase <UnflowKotlinIterator>
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 - (UnflowByte *)next __attribute__((swift_name("next()")));
 - (int8_t)nextByte __attribute__((swift_name("nextByte()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHeaderValueParam")))
+@interface UnflowKtor_httpHeaderValueParam : UnflowBase
+- (instancetype)initWithName:(NSString *)name value:(NSString *)value __attribute__((swift_name("init(name:value:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (UnflowKtor_httpHeaderValueParam *)doCopyName:(NSString *)name value:(NSString *)value __attribute__((swift_name("doCopy(name:value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHeaderValueWithParameters.Companion")))
+@interface UnflowKtor_httpHeaderValueWithParametersCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_httpHeaderValueWithParametersCompanion *shared __attribute__((swift_name("shared")));
+- (id _Nullable)parseValue:(NSString *)value init:(id _Nullable (^)(NSString *, NSArray<UnflowKtor_httpHeaderValueParam *> *))init __attribute__((swift_name("parse(value:init:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpContentType.Companion")))
+@interface UnflowKtor_httpContentTypeCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_httpContentTypeCompanion *shared __attribute__((swift_name("shared")));
+- (UnflowKtor_httpContentType *)parseValue:(NSString *)value __attribute__((swift_name("parse(value:)")));
+@property (readonly) UnflowKtor_httpContentType *Any __attribute__((swift_name("Any")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpStatusCode.Companion")))
+@interface UnflowKtor_httpHttpStatusCodeCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_httpHttpStatusCodeCompanion *shared __attribute__((swift_name("shared")));
+- (UnflowKtor_httpHttpStatusCode *)fromValueValue:(int32_t)value __attribute__((swift_name("fromValue(value:)")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Accepted __attribute__((swift_name("Accepted")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *BadGateway __attribute__((swift_name("BadGateway")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *BadRequest __attribute__((swift_name("BadRequest")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Conflict __attribute__((swift_name("Conflict")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Continue __attribute__((swift_name("Continue")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Created __attribute__((swift_name("Created")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *ExpectationFailed __attribute__((swift_name("ExpectationFailed")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *FailedDependency __attribute__((swift_name("FailedDependency")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Forbidden __attribute__((swift_name("Forbidden")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Found __attribute__((swift_name("Found")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *GatewayTimeout __attribute__((swift_name("GatewayTimeout")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Gone __attribute__((swift_name("Gone")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *InsufficientStorage __attribute__((swift_name("InsufficientStorage")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *InternalServerError __attribute__((swift_name("InternalServerError")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *LengthRequired __attribute__((swift_name("LengthRequired")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Locked __attribute__((swift_name("Locked")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *MethodNotAllowed __attribute__((swift_name("MethodNotAllowed")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *MovedPermanently __attribute__((swift_name("MovedPermanently")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *MultiStatus __attribute__((swift_name("MultiStatus")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *MultipleChoices __attribute__((swift_name("MultipleChoices")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *NoContent __attribute__((swift_name("NoContent")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *NonAuthoritativeInformation __attribute__((swift_name("NonAuthoritativeInformation")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *NotAcceptable __attribute__((swift_name("NotAcceptable")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *NotFound __attribute__((swift_name("NotFound")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *NotImplemented __attribute__((swift_name("NotImplemented")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *NotModified __attribute__((swift_name("NotModified")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *OK __attribute__((swift_name("OK")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *PartialContent __attribute__((swift_name("PartialContent")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *PayloadTooLarge __attribute__((swift_name("PayloadTooLarge")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *PaymentRequired __attribute__((swift_name("PaymentRequired")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *PermanentRedirect __attribute__((swift_name("PermanentRedirect")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *PreconditionFailed __attribute__((swift_name("PreconditionFailed")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Processing __attribute__((swift_name("Processing")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *ProxyAuthenticationRequired __attribute__((swift_name("ProxyAuthenticationRequired")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *RequestHeaderFieldTooLarge __attribute__((swift_name("RequestHeaderFieldTooLarge")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *RequestTimeout __attribute__((swift_name("RequestTimeout")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *RequestURITooLong __attribute__((swift_name("RequestURITooLong")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *RequestedRangeNotSatisfiable __attribute__((swift_name("RequestedRangeNotSatisfiable")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *ResetContent __attribute__((swift_name("ResetContent")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *SeeOther __attribute__((swift_name("SeeOther")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *ServiceUnavailable __attribute__((swift_name("ServiceUnavailable")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *SwitchProxy __attribute__((swift_name("SwitchProxy")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *SwitchingProtocols __attribute__((swift_name("SwitchingProtocols")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *TemporaryRedirect __attribute__((swift_name("TemporaryRedirect")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *TooManyRequests __attribute__((swift_name("TooManyRequests")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *Unauthorized __attribute__((swift_name("Unauthorized")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *UnprocessableEntity __attribute__((swift_name("UnprocessableEntity")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *UnsupportedMediaType __attribute__((swift_name("UnsupportedMediaType")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *UpgradeRequired __attribute__((swift_name("UpgradeRequired")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *UseProxy __attribute__((swift_name("UseProxy")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *VariantAlsoNegotiates __attribute__((swift_name("VariantAlsoNegotiates")));
+@property (readonly) UnflowKtor_httpHttpStatusCode *VersionNotSupported __attribute__((swift_name("VersionNotSupported")));
+@property (readonly) NSArray<UnflowKtor_httpHttpStatusCode *> *allStatusCodes __attribute__((swift_name("allStatusCodes")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinKVariance")))
+@interface UnflowKotlinKVariance : UnflowKotlinEnum<UnflowKotlinKVariance *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) UnflowKotlinKVariance *invariant __attribute__((swift_name("invariant")));
+@property (class, readonly) UnflowKotlinKVariance *in __attribute__((swift_name("in")));
+@property (class, readonly) UnflowKotlinKVariance *out __attribute__((swift_name("out")));
++ (UnflowKotlinArray<UnflowKotlinKVariance *> *)values __attribute__((swift_name("values()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinKTypeProjection.Companion")))
+@interface UnflowKotlinKTypeProjectionCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKotlinKTypeProjectionCompanion *shared __attribute__((swift_name("shared")));
+- (UnflowKotlinKTypeProjection *)contravariantType:(id<UnflowKotlinKType>)type __attribute__((swift_name("contravariant(type:)")));
+- (UnflowKotlinKTypeProjection *)covariantType:(id<UnflowKotlinKType>)type __attribute__((swift_name("covariant(type:)")));
+- (UnflowKotlinKTypeProjection *)invariantType:(id<UnflowKotlinKType>)type __attribute__((swift_name("invariant(type:)")));
+@property (readonly) UnflowKotlinKTypeProjection *STAR __attribute__((swift_name("STAR")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreAtomicDesc")))
+@interface UnflowKotlinx_coroutines_coreAtomicDesc : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)completeOp:(UnflowKotlinx_coroutines_coreAtomicOp<id> *)op failure:(id _Nullable)failure __attribute__((swift_name("complete(op:failure:)")));
+- (id _Nullable)prepareOp:(UnflowKotlinx_coroutines_coreAtomicOp<id> *)op __attribute__((swift_name("prepare(op:)")));
+@property UnflowKotlinx_coroutines_coreAtomicOp<id> *atomicOp __attribute__((swift_name("atomicOp")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreOpDescriptor")))
+@interface UnflowKotlinx_coroutines_coreOpDescriptor : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (BOOL)isEarlierThanThat:(UnflowKotlinx_coroutines_coreOpDescriptor *)that __attribute__((swift_name("isEarlierThan(that:)")));
+- (id _Nullable)performAffected:(id _Nullable)affected __attribute__((swift_name("perform(affected:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) UnflowKotlinx_coroutines_coreAtomicOp<id> * _Nullable atomicOp __attribute__((swift_name("atomicOp")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode.PrepareOp")))
+@interface UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp : UnflowKotlinx_coroutines_coreOpDescriptor
+- (instancetype)initWithAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)next desc:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc *)desc __attribute__((swift_name("init(affected:next:desc:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (void)finishPrepare __attribute__((swift_name("finishPrepare()")));
+- (id _Nullable)performAffected:(id _Nullable)affected __attribute__((swift_name("perform(affected:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *affected __attribute__((swift_name("affected")));
+@property (readonly) UnflowKotlinx_coroutines_coreAtomicOp<id> *atomicOp __attribute__((swift_name("atomicOp")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc *desc __attribute__((swift_name("desc")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *next __attribute__((swift_name("next")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsGMTDate.Companion")))
+@interface UnflowKtor_utilsGMTDateCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_utilsGMTDateCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_utilsGMTDate *START __attribute__((swift_name("START")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsWeekDay")))
+@interface UnflowKtor_utilsWeekDay : UnflowKotlinEnum<UnflowKtor_utilsWeekDay *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_utilsWeekDayCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) UnflowKtor_utilsWeekDay *monday __attribute__((swift_name("monday")));
+@property (class, readonly) UnflowKtor_utilsWeekDay *tuesday __attribute__((swift_name("tuesday")));
+@property (class, readonly) UnflowKtor_utilsWeekDay *wednesday __attribute__((swift_name("wednesday")));
+@property (class, readonly) UnflowKtor_utilsWeekDay *thursday __attribute__((swift_name("thursday")));
+@property (class, readonly) UnflowKtor_utilsWeekDay *friday __attribute__((swift_name("friday")));
+@property (class, readonly) UnflowKtor_utilsWeekDay *saturday __attribute__((swift_name("saturday")));
+@property (class, readonly) UnflowKtor_utilsWeekDay *sunday __attribute__((swift_name("sunday")));
++ (UnflowKotlinArray<UnflowKtor_utilsWeekDay *> *)values __attribute__((swift_name("values()")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsMonth")))
+@interface UnflowKtor_utilsMonth : UnflowKotlinEnum<UnflowKtor_utilsMonth *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_utilsMonthCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) UnflowKtor_utilsMonth *january __attribute__((swift_name("january")));
+@property (class, readonly) UnflowKtor_utilsMonth *february __attribute__((swift_name("february")));
+@property (class, readonly) UnflowKtor_utilsMonth *march __attribute__((swift_name("march")));
+@property (class, readonly) UnflowKtor_utilsMonth *april __attribute__((swift_name("april")));
+@property (class, readonly) UnflowKtor_utilsMonth *may __attribute__((swift_name("may")));
+@property (class, readonly) UnflowKtor_utilsMonth *june __attribute__((swift_name("june")));
+@property (class, readonly) UnflowKtor_utilsMonth *july __attribute__((swift_name("july")));
+@property (class, readonly) UnflowKtor_utilsMonth *august __attribute__((swift_name("august")));
+@property (class, readonly) UnflowKtor_utilsMonth *september __attribute__((swift_name("september")));
+@property (class, readonly) UnflowKtor_utilsMonth *october __attribute__((swift_name("october")));
+@property (class, readonly) UnflowKtor_utilsMonth *november __attribute__((swift_name("november")));
+@property (class, readonly) UnflowKtor_utilsMonth *december __attribute__((swift_name("december")));
++ (UnflowKotlinArray<UnflowKtor_utilsMonth *> *)values __attribute__((swift_name("values()")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpProtocolVersion.Companion")))
+@interface UnflowKtor_httpHttpProtocolVersionCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_httpHttpProtocolVersionCompanion *shared __attribute__((swift_name("shared")));
+- (UnflowKtor_httpHttpProtocolVersion *)fromValueName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("fromValue(name:major:minor:)")));
+- (UnflowKtor_httpHttpProtocolVersion *)parseValue:(id)value __attribute__((swift_name("parse(value:)")));
+@property (readonly) UnflowKtor_httpHttpProtocolVersion *HTTP_1_0 __attribute__((swift_name("HTTP_1_0")));
+@property (readonly) UnflowKtor_httpHttpProtocolVersion *HTTP_1_1 __attribute__((swift_name("HTTP_1_1")));
+@property (readonly) UnflowKtor_httpHttpProtocolVersion *HTTP_2_0 __attribute__((swift_name("HTTP_2_0")));
+@property (readonly) UnflowKtor_httpHttpProtocolVersion *QUIC __attribute__((swift_name("QUIC")));
+@property (readonly) UnflowKtor_httpHttpProtocolVersion *SPDY_3 __attribute__((swift_name("SPDY_3")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioMemory")))
+@interface UnflowKtor_ioMemory : UnflowBase
+- (instancetype)initWithPointer:(void *)pointer size:(int64_t)size __attribute__((swift_name("init(pointer:size:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_ioMemoryCompanion *companion __attribute__((swift_name("companion")));
+- (void)doCopyToDestination:(UnflowKtor_ioMemory *)destination offset:(int32_t)offset length:(int32_t)length destinationOffset:(int32_t)destinationOffset __attribute__((swift_name("doCopyTo(destination:offset:length:destinationOffset:)")));
+- (void)doCopyToDestination:(UnflowKtor_ioMemory *)destination offset:(int64_t)offset length:(int64_t)length destinationOffset_:(int64_t)destinationOffset __attribute__((swift_name("doCopyTo(destination:offset:length:destinationOffset_:)")));
+- (int8_t)loadAtIndex:(int32_t)index __attribute__((swift_name("loadAt(index:)")));
+- (int8_t)loadAtIndex_:(int64_t)index __attribute__((swift_name("loadAt(index_:)")));
+- (UnflowKtor_ioMemory *)sliceOffset:(int32_t)offset length:(int32_t)length __attribute__((swift_name("slice(offset:length:)")));
+- (UnflowKtor_ioMemory *)sliceOffset:(int64_t)offset length_:(int64_t)length __attribute__((swift_name("slice(offset:length_:)")));
+- (void)storeAtIndex:(int32_t)index value:(int8_t)value __attribute__((swift_name("storeAt(index:value:)")));
+- (void)storeAtIndex:(int64_t)index value_:(int8_t)value __attribute__((swift_name("storeAt(index:value_:)")));
+@property (readonly) void *pointer __attribute__((swift_name("pointer")));
+@property (readonly) int64_t size __attribute__((swift_name("size")));
+@property (readonly) int32_t size32 __attribute__((swift_name("size32")));
+@end;
+
+__attribute__((swift_name("Ktor_ioBuffer")))
+@interface UnflowKtor_ioBuffer : UnflowBase
+- (instancetype)initWithMemory:(UnflowKtor_ioMemory *)memory __attribute__((swift_name("init(memory:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_ioBufferCompanion *companion __attribute__((swift_name("companion")));
+- (void)commitWrittenCount:(int32_t)count __attribute__((swift_name("commitWritten(count:)")));
+- (void)discardExactCount:(int32_t)count __attribute__((swift_name("discardExact(count:)")));
+- (UnflowKtor_ioBuffer *)duplicate __attribute__((swift_name("duplicate()")));
+- (void)duplicateToCopy:(UnflowKtor_ioBuffer *)copy __attribute__((swift_name("duplicateTo(copy:)")));
+- (int8_t)readByte __attribute__((swift_name("readByte()")));
+- (void)reserveEndGapEndGap:(int32_t)endGap __attribute__((swift_name("reserveEndGap(endGap:)")));
+- (void)reserveStartGapStartGap:(int32_t)startGap __attribute__((swift_name("reserveStartGap(startGap:)")));
+- (void)reset __attribute__((swift_name("reset()")));
+- (void)resetForRead __attribute__((swift_name("resetForRead()")));
+- (void)resetForWrite __attribute__((swift_name("resetForWrite()")));
+- (void)resetForWriteLimit:(int32_t)limit __attribute__((swift_name("resetForWrite(limit:)")));
+- (void)rewindCount:(int32_t)count __attribute__((swift_name("rewind(count:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (int32_t)tryPeekByte __attribute__((swift_name("tryPeekByte()")));
+- (int32_t)tryReadByte __attribute__((swift_name("tryReadByte()")));
+- (void)writeByteValue:(int8_t)value __attribute__((swift_name("writeByte(value:)")));
+@property id _Nullable attachment __attribute__((swift_name("attachment"))) __attribute__((unavailable("Will be removed. Inherit Buffer and add required fields instead.")));
+@property (readonly) int32_t capacity __attribute__((swift_name("capacity")));
+@property (readonly) int32_t endGap __attribute__((swift_name("endGap")));
+@property (readonly) int32_t limit __attribute__((swift_name("limit")));
+@property (readonly) UnflowKtor_ioMemory *memory __attribute__((swift_name("memory")));
+@property (readonly) int32_t readPosition __attribute__((swift_name("readPosition")));
+@property (readonly) int32_t readRemaining __attribute__((swift_name("readRemaining")));
+@property (readonly) int32_t startGap __attribute__((swift_name("startGap")));
+@property (readonly) int32_t writePosition __attribute__((swift_name("writePosition")));
+@property (readonly) int32_t writeRemaining __attribute__((swift_name("writeRemaining")));
+@end;
+
+__attribute__((swift_name("Ktor_ioChunkBuffer")))
+@interface UnflowKtor_ioChunkBuffer : UnflowKtor_ioBuffer
+- (instancetype)initWithMemory:(UnflowKtor_ioMemory *)memory origin:(UnflowKtor_ioChunkBuffer * _Nullable)origin parentPool:(id<UnflowKtor_ioObjectPool> _Nullable)parentPool __attribute__((swift_name("init(memory:origin:parentPool:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMemory:(UnflowKtor_ioMemory *)memory __attribute__((swift_name("init(memory:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_ioChunkBufferCompanion *companion __attribute__((swift_name("companion")));
+- (UnflowKtor_ioChunkBuffer * _Nullable)cleanNext __attribute__((swift_name("cleanNext()")));
+- (UnflowKtor_ioChunkBuffer *)duplicate __attribute__((swift_name("duplicate()")));
+- (void)releasePool:(id<UnflowKtor_ioObjectPool>)pool __attribute__((swift_name("release(pool:)")));
+- (void)reset __attribute__((swift_name("reset()")));
+@property (getter=next__) UnflowKtor_ioChunkBuffer * _Nullable next __attribute__((swift_name("next")));
+@property (readonly) UnflowKtor_ioChunkBuffer * _Nullable origin __attribute__((swift_name("origin")));
+@property (readonly) int32_t referenceCount __attribute__((swift_name("referenceCount")));
+@end;
+
+__attribute__((swift_name("Ktor_ioInput")))
+@interface UnflowKtor_ioInput : UnflowBase <UnflowKtor_ioCloseable>
+- (instancetype)initWithHead:(UnflowKtor_ioChunkBuffer *)head remaining:(int64_t)remaining pool:(id<UnflowKtor_ioObjectPool>)pool __attribute__((swift_name("init(head:remaining:pool:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowKtor_ioInputCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)canRead __attribute__((swift_name("canRead()")));
+- (void)close __attribute__((swift_name("close()")));
+- (void)closeSource __attribute__((swift_name("closeSource()")));
+- (int32_t)discardN:(int32_t)n __attribute__((swift_name("discard(n:)")));
+- (int64_t)discardN_:(int64_t)n __attribute__((swift_name("discard(n_:)")));
+- (void)discardExactN:(int32_t)n __attribute__((swift_name("discardExact(n:)")));
+- (UnflowKtor_ioChunkBuffer * _Nullable)fill __attribute__((swift_name("fill()")));
+- (int32_t)fillDestination:(UnflowKtor_ioMemory *)destination offset:(int32_t)offset length:(int32_t)length __attribute__((swift_name("fill(destination:offset:length:)")));
+- (BOOL)hasBytesN:(int32_t)n __attribute__((swift_name("hasBytes(n:)")));
+- (void)markNoMoreChunksAvailable __attribute__((swift_name("markNoMoreChunksAvailable()")));
+- (int64_t)peekToDestination:(UnflowKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max __attribute__((swift_name("peekTo(destination:destinationOffset:offset:min:max:)")));
+- (int32_t)peekToBuffer:(UnflowKtor_ioChunkBuffer *)buffer __attribute__((swift_name("peekTo(buffer:)")));
+- (int8_t)readByte __attribute__((swift_name("readByte()")));
+- (NSString *)readTextMin:(int32_t)min max:(int32_t)max __attribute__((swift_name("readText(min:max:)")));
+- (int32_t)readTextOut:(id<UnflowKotlinAppendable>)out min:(int32_t)min max:(int32_t)max __attribute__((swift_name("readText(out:min:max:)")));
+- (NSString *)readTextExactExactCharacters:(int32_t)exactCharacters __attribute__((swift_name("readTextExact(exactCharacters:)")));
+- (void)readTextExactOut:(id<UnflowKotlinAppendable>)out exactCharacters:(int32_t)exactCharacters __attribute__((swift_name("readTextExact(out:exactCharacters:)")));
+- (void)release_ __attribute__((swift_name("release()")));
+- (int32_t)tryPeek __attribute__((swift_name("tryPeek()")));
+@property (readonly) BOOL endOfInput __attribute__((swift_name("endOfInput")));
+@property (readonly) id<UnflowKtor_ioObjectPool> pool __attribute__((swift_name("pool")));
+@property (readonly) int64_t remaining __attribute__((swift_name("remaining")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioByteReadPacket")))
+@interface UnflowKtor_ioByteReadPacket : UnflowKtor_ioInput
+- (instancetype)initWithHead:(UnflowKtor_ioChunkBuffer *)head pool:(id<UnflowKtor_ioObjectPool>)pool __attribute__((swift_name("init(head:pool:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithHead:(UnflowKtor_ioChunkBuffer *)head remaining:(int64_t)remaining pool:(id<UnflowKtor_ioObjectPool>)pool __attribute__((swift_name("init(head:remaining:pool:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowKtor_ioByteReadPacketCompanion *companion __attribute__((swift_name("companion")));
+- (void)closeSource __attribute__((swift_name("closeSource()")));
+- (UnflowKtor_ioByteReadPacket *)doCopy __attribute__((swift_name("doCopy()")));
+- (UnflowKtor_ioChunkBuffer * _Nullable)fill __attribute__((swift_name("fill()")));
+- (int32_t)fillDestination:(UnflowKtor_ioMemory *)destination offset:(int32_t)offset length:(int32_t)length __attribute__((swift_name("fill(destination:offset:length:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end;
+
+__attribute__((swift_name("Ktor_ioReadSession")))
+@protocol UnflowKtor_ioReadSession
+@required
+- (int32_t)discardN:(int32_t)n __attribute__((swift_name("discard(n:)")));
+- (UnflowKtor_ioChunkBuffer * _Nullable)requestAtLeast:(int32_t)atLeast __attribute__((swift_name("request(atLeast:)")));
+@property (readonly) int32_t availableForRead __attribute__((swift_name("availableForRead")));
+@end;
+
+__attribute__((swift_name("KotlinSuspendFunction1")))
+@protocol UnflowKotlinSuspendFunction1 <UnflowKotlinFunction>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeP1:(id _Nullable)p1 completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(p1:completionHandler:)")));
+@end;
+
+__attribute__((swift_name("KotlinAppendable")))
+@protocol UnflowKotlinAppendable
+@required
+- (id<UnflowKotlinAppendable>)appendValue:(unichar)value __attribute__((swift_name("append(value:)")));
+- (id<UnflowKotlinAppendable>)appendValue_:(id _Nullable)value __attribute__((swift_name("append(value_:)")));
+- (id<UnflowKotlinAppendable>)appendValue:(id _Nullable)value startIndex:(int32_t)startIndex endIndex:(int32_t)endIndex __attribute__((swift_name("append(value:startIndex:endIndex:)")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreAtomicOp")))
+@interface UnflowKotlinx_coroutines_coreAtomicOp<__contravariant T> : UnflowKotlinx_coroutines_coreOpDescriptor
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)completeAffected:(T _Nullable)affected failure:(id _Nullable)failure __attribute__((swift_name("complete(affected:failure:)")));
+- (id _Nullable)decideDecision:(id _Nullable)decision __attribute__((swift_name("decide(decision:)")));
+- (id _Nullable)performAffected:(id _Nullable)affected __attribute__((swift_name("perform(affected:)")));
+- (id _Nullable)prepareAffected:(T _Nullable)affected __attribute__((swift_name("prepare(affected:)")));
+@property (readonly) UnflowKotlinx_coroutines_coreAtomicOp<id> *atomicOp __attribute__((swift_name("atomicOp")));
+@property (readonly) id _Nullable consensus __attribute__((swift_name("consensus")));
+@property (readonly) BOOL isDecided __attribute__((swift_name("isDecided")));
+@property (readonly) int64_t opSequence __attribute__((swift_name("opSequence")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode")))
+@interface UnflowKotlinx_coroutines_coreLockFreeLinkedListNode : UnflowBase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)addLastNode:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)node __attribute__((swift_name("addLast(node:)")));
+- (BOOL)addLastIfNode:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)node condition:(UnflowBoolean *(^)(void))condition __attribute__((swift_name("addLastIf(node:condition:)")));
+- (BOOL)addLastIfPrevNode:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)node predicate:(UnflowBoolean *(^)(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *))predicate __attribute__((swift_name("addLastIfPrev(node:predicate:)")));
+- (BOOL)addLastIfPrevAndIfNode:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)node predicate:(UnflowBoolean *(^)(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *))predicate condition:(UnflowBoolean *(^)(void))condition __attribute__((swift_name("addLastIfPrevAndIf(node:predicate:condition:)")));
+- (BOOL)addOneIfEmptyNode:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)node __attribute__((swift_name("addOneIfEmpty(node:)")));
+- (UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *> *)describeAddLastNode:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)node __attribute__((swift_name("describeAddLast(node:)")));
+- (UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *> *)describeRemoveFirst __attribute__((swift_name("describeRemoveFirst()")));
+- (void)helpRemove __attribute__((swift_name("helpRemove()")));
+- (UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)nextIfRemoved __attribute__((swift_name("nextIfRemoved()")));
+- (BOOL)remove __attribute__((swift_name("remove()")));
+- (id _Nullable)removeFirstIfIsInstanceOfOrPeekIfPredicate:(UnflowBoolean *(^)(id _Nullable))predicate __attribute__((swift_name("removeFirstIfIsInstanceOfOrPeekIf(predicate:)")));
+- (UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)removeFirstOrNull __attribute__((swift_name("removeFirstOrNull()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) BOOL isRemoved __attribute__((swift_name("isRemoved")));
+@property (readonly, getter=next__) id next __attribute__((swift_name("next")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *nextNode __attribute__((swift_name("nextNode")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *prevNode __attribute__((swift_name("prevNode")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode.AbstractAtomicDesc")))
+@interface UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc : UnflowKotlinx_coroutines_coreAtomicDesc
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (void)completeOp:(UnflowKotlinx_coroutines_coreAtomicOp<id> *)op failure:(id _Nullable)failure __attribute__((swift_name("complete(op:failure:)")));
+- (id _Nullable)failureAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected __attribute__((swift_name("failure(affected:)")));
+- (void)finishOnSuccessAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("finishOnSuccess(affected:next:)")));
+- (void)finishPreparePrepareOp:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("finishPrepare(prepareOp:)")));
+- (id _Nullable)onPreparePrepareOp:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("onPrepare(prepareOp:)")));
+- (void)onRemovedAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected __attribute__((swift_name("onRemoved(affected:)")));
+- (id _Nullable)prepareOp:(UnflowKotlinx_coroutines_coreAtomicOp<id> *)op __attribute__((swift_name("prepare(op:)")));
+- (BOOL)retryAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(id)next __attribute__((swift_name("retry(affected:next:)")));
+- (UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)takeAffectedNodeOp:(UnflowKotlinx_coroutines_coreOpDescriptor *)op __attribute__((swift_name("takeAffectedNode(op:)")));
+- (id)updatedNextAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("updatedNext(affected:next:)")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable affectedNode __attribute__((swift_name("affectedNode")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable originalNext __attribute__((swift_name("originalNext")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsWeekDay.Companion")))
+@interface UnflowKtor_utilsWeekDayCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_utilsWeekDayCompanion *shared __attribute__((swift_name("shared")));
+- (UnflowKtor_utilsWeekDay *)fromOrdinal:(int32_t)ordinal __attribute__((swift_name("from(ordinal:)")));
+- (UnflowKtor_utilsWeekDay *)fromValue:(NSString *)value __attribute__((swift_name("from(value:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsMonth.Companion")))
+@interface UnflowKtor_utilsMonthCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_utilsMonthCompanion *shared __attribute__((swift_name("shared")));
+- (UnflowKtor_utilsMonth *)fromOrdinal:(int32_t)ordinal __attribute__((swift_name("from(ordinal:)")));
+- (UnflowKtor_utilsMonth *)fromValue:(NSString *)value __attribute__((swift_name("from(value:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioMemory.Companion")))
+@interface UnflowKtor_ioMemoryCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_ioMemoryCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_ioMemory *Empty __attribute__((swift_name("Empty")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioBuffer.Companion")))
+@interface UnflowKtor_ioBufferCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_ioBufferCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_ioBuffer *Empty __attribute__((swift_name("Empty")));
+@property (readonly) int32_t ReservedSize __attribute__((swift_name("ReservedSize")));
+@end;
+
+__attribute__((swift_name("Ktor_ioObjectPool")))
+@protocol UnflowKtor_ioObjectPool <UnflowKtor_ioCloseable>
+@required
+- (id)borrow __attribute__((swift_name("borrow()")));
+- (void)dispose __attribute__((swift_name("dispose()")));
+- (void)recycleInstance:(id)instance __attribute__((swift_name("recycle(instance:)")));
+@property (readonly) int32_t capacity __attribute__((swift_name("capacity")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioChunkBuffer.Companion")))
+@interface UnflowKtor_ioChunkBufferCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_ioChunkBufferCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_ioChunkBuffer *Empty __attribute__((swift_name("Empty")));
+@property (readonly) id<UnflowKtor_ioObjectPool> EmptyPool __attribute__((swift_name("EmptyPool")));
+@property (readonly) id<UnflowKtor_ioObjectPool> Pool __attribute__((swift_name("Pool")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioInput.Companion")))
+@interface UnflowKtor_ioInputCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_ioInputCompanion *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioByteReadPacket.Companion")))
+@interface UnflowKtor_ioByteReadPacketCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowKtor_ioByteReadPacketCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) UnflowKtor_ioByteReadPacket *Empty __attribute__((swift_name("Empty")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc")))
+@interface UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T> : UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc
+- (instancetype)initWithQueue:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)queue node:(T)node __attribute__((swift_name("init(queue:node:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (void)finishOnSuccessAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("finishOnSuccess(affected:next:)")));
+- (void)finishPreparePrepareOp:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("finishPrepare(prepareOp:)")));
+- (BOOL)retryAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(id)next __attribute__((swift_name("retry(affected:next:)")));
+- (UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)takeAffectedNodeOp:(UnflowKotlinx_coroutines_coreOpDescriptor *)op __attribute__((swift_name("takeAffectedNode(op:)")));
+- (id)updatedNextAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("updatedNext(affected:next:)")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable affectedNode __attribute__((swift_name("affectedNode")));
+@property (readonly) T node __attribute__((swift_name("node")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *originalNext __attribute__((swift_name("originalNext")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *queue __attribute__((swift_name("queue")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc")))
+@interface UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T> : UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc
+- (instancetype)initWithQueue:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)queue __attribute__((swift_name("init(queue:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)new __attribute__((unavailable));
+- (id _Nullable)failureAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected __attribute__((swift_name("failure(affected:)")));
+- (void)finishOnSuccessAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("finishOnSuccess(affected:next:)")));
+- (void)finishPreparePrepareOp:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp *)prepareOp __attribute__((swift_name("finishPrepare(prepareOp:)")));
+- (BOOL)retryAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(id)next __attribute__((swift_name("retry(affected:next:)")));
+- (UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable)takeAffectedNodeOp:(UnflowKotlinx_coroutines_coreOpDescriptor *)op __attribute__((swift_name("takeAffectedNode(op:)")));
+- (id)updatedNextAffected:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("updatedNext(affected:next:)")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable affectedNode __attribute__((swift_name("affectedNode")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable originalNext __attribute__((swift_name("originalNext")));
+@property (readonly) UnflowKotlinx_coroutines_coreLockFreeLinkedListNode *queue __attribute__((swift_name("queue")));
+@property (readonly) T _Nullable result __attribute__((swift_name("result")));
 @end;
 
 #pragma pop_macro("_Nullable_result")

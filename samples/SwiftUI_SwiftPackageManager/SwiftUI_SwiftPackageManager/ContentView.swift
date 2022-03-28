@@ -3,15 +3,18 @@ import UnflowUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            OpenerView()
-            Spacer()
-            Text("Welcome to Unflow!")
-                .padding()
-            Text("Edit the AppDelegate to add your own API Key to see your content here.")
-                .padding()
-            Spacer()
+        TabView {
+            NavigationView {
+                HomeView()
+            }
+            .tabItem({ Label("Home", systemImage: "house.fill") })
+            
+            NavigationView {
+                CustomGridView()
+            }
+            .tabItem({ Label("Custom Grids", systemImage: "rectangle.grid.2x2.fill") })
         }
+        .navigationViewStyle(.stack)
     }
 }
 

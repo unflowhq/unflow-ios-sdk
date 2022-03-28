@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63E89AA527B3E3F800E9827E /* Unflow in Frameworks */ = {isa = PBXBuildFile; productRef = 63E89AA427B3E3F800E9827E /* Unflow */; };
 		C73C76542703C84E003A1B18 /* SwiftUIUnflowExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73C76532703C84E003A1B18 /* SwiftUIUnflowExampleApp.swift */; };
 		C73C76562703C84E003A1B18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73C76552703C84E003A1B18 /* ContentView.swift */; };
 		C73C76582703C851003A1B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73C76572703C851003A1B18 /* Assets.xcassets */; };
 		C73C765B2703C851003A1B18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73C765A2703C851003A1B18 /* Preview Assets.xcassets */; };
+		FA28656327F2001A001B5FE3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28656227F2001A001B5FE3 /* HomeView.swift */; };
+		FA28656627F20068001B5FE3 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28656527F20068001B5FE3 /* Container.swift */; };
+		FA28656827F201AE001B5FE3 /* CustomGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28656727F201AE001B5FE3 /* CustomGridView.swift */; };
+		FA28656B27F20640001B5FE3 /* OpenerTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA28656A27F20640001B5FE3 /* OpenerTile.swift */; };
+		FA299B4827F302C200B5EA55 /* Unflow in Frameworks */ = {isa = PBXBuildFile; productRef = FA299B4727F302C200B5EA55 /* Unflow */; };
+		FA299B4B27F3118B00B5EA55 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA299B4A27F3118B00B5EA55 /* SectionHeader.swift */; };
+		FA8BA6D327F208D900048B34 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA6D227F208D900048B34 /* RemoteImage.swift */; };
+		FA8BA6DB27F2167400048B34 /* OpenerImageTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA6DA27F2167400048B34 /* OpenerImageTile.swift */; };
+		FA8BA6DD27F219B600048B34 /* OpenerImageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8BA6DC27F219B600048B34 /* OpenerImageRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,14 @@
 		C73C76552703C84E003A1B18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C73C76572703C851003A1B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C73C765A2703C851003A1B18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA28656227F2001A001B5FE3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FA28656527F20068001B5FE3 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		FA28656727F201AE001B5FE3 /* CustomGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomGridView.swift; sourceTree = "<group>"; };
+		FA28656A27F20640001B5FE3 /* OpenerTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenerTile.swift; sourceTree = "<group>"; };
+		FA299B4A27F3118B00B5EA55 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		FA8BA6D227F208D900048B34 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		FA8BA6DA27F2167400048B34 /* OpenerImageTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenerImageTile.swift; sourceTree = "<group>"; };
+		FA8BA6DC27F219B600048B34 /* OpenerImageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenerImageRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63E89AA527B3E3F800E9827E /* Unflow in Frameworks */,
+				FA299B4827F302C200B5EA55 /* Unflow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +69,9 @@
 		C73C76522703C84E003A1B18 /* SwiftUI_SwiftPackageManager */ = {
 			isa = PBXGroup;
 			children = (
+				FA28656427F20054001B5FE3 /* Helpers */,
+				FA28656127F20010001B5FE3 /* Screens */,
+				FA28656027F1FE2D001B5FE3 /* Sample Views */,
 				C73C76532703C84E003A1B18 /* SwiftUIUnflowExampleApp.swift */,
 				C73C76552703C84E003A1B18 /* ContentView.swift */,
 				C73C76572703C851003A1B18 /* Assets.xcassets */,
@@ -67,6 +86,43 @@
 				C73C765A2703C851003A1B18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA28656027F1FE2D001B5FE3 /* Sample Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA28656A27F20640001B5FE3 /* OpenerTile.swift */,
+				FA8BA6DA27F2167400048B34 /* OpenerImageTile.swift */,
+				FA8BA6DC27F219B600048B34 /* OpenerImageRow.swift */,
+			);
+			path = "Sample Views";
+			sourceTree = "<group>";
+		};
+		FA28656127F20010001B5FE3 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA299B4927F3118000B5EA55 /* Components */,
+				FA28656227F2001A001B5FE3 /* HomeView.swift */,
+				FA28656727F201AE001B5FE3 /* CustomGridView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FA28656427F20054001B5FE3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA28656527F20068001B5FE3 /* Container.swift */,
+				FA8BA6D227F208D900048B34 /* RemoteImage.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FA299B4927F3118000B5EA55 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FA299B4A27F3118B00B5EA55 /* SectionHeader.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,7 +142,7 @@
 			);
 			name = SwiftUI_SwiftPackageManager;
 			packageProductDependencies = (
-				63E89AA427B3E3F800E9827E /* Unflow */,
+				FA299B4727F302C200B5EA55 /* Unflow */,
 			);
 			productName = SwiftUIAnymoExample;
 			productReference = C73C76502703C84E003A1B18 /* SwiftUI_SwiftPackageManager.app */;
@@ -117,7 +173,7 @@
 			);
 			mainGroup = C73C76472703C84E003A1B18;
 			packageReferences = (
-				63E89AA327B3E3F800E9827E /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */,
+				FA299B4627F302C200B5EA55 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */,
 			);
 			productRefGroup = C73C76512703C84E003A1B18 /* Products */;
 			projectDirPath = "";
@@ -145,8 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA28656327F2001A001B5FE3 /* HomeView.swift in Sources */,
+				FA28656627F20068001B5FE3 /* Container.swift in Sources */,
+				FA299B4B27F3118B00B5EA55 /* SectionHeader.swift in Sources */,
+				FA8BA6DB27F2167400048B34 /* OpenerImageTile.swift in Sources */,
+				FA8BA6DD27F219B600048B34 /* OpenerImageRow.swift in Sources */,
+				FA8BA6D327F208D900048B34 /* RemoteImage.swift in Sources */,
 				C73C76562703C84E003A1B18 /* ContentView.swift in Sources */,
 				C73C76542703C84E003A1B18 /* SwiftUIUnflowExampleApp.swift in Sources */,
+				FA28656B27F20640001B5FE3 /* OpenerTile.swift in Sources */,
+				FA28656827F201AE001B5FE3 /* CustomGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,20 +417,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		63E89AA327B3E3F800E9827E /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */ = {
+		FA299B4627F302C200B5EA55 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/unflowhq/unflow-ios-sdk";
+			repositoryURL = "git@github.com:unflowhq/unflow-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.1;
+				minimumVersion = 1.6.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		63E89AA427B3E3F800E9827E /* Unflow */ = {
+		FA299B4727F302C200B5EA55 /* Unflow */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 63E89AA327B3E3F800E9827E /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */;
+			package = FA299B4627F302C200B5EA55 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */;
 			productName = Unflow;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -10,21 +10,33 @@
 		63CC04962746C50A007D5EBF /* Unflow in Frameworks */ = {isa = PBXBuildFile; productRef = 63CC04952746C50A007D5EBF /* Unflow */; };
 		C729BA132703CA3F00AF6611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729BA122703CA3F00AF6611 /* AppDelegate.swift */; };
 		C729BA152703CA3F00AF6611 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729BA142703CA3F00AF6611 /* SceneDelegate.swift */; };
-		C729BA172703CA3F00AF6611 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729BA162703CA3F00AF6611 /* ViewController.swift */; };
+		C729BA172703CA3F00AF6611 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729BA162703CA3F00AF6611 /* HomeViewController.swift */; };
 		C729BA1A2703CA3F00AF6611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C729BA182703CA3F00AF6611 /* Main.storyboard */; };
 		C729BA1C2703CA4100AF6611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C729BA1B2703CA4100AF6611 /* Assets.xcassets */; };
 		C729BA1F2703CA4100AF6611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C729BA1D2703CA4100AF6611 /* LaunchScreen.storyboard */; };
+		FA74390227F31DB500B904BB /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74390127F31DB500B904BB /* GridViewController.swift */; };
+		FA74390727F31E4C00B904BB /* OpenerTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA74390627F31E4C00B904BB /* OpenerTileCell.xib */; };
+		FA74390927F31E6500B904BB /* OpenerTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74390827F31E6500B904BB /* OpenerTileCell.swift */; };
+		FAA2917527F344F3003DE83E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2917427F344F3003DE83E /* ImageLoader.swift */; };
+		FAA2917727F3471E003DE83E /* LegacyOpenerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2917627F3471E003DE83E /* LegacyOpenerViewModel.swift */; };
+		FAD66E4127F31A79004D62D5 /* OpenerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD66E4027F31A79004D62D5 /* OpenerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C729BA0F2703CA3F00AF6611 /* Storyboards_SwiftPackageManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storyboards_SwiftPackageManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C729BA122703CA3F00AF6611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C729BA142703CA3F00AF6611 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C729BA162703CA3F00AF6611 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C729BA162703CA3F00AF6611 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C729BA192703CA3F00AF6611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C729BA1B2703CA4100AF6611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C729BA1E2703CA4100AF6611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C729BA202703CA4100AF6611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA74390127F31DB500B904BB /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
+		FA74390627F31E4C00B904BB /* OpenerTileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenerTileCell.xib; sourceTree = "<group>"; };
+		FA74390827F31E6500B904BB /* OpenerTileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenerTileCell.swift; sourceTree = "<group>"; };
+		FAA2917427F344F3003DE83E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FAA2917627F3471E003DE83E /* LegacyOpenerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyOpenerViewModel.swift; sourceTree = "<group>"; };
+		FAD66E4027F31A79004D62D5 /* OpenerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +70,69 @@
 		C729BA112703CA3F00AF6611 /* Storyboards_SwiftPackageManager */ = {
 			isa = PBXGroup;
 			children = (
+				FAD66E3E27F31A6C004D62D5 /* Helpers */,
+				FAD66E3D27F31A5C004D62D5 /* Screens */,
 				C729BA122703CA3F00AF6611 /* AppDelegate.swift */,
 				C729BA142703CA3F00AF6611 /* SceneDelegate.swift */,
-				C729BA162703CA3F00AF6611 /* ViewController.swift */,
 				C729BA182703CA3F00AF6611 /* Main.storyboard */,
 				C729BA1B2703CA4100AF6611 /* Assets.xcassets */,
 				C729BA1D2703CA4100AF6611 /* LaunchScreen.storyboard */,
 				C729BA202703CA4100AF6611 /* Info.plist */,
 			);
 			path = Storyboards_SwiftPackageManager;
+			sourceTree = "<group>";
+		};
+		FA74390327F31E3200B904BB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C729BA162703CA3F00AF6611 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FA74390427F31E3500B904BB /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				FA74390527F31E3F00B904BB /* Cells */,
+				FA74390127F31DB500B904BB /* GridViewController.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		FA74390527F31E3F00B904BB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA74390627F31E4C00B904BB /* OpenerTileCell.xib */,
+				FA74390827F31E6500B904BB /* OpenerTileCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAD66E3D27F31A5C004D62D5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA74390427F31E3500B904BB /* Grid */,
+				FA74390327F31E3200B904BB /* Home */,
+				FAD66E3F27F31A72004D62D5 /* ViewModel */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FAD66E3E27F31A6C004D62D5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAA2917427F344F3003DE83E /* ImageLoader.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAD66E3F27F31A72004D62D5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FAD66E4027F31A79004D62D5 /* OpenerViewModel.swift */,
+				FAA2917627F3471E003DE83E /* LegacyOpenerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +201,7 @@
 			files = (
 				C729BA1F2703CA4100AF6611 /* LaunchScreen.storyboard in Resources */,
 				C729BA1C2703CA4100AF6611 /* Assets.xcassets in Resources */,
+				FA74390727F31E4C00B904BB /* OpenerTileCell.xib in Resources */,
 				C729BA1A2703CA3F00AF6611 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,7 +213,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C729BA172703CA3F00AF6611 /* ViewController.swift in Sources */,
+				FAA2917727F3471E003DE83E /* LegacyOpenerViewModel.swift in Sources */,
+				FAA2917527F344F3003DE83E /* ImageLoader.swift in Sources */,
+				FA74390927F31E6500B904BB /* OpenerTileCell.swift in Sources */,
+				C729BA172703CA3F00AF6611 /* HomeViewController.swift in Sources */,
+				FA74390227F31DB500B904BB /* GridViewController.swift in Sources */,
+				FAD66E4127F31A79004D62D5 /* OpenerViewModel.swift in Sources */,
 				C729BA132703CA3F00AF6611 /* AppDelegate.swift in Sources */,
 				C729BA152703CA3F00AF6611 /* SceneDelegate.swift in Sources */,
 			);
@@ -375,7 +447,7 @@
 			repositoryURL = "https://github.com/unflowhq/unflow-ios-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
+				minimumVersion = 1.6.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

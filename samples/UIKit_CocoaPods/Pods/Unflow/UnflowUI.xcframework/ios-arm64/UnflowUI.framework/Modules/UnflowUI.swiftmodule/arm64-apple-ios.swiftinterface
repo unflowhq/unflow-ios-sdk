@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnflowUI
 import Combine
 import Foundation
@@ -21,6 +21,8 @@ public class UnflowSDK {
   public func trackEvent<T>(_ key: Swift.String, attributes: T?) where T : Swift.Decodable, T : Swift.Encodable
   public func trackEvent(_ key: Swift.String)
   public func sync()
+  public func getOpeners(id subscriptionID: Swift.String = Opener.defaultSubscriptionID, completion: @escaping (Swift.Result<[UnflowUI.Opener], Swift.Error>) -> Swift.Void)
+  public func openers(id subscriptionID: Swift.String) -> Combine.AnyPublisher<[UnflowUI.Opener], Swift.Never>
   @objc deinit
 }
 @available(iOS 13.0, *)
@@ -31,8 +33,35 @@ extension UnflowUI.UnflowSDK {
   public static let client: UnflowUI.UnflowSDK
   public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: UnflowUI.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
 }
+public typealias PlatformView = UIKit.UIView
+public typealias PlatformViewController = UIKit.UIViewController
+public enum Introspect {
+  public static func findChild<AnyViewType>(ofType type: AnyViewType.Type, in root: UnflowUI.PlatformView) -> AnyViewType? where AnyViewType : UIKit.UIView
+  public static func findChild<AnyViewController>(ofType type: AnyViewController.Type, in root: UnflowUI.PlatformViewController) -> AnyViewController? where AnyViewController : UIKit.UIViewController
+  public static func findChildUsingFrame<AnyViewType>(ofType type: AnyViewType.Type, in root: UnflowUI.PlatformView, from originalEntry: UnflowUI.PlatformView) -> AnyViewType? where AnyViewType : UIKit.UIView
+  public static func previousSibling<AnyViewType>(containing type: AnyViewType.Type, from entry: UnflowUI.PlatformView) -> AnyViewType? where AnyViewType : UIKit.UIView
+  public static func previousSibling<AnyViewType>(ofType type: AnyViewType.Type, from entry: UnflowUI.PlatformView) -> AnyViewType? where AnyViewType : UIKit.UIView
+  @available(macOS, unavailable)
+  public static func previousSibling<AnyViewController>(containing type: AnyViewController.Type, from entry: UnflowUI.PlatformViewController) -> AnyViewController? where AnyViewController : UIKit.UIViewController
+  public static func previousSibling<AnyViewController>(ofType type: AnyViewController.Type, from entry: UnflowUI.PlatformViewController) -> AnyViewController? where AnyViewController : UIKit.UIViewController
+  public static func nextSibling<AnyViewType>(containing type: AnyViewType.Type, from entry: UnflowUI.PlatformView) -> AnyViewType? where AnyViewType : UIKit.UIView
+  public static func nextSibling<AnyViewType>(ofType type: AnyViewType.Type, from entry: UnflowUI.PlatformView) -> AnyViewType? where AnyViewType : UIKit.UIView
+  public static func findAncestor<AnyViewType>(ofType type: AnyViewType.Type, from entry: UnflowUI.PlatformView) -> AnyViewType? where AnyViewType : UIKit.UIView
+  public static func findAncestorOrAncestorChild<AnyViewType>(ofType type: AnyViewType.Type, from entry: UnflowUI.PlatformView) -> AnyViewType? where AnyViewType : UIKit.UIView
+  public static func findHostingView(from entry: UnflowUI.PlatformView) -> UnflowUI.PlatformView?
+  public static func findViewHost(from entry: UnflowUI.PlatformView) -> UnflowUI.PlatformView?
+}
+public enum TargetViewSelector {
+  public static func siblingContaining<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
+  public static func siblingContainingOrAncestor<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
+  public static func siblingContainingOrAncestorOrAncestorChild<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
+  public static func siblingOfType<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
+  public static func siblingOfTypeOrAncestor<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
+  public static func ancestorOrSiblingContaining<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
+  public static func ancestorOrSiblingOfType<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
+}
 @available(iOS 13.0, *)
-public struct OpenerRail<Content> : SwiftUI.View where Content : SwiftUI.View {
+@_Concurrency.MainActor(unsafe) public struct OpenerRail<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -44,20 +73,14 @@ public struct OpenerItemState {
   public let numberOfOpeners: Swift.Int
 }
 @available(iOS 13, *)
-@_Concurrency.MainActor(unsafe) public struct OpenerView<Content, ItemContent> : SwiftUI.View where Content : SwiftUI.View, ItemContent : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(subscriptionID: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client, @SwiftUI.ViewBuilder openerHost: @escaping ([UnflowUI.Opener]) -> Content)
+@_Concurrency.MainActor(unsafe) public struct OpenerView<Content> : SwiftUI.View where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(subscriptionID: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client, limit: Swift.Int? = nil, @SwiftUI.ViewBuilder openerHost: @escaping ([UnflowUI.Opener]) -> Content)
+  @_Concurrency.MainActor(unsafe) public init(limit: Swift.Int? = nil) where Content == UnflowUI.OpenerHost<UnflowUI.OpenerRail<UnflowUI.OpenerBanner>>
+  @_Concurrency.MainActor(unsafe) public init<ItemContent>(contentPadding: CoreGraphics.CGFloat? = 16.0, scrollSettlingEnabled: Swift.Bool = true, itemContent: @escaping (UnflowUI.OpenerItemState) -> ItemContent) where Content == UnflowUI.OpenerRail<ItemContent>, ItemContent : SwiftUI.View
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
-  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerViewV4bodyQrvp", 0) __<Content, ItemContent>
-}
-@available(iOS 13, *)
-extension UnflowUI.OpenerView where Content == UnflowUI.OpenerHost<UnflowUI.OpenerRail<UnflowUI.OpenerBanner>>, ItemContent == UnflowUI.OpenerBanner {
-  @_Concurrency.MainActor(unsafe) public init()
-}
-@available(iOS 13, *)
-extension UnflowUI.OpenerView where Content == UnflowUI.OpenerRail<ItemContent> {
-  @_Concurrency.MainActor(unsafe) public init(contentPadding: CoreGraphics.CGFloat? = 16.0, itemContent: @escaping (UnflowUI.OpenerItemState) -> ItemContent)
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerViewV4bodyQrvp", 0) __<Content>
 }
 extension CoreGraphics.CGFloat {
   public func pixelsToPoints() -> CoreGraphics.CGFloat
@@ -72,6 +95,7 @@ extension SwiftUI.View {
   
 }
 public struct Opener : Swift.Hashable, Swift.Identifiable {
+  public static let defaultSubscriptionID: Swift.String
   public var id: Swift.Int
   public var priority: Swift.Int
   public var title: Swift.String
@@ -83,6 +107,9 @@ public struct Opener : Swift.Hashable, Swift.Identifiable {
   public var hashValue: Swift.Int {
     get
   }
+}
+extension UIKit.UIImage {
+  public class func animationOrStatic(from data: Foundation.Data) -> UIKit.UIImage?
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class OpenerViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
@@ -101,21 +128,22 @@ public protocol AnalyticsListener {
   func onEvent(event: UnflowUI.UnflowEvent)
 }
 @available(iOS 13.0, *)
-public struct OpenerBanner : SwiftUI.View {
+@_Concurrency.MainActor(unsafe) public struct OpenerBanner : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI12OpenerBannerV4bodyQrvp", 0) __
 }
 public struct UnflowEvent {
+  public var id: Swift.String
+  public var occuredAt: Swift.Int64
   public var name: Swift.String
-  public var type: Swift.String
-  public var attributes: [Swift.String : Any]
+  public var metadata: [Swift.String : Any]
 }
 @available(iOS 13.0, *)
 public struct Typography : Swift.Hashable {
-  public static func == (a: UnflowUI.Typography, b: UnflowUI.Typography) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: UnflowUI.Typography, b: UnflowUI.Typography) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
