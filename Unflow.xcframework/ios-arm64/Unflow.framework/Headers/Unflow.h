@@ -825,22 +825,22 @@ __attribute__((swift_name("Page")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Screen")))
 @interface UnflowScreen : UnflowBase
-- (instancetype)initWithId:(int64_t)id subscriptionId:(NSString * _Nullable)subscriptionId contentType:(UnflowScreenContentType * _Nullable)contentType layout:(UnflowScreenLayout *)layout presentationStyle:(UnflowScreenPresentationStyle *)presentationStyle opener:(UnflowOpener *)opener pages:(NSArray<UnflowPage *> *)pages __attribute__((swift_name("init(id:subscriptionId:contentType:layout:presentationStyle:opener:pages:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id subscriptionId:(NSString * _Nullable)subscriptionId contentType:(UnflowScreenContentType * _Nullable)contentType layout:(UnflowScreenLayout *)layout presentationStyle:(UnflowScreenPresentationStyle *)presentationStyle opener:(UnflowOpener * _Nullable)opener pages:(NSArray<UnflowPage *> *)pages __attribute__((swift_name("init(id:subscriptionId:contentType:layout:presentationStyle:opener:pages:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
 - (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
 - (UnflowScreenContentType * _Nullable)component3 __attribute__((swift_name("component3()")));
 - (UnflowScreenLayout *)component4 __attribute__((swift_name("component4()")));
 - (UnflowScreenPresentationStyle *)component5 __attribute__((swift_name("component5()")));
-- (UnflowOpener *)component6 __attribute__((swift_name("component6()")));
+- (UnflowOpener * _Nullable)component6 __attribute__((swift_name("component6()")));
 - (NSArray<UnflowPage *> *)component7 __attribute__((swift_name("component7()")));
-- (UnflowScreen *)doCopyId:(int64_t)id subscriptionId:(NSString * _Nullable)subscriptionId contentType:(UnflowScreenContentType * _Nullable)contentType layout:(UnflowScreenLayout *)layout presentationStyle:(UnflowScreenPresentationStyle *)presentationStyle opener:(UnflowOpener *)opener pages:(NSArray<UnflowPage *> *)pages __attribute__((swift_name("doCopy(id:subscriptionId:contentType:layout:presentationStyle:opener:pages:)")));
+- (UnflowScreen *)doCopyId:(int64_t)id subscriptionId:(NSString * _Nullable)subscriptionId contentType:(UnflowScreenContentType * _Nullable)contentType layout:(UnflowScreenLayout *)layout presentationStyle:(UnflowScreenPresentationStyle *)presentationStyle opener:(UnflowOpener * _Nullable)opener pages:(NSArray<UnflowPage *> *)pages __attribute__((swift_name("doCopy(id:subscriptionId:contentType:layout:presentationStyle:opener:pages:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property (readonly) UnflowScreenContentType * _Nullable contentType __attribute__((swift_name("contentType")));
 @property (readonly) int64_t id __attribute__((swift_name("id")));
 @property (readonly) UnflowScreenLayout *layout __attribute__((swift_name("layout")));
-@property (readonly) UnflowOpener *opener __attribute__((swift_name("opener")));
+@property (readonly) UnflowOpener * _Nullable opener __attribute__((swift_name("opener")));
 @property (readonly) NSArray<UnflowPage *> *pages __attribute__((swift_name("pages")));
 @property (readonly) UnflowScreenPresentationStyle *presentationStyle __attribute__((swift_name("presentationStyle")));
 @property (readonly) NSString * _Nullable subscriptionId __attribute__((swift_name("subscriptionId")));
