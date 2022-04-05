@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/UnflowUI-Swift.h</key>
 		<data>
-		XKYLPfyBz5mG1/mT0bjw8Eveabs=
+		/ITj4agtN1q7W8YHDI9RFHTuacE=
 		</data>
 		<key>Headers/UnflowUI.h</key>
 		<data>
@@ -14,55 +14,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GOv5+RNaAc7Ls0A3Ch/5WFBAjV4=
+		bPwF2bx78ijtFBnc9OYSei8bqPk=
 		</data>
 		<key>Modules/UnflowUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4LB5+iwz/9GY0Ugd1ZWnIsKBxog=
+		jbqhG6kH01BUk+2AkN/luEPM41E=
 		</data>
 		<key>Modules/UnflowUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		K/riPEDOvGNvddTVQt3Pj/9qflo=
+		F4cTu6AYvWVO8lkGNZhXvfPkBCE=
 		</data>
 		<key>Modules/UnflowUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		n4VKKN0VEYh1m1bmfDJp37Ush1M=
-		</data>
-		<key>Modules/UnflowUI.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		4LB5+iwz/9GY0Ugd1ZWnIsKBxog=
-		</data>
-		<key>Modules/UnflowUI.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		K/riPEDOvGNvddTVQt3Pj/9qflo=
-		</data>
-		<key>Modules/UnflowUI.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		n4VKKN0VEYh1m1bmfDJp37Ush1M=
+		LqSubWD/LjcLx/lRbgLd6SIduK0=
 		</data>
 		<key>Modules/UnflowUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		6p4f3Ye6ey0ZaXs6Ny6KmB7o/sc=
+		EFp2T6DAD0qCC2rt66Eubs5qkkg=
 		</data>
 		<key>Modules/UnflowUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7hE954CUfORrFk+rIcbuN2/rBNQ=
+		cNcH2L68vglRzLGMY2yA6Wq0j64=
 		</data>
 		<key>Modules/UnflowUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		d5uXinfuTYZQbt0JP3oIEz8RMLA=
-		</data>
-		<key>Modules/UnflowUI.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		6p4f3Ye6ey0ZaXs6Ny6KmB7o/sc=
-		</data>
-		<key>Modules/UnflowUI.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		7hE954CUfORrFk+rIcbuN2/rBNQ=
-		</data>
-		<key>Modules/UnflowUI.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		d5uXinfuTYZQbt0JP3oIEz8RMLA=
+		AkBRhw67QVcYJdukdd7Ee6iCPyU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zHqljczUPMSgNd96rfK0U04OWvcYK+XQSAQvDQyuzoc=
+			3ATT5IoU85oXuEmB32j592b228+R8l254sv5ZZ4uBxM=
 			</data>
 		</dict>
 		<key>Headers/UnflowUI.h</key>
@@ -89,84 +65,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TyligLmirwsi6qA2laZ3GtTjFoLedeCNIz4YaJWgWzM=
+			7bDyJr+0pHMT+6h/00udc/S9ZNIxVZaf1TGPOXBOTh0=
 			</data>
 		</dict>
 		<key>Modules/UnflowUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VnCVhxxwdXXGCFUL1LW1yvjihthBu5dLsu6BfnKoEDA=
+			JN0NR4YFgNGZ6Asb4vSNKf+yh98MxXULY0x2eKMBfOU=
 			</data>
 		</dict>
 		<key>Modules/UnflowUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z9WKX77vcfNwS/dyuuDZ3nm6PepwBZ+lxpmvC/LPeOc=
-			</data>
-		</dict>
-		<key>Modules/UnflowUI.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TyligLmirwsi6qA2laZ3GtTjFoLedeCNIz4YaJWgWzM=
-			</data>
-		</dict>
-		<key>Modules/UnflowUI.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VnCVhxxwdXXGCFUL1LW1yvjihthBu5dLsu6BfnKoEDA=
-			</data>
-		</dict>
-		<key>Modules/UnflowUI.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			z9WKX77vcfNwS/dyuuDZ3nm6PepwBZ+lxpmvC/LPeOc=
+			WFve8HesWqntOEcarBejab8hODkHkpimOxxh7tVwrTs=
 			</data>
 		</dict>
 		<key>Modules/UnflowUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EagtIQ01JE7f3VyPM/BJYuSXXLWbnJBjUdQYOKQWFaM=
+			q2UUHGDMvOKmVvATsmhNxjoJ06mpcHwkfxXzTIZXUAY=
 			</data>
 		</dict>
 		<key>Modules/UnflowUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M4b8BEjR6/dwOL37C2bHML19b64EZ7h9dI1yhKMiojM=
+			UQNOMadmwN3wKPKKm0PZcyM+mt8sRJI3zSeEYHJp/0c=
 			</data>
 		</dict>
 		<key>Modules/UnflowUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			flr5zTSefxTBtFY4PBIU7lwbW+ciROnd2pT6roij1t0=
-			</data>
-		</dict>
-		<key>Modules/UnflowUI.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EagtIQ01JE7f3VyPM/BJYuSXXLWbnJBjUdQYOKQWFaM=
-			</data>
-		</dict>
-		<key>Modules/UnflowUI.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M4b8BEjR6/dwOL37C2bHML19b64EZ7h9dI1yhKMiojM=
-			</data>
-		</dict>
-		<key>Modules/UnflowUI.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			flr5zTSefxTBtFY4PBIU7lwbW+ciROnd2pT6roij1t0=
+			QRaWK+saIlhqI9WswbFSwKdqwidW4hT3mK0gMLOU85s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
