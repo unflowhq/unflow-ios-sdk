@@ -1,10 +1,10 @@
 {
   "name": "Unflow",
-  "version": "1.5.1",
+  "version": "1.6.3",
   "summary": "A low-code tool for marketers to ship screens quickly",
   "source": {
     "git": "https://github.com/unflowhq/unflow-ios-sdk.git",
-    "tag": "v1.5.1"
+    "tag": "v1.6.3"
   },
   "homepage": "https://www.unflow.com",
   "license": {
