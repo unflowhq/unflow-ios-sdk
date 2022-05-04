@@ -1,14 +1,16 @@
 {
-  "pins" : [
-    {
-      "identity" : "unflow-ios-sdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/unflowhq/unflow-ios-sdk",
-      "state" : {
-        "revision" : "664623d70a6c465d45b2d36e0029c7193bb75e3a",
-        "version" : "1.6.3"
+  "object": {
+    "pins": [
+      {
+        "package": "Unflow",
+        "repositoryURL": "https://github.com/unflowhq/unflow-ios-sdk",
+        "state": {
+          "branch": null,
+          "revision": "357162977cfd0134c5bcef38aa2359d0d347f403",
+          "version": "1.7.0"
+        }
       }
-    }
-  ],
-  "version" : 2
+    ]
+  },
+  "version": 1
 }
