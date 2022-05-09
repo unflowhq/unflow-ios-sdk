@@ -5,7 +5,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .cyan
+
+        if #available(iOS 13.0, *) {
+            view.backgroundColor = .systemGroupedBackground
+        }
 
         let unflowViewController = OpenerViewController()
         addChild(unflowViewController)
