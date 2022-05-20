@@ -54,7 +54,9 @@ class GridViewController: UIViewController {
 // MARK: - LegacyOpenerViewModelDelegate
 extension GridViewController: LegacyOpenerViewModelDelegate {
     func didUpdateContent(viewModel: LegacyOpenerViewModel) {
-        collectionView.reloadData()
+        DispatchQueue.main.async {
+            self.collectionView.reloadData()
+        }
     }
 }
 
