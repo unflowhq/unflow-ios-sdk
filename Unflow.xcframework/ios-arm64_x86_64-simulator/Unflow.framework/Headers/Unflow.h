@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class UnflowUnflowEvent, UnflowUnflowSdk, UnflowUnflowSdkConfig, UnflowDatabaseDriverFactory, UnflowSettingsFactory, UnflowKotlinUnit, UnflowPlatformProvider, UnflowTrackUnflowEventUseCase, UnflowTrackAnalyticsEventUseCase, UnflowUnflowComponent, UnflowLink, UnflowLinkActionCompanion, UnflowLinkAction, UnflowLinkActionClose, UnflowLinkLinkIdCompanion, UnflowLinkLinkId, UnflowLinkNavigable, UnflowLinkNavigableHttp, UnflowLinkNavigableOther, UnflowLinkShareCompanion, UnflowLinkShare, UnflowAppStyle, UnflowCommonFlow<T>, UnflowAppMetadata, UnflowOpener, UnflowScreen, UnflowBlock, UnflowTheme, UnflowBlockAuthor, UnflowBlockButtonStyle, UnflowBlockButton, UnflowKotlinEnumCompanion, UnflowKotlinEnum<E>, UnflowBlockButtonStyleCompanion, UnflowKotlinArray<T>, UnflowBlockImage, UnflowBlockRatingStyle, UnflowBlockRating, UnflowBlockRatingStyleCompanion, UnflowBlockSpacer, UnflowBlockTextStyle, UnflowHorizontalAlignment, UnflowBlockText, UnflowBlockTextStyleCompanion, UnflowBlockVideo, UnflowBlockTypeCompanion, UnflowBlockType, UnflowHorizontalAlignmentCompanion, UnflowImage, UnflowSlot, UnflowPage, UnflowScreenContentType, UnflowScreenLayout, UnflowScreenPresentationStyle, UnflowScreenContentTypeCompanion, UnflowScreenLayoutCompanion, UnflowScreenPresentationStyleCompanion, UnflowAppStyleThemePalette, UnflowThemeCompanion, UnflowEmptyResponseCompanion, UnflowAppMetadata_, UnflowRuntimeQuery<__covariant RowType>, UnflowAppStyle_, UnflowTheme_, UnflowBlock_, UnflowRuntimeAfterVersionWithDriver, UnflowImage_, UnflowLink_, UnflowOpener_, UnflowPage_, UnflowPendingScreen, UnflowScreen_, UnflowSlot_, UnflowUnflowDatabaseCompanion, UnflowKtor_client_coreHttpClient, UnflowKtor_client_coreHttpClientConfig<T>, UnflowLocaleProvider, UnflowTrackDefaultAttributesUseCaseCompanion, UnflowKtor_httpHeadersBuilder, UnflowKtor_client_coreHttpRequestBuilderCompanion, UnflowKtor_client_coreHttpRequestData, UnflowKtor_client_coreHttpRequestBuilder, UnflowKtor_httpURLBuilder, UnflowKtor_utilsTypeInfo, UnflowKtor_httpHttpMethod, UnflowKotlinThrowable, UnflowKotlinException, UnflowKotlinRuntimeException, UnflowKotlinIllegalStateException, UnflowRuntimeTransacterTransaction, UnflowKtor_client_coreHttpClientEngineConfig, UnflowKtor_eventsEvents, UnflowKtor_client_coreHttpReceivePipeline, UnflowKtor_client_coreHttpRequestPipeline, UnflowKtor_client_coreHttpResponsePipeline, UnflowKtor_client_coreHttpSendPipeline, UnflowKtor_utilsStringValuesBuilderImpl, UnflowKtor_httpUrl, UnflowKtor_httpOutgoingContent, UnflowKtor_utilsAttributeKey<T>, UnflowKtor_httpURLProtocol, UnflowKtor_httpURLBuilderCompanion, UnflowKotlinCancellationException, UnflowKtor_httpHttpMethodCompanion, UnflowKotlinx_serialization_coreSerializersModule, UnflowKotlinx_serialization_coreSerialKind, UnflowKotlinNothing, UnflowKotlinByteArray, UnflowKtor_client_coreHttpResponseData, UnflowKotlinx_coroutines_coreCoroutineDispatcher, UnflowKtor_client_coreProxyConfig, UnflowKtor_eventsEventDefinition<T>, UnflowKtor_utilsPipelinePhase, UnflowKtor_utilsPipeline<TSubject, TContext>, UnflowKtor_client_coreHttpReceivePipelinePhases, UnflowKtor_client_coreHttpResponse, UnflowKtor_client_coreHttpRequestPipelinePhases, UnflowKtor_client_coreHttpResponsePipelinePhases, UnflowKtor_client_coreHttpResponseContainer, UnflowKtor_client_coreHttpClientCall, UnflowKtor_client_coreHttpSendPipelinePhases, UnflowKtor_httpUrlCompanion, UnflowKtor_httpContentType, UnflowKtor_httpHttpStatusCode, UnflowKtor_httpURLProtocolCompanion, UnflowKotlinKTypeProjection, UnflowKotlinByteIterator, UnflowKtor_utilsGMTDate, UnflowKtor_httpHttpProtocolVersion, UnflowKotlinAbstractCoroutineContextElement, UnflowKotlinx_coroutines_coreCoroutineDispatcherKey, UnflowKtor_client_coreHttpClientCallCompanion, UnflowKtor_httpHeaderValueParam, UnflowKtor_httpHeaderValueWithParametersCompanion, UnflowKtor_httpHeaderValueWithParameters, UnflowKtor_httpContentTypeCompanion, UnflowKtor_httpHttpStatusCodeCompanion, UnflowKotlinKVariance, UnflowKotlinKTypeProjectionCompanion, UnflowKotlinx_coroutines_coreAtomicDesc, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, UnflowKtor_utilsGMTDateCompanion, UnflowKtor_utilsWeekDay, UnflowKtor_utilsMonth, UnflowKtor_httpHttpProtocolVersionCompanion, UnflowKotlinAbstractCoroutineContextKey<B, E>, UnflowKtor_ioMemory, UnflowKtor_ioChunkBuffer, UnflowKtor_ioBuffer, UnflowKtor_ioByteReadPacket, UnflowKotlinx_coroutines_coreAtomicOp<__contravariant T>, UnflowKotlinx_coroutines_coreOpDescriptor, UnflowKotlinx_coroutines_coreLockFreeLinkedListNode, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, UnflowKtor_utilsWeekDayCompanion, UnflowKtor_utilsMonthCompanion, UnflowKtor_ioMemoryCompanion, UnflowKtor_ioBufferCompanion, UnflowKtor_ioChunkBufferCompanion, UnflowKtor_ioInputCompanion, UnflowKtor_ioInput, UnflowKtor_ioByteReadPacketCompanion, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>;
+@class UnflowUnflowEvent, UnflowUnflowSdk, UnflowUnflowSdkConfig, UnflowDatabaseDriverFactory, UnflowSettingsFactory, UnflowKotlinUnit, UnflowPlatformProvider, UnflowTrackUnflowEventUseCase, UnflowTrackAnalyticsEventUseCase, UnflowUnflowComponent, UnflowLink, UnflowLinkActionCompanion, UnflowLinkAction, UnflowLinkActionClose, UnflowLinkLinkIdCompanion, UnflowLinkLinkId, UnflowLinkNavigable, UnflowLinkNavigableHttp, UnflowLinkNavigableOther, UnflowLinkShareCompanion, UnflowLinkShare, UnflowAppStyle, UnflowCommonFlow<T>, UnflowAppMetadata, UnflowOpener, UnflowScreen, UnflowPingResponse, UnflowBlock, UnflowTheme, UnflowBlockAuthor, UnflowBlockButtonStyle, UnflowBlockButton, UnflowKotlinEnumCompanion, UnflowKotlinEnum<E>, UnflowBlockButtonStyleCompanion, UnflowKotlinArray<T>, UnflowBlockImage, UnflowBlockRatingStyle, UnflowBlockRating, UnflowBlockRatingStyleCompanion, UnflowBlockSpacer, UnflowBlockTextStyle, UnflowHorizontalAlignment, UnflowBlockText, UnflowBlockTextStyleCompanion, UnflowBlockVideo, UnflowBlockTypeCompanion, UnflowBlockType, UnflowHorizontalAlignmentCompanion, UnflowImage, UnflowSlot, UnflowPageBackground, UnflowPage, UnflowPageBackgroundBackgroundType, UnflowPageBackgroundBackgroundTypeCompanion, UnflowScreenContentType, UnflowScreenLayout, UnflowScreenPresentationStyle, UnflowScreenContentTypeCompanion, UnflowScreenLayoutCompanion, UnflowScreenPresentationStyleCompanion, UnflowAppStyleThemePalette, UnflowThemeCompanion, UnflowAppMetadataResponseCompanion, UnflowAppMetadataResponse, UnflowAppStyleResponseTheme, UnflowAppStyleResponseCompanion, UnflowAppStyleResponse, UnflowAppStyleResponseThemeCompanion, UnflowBlockResponseStyle, UnflowBlockResponseData, UnflowBlockResponseCompanion, UnflowBlockResponse, UnflowBlockResponseDataCompanion, UnflowBlockResponseStyleCompanion, UnflowEmptyResponseCompanion, UnflowImageResponseCompanion, UnflowImageResponse, UnflowLinkResponseCompanion, UnflowLinkResponse, UnflowOpenerContextCompanion, UnflowOpenerContext, UnflowPageBackgroundResponseCompanion, UnflowPageBackgroundResponse, UnflowSlotResponse, UnflowPageResponseCompanion, UnflowPageResponse, UnflowScreenResponse, UnflowPingResponseCompanion, UnflowScreenResponseCompanion, UnflowSlotResponseCompanion, UnflowAppMetadata_, UnflowRuntimeQuery<__covariant RowType>, UnflowAppStyle_, UnflowTheme_, UnflowBlock_, UnflowRuntimeAfterVersionWithDriver, UnflowImage_, UnflowLink_, UnflowOpener_, UnflowPage_, UnflowPendingScreen, UnflowScreen_, UnflowSlot_, UnflowUnflowDatabaseCompanion, UnflowKtor_client_coreHttpClient, UnflowKtor_client_coreHttpClientConfig<T>, UnflowLocaleProvider, UnflowTrackDefaultAttributesUseCaseCompanion, UnflowKtor_httpHeadersBuilder, UnflowKtor_client_coreHttpRequestBuilderCompanion, UnflowKtor_client_coreHttpRequestData, UnflowKtor_client_coreHttpRequestBuilder, UnflowKtor_httpURLBuilder, UnflowKtor_utilsTypeInfo, UnflowKtor_httpHttpMethod, UnflowKotlinThrowable, UnflowKotlinException, UnflowKotlinRuntimeException, UnflowKotlinIllegalStateException, UnflowRuntimeTransacterTransaction, UnflowKtor_client_coreHttpClientEngineConfig, UnflowKtor_eventsEvents, UnflowKtor_client_coreHttpReceivePipeline, UnflowKtor_client_coreHttpRequestPipeline, UnflowKtor_client_coreHttpResponsePipeline, UnflowKtor_client_coreHttpSendPipeline, UnflowKtor_utilsStringValuesBuilderImpl, UnflowKtor_httpUrl, UnflowKtor_httpOutgoingContent, UnflowKtor_utilsAttributeKey<T>, UnflowKtor_httpURLProtocol, UnflowKtor_httpURLBuilderCompanion, UnflowKotlinCancellationException, UnflowKtor_httpHttpMethodCompanion, UnflowKotlinx_serialization_coreSerializersModule, UnflowKotlinx_serialization_coreSerialKind, UnflowKotlinNothing, UnflowKotlinByteArray, UnflowKtor_client_coreHttpResponseData, UnflowKotlinx_coroutines_coreCoroutineDispatcher, UnflowKtor_client_coreProxyConfig, UnflowKtor_eventsEventDefinition<T>, UnflowKtor_utilsPipelinePhase, UnflowKtor_utilsPipeline<TSubject, TContext>, UnflowKtor_client_coreHttpReceivePipelinePhases, UnflowKtor_client_coreHttpResponse, UnflowKtor_client_coreHttpRequestPipelinePhases, UnflowKtor_client_coreHttpResponsePipelinePhases, UnflowKtor_client_coreHttpResponseContainer, UnflowKtor_client_coreHttpClientCall, UnflowKtor_client_coreHttpSendPipelinePhases, UnflowKtor_httpUrlCompanion, UnflowKtor_httpContentType, UnflowKtor_httpHttpStatusCode, UnflowKtor_httpURLProtocolCompanion, UnflowKotlinKTypeProjection, UnflowKotlinByteIterator, UnflowKtor_utilsGMTDate, UnflowKtor_httpHttpProtocolVersion, UnflowKotlinAbstractCoroutineContextElement, UnflowKotlinx_coroutines_coreCoroutineDispatcherKey, UnflowKtor_client_coreHttpClientCallCompanion, UnflowKtor_httpHeaderValueParam, UnflowKtor_httpHeaderValueWithParametersCompanion, UnflowKtor_httpHeaderValueWithParameters, UnflowKtor_httpContentTypeCompanion, UnflowKtor_httpHttpStatusCodeCompanion, UnflowKotlinKVariance, UnflowKotlinKTypeProjectionCompanion, UnflowKotlinx_coroutines_coreAtomicDesc, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, UnflowKtor_utilsGMTDateCompanion, UnflowKtor_utilsWeekDay, UnflowKtor_utilsMonth, UnflowKtor_httpHttpProtocolVersionCompanion, UnflowKotlinAbstractCoroutineContextKey<B, E>, UnflowKtor_ioMemory, UnflowKtor_ioChunkBuffer, UnflowKtor_ioBuffer, UnflowKtor_ioByteReadPacket, UnflowKotlinx_coroutines_coreAtomicOp<__contravariant T>, UnflowKotlinx_coroutines_coreOpDescriptor, UnflowKotlinx_coroutines_coreLockFreeLinkedListNode, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, UnflowKtor_utilsWeekDayCompanion, UnflowKtor_utilsMonthCompanion, UnflowKtor_ioMemoryCompanion, UnflowKtor_ioBufferCompanion, UnflowKtor_ioChunkBufferCompanion, UnflowKtor_ioInputCompanion, UnflowKtor_ioInput, UnflowKtor_ioByteReadPacketCompanion, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, UnflowKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>;
 
 @protocol UnflowAnalyticsListener, UnflowAnalytics, UnflowEventRepository, UnflowAnalyticsLocalDataSource, UnflowPushRepository, UnflowTokenRepository, UnflowUnflowRepository, UnflowKotlinx_coroutines_coreFlowCollector, UnflowKotlinx_coroutines_coreFlow, UnflowKtor_ioCloseable, UnflowKotlinComparable, UnflowAlignment, UnflowKotlinx_serialization_coreKSerializer, UnflowRuntimeTransactionWithoutReturn, UnflowRuntimeTransactionWithReturn, UnflowRuntimeTransacter, UnflowRuntimeSqlDriver, UnflowAppMetadataQueries, UnflowAppStyleQueries, UnflowLinkQueries, UnflowScreenQueries, UnflowTriggerQueries, UnflowUnflowDatabase, UnflowRuntimeSqlDriverSchema, UnflowKotlinKClass, UnflowMultiplatform_settings_coroutinesFlowSettings, UnflowKtor_httpHttpMessageBuilder, UnflowKtor_client_coreHttpClientEngineCapability, UnflowKtor_utilsAttributes, UnflowKotlinx_coroutines_coreJob, UnflowGenericStorage, UnflowKotlinIterator, UnflowKotlinx_serialization_coreEncoder, UnflowKotlinx_serialization_coreSerialDescriptor, UnflowKotlinx_serialization_coreSerializationStrategy, UnflowKotlinx_serialization_coreDecoder, UnflowKotlinx_serialization_coreDeserializationStrategy, UnflowRuntimeSqlCursor, UnflowRuntimeQueryListener, UnflowRuntimeTransactionCallbacks, UnflowRuntimeSqlPreparedStatement, UnflowRuntimeCloseable, UnflowKotlinCoroutineContext, UnflowKotlinx_coroutines_coreCoroutineScope, UnflowKtor_client_coreHttpClientEngine, UnflowKtor_client_coreHttpClientPlugin, UnflowKotlinKDeclarationContainer, UnflowKotlinKAnnotatedElement, UnflowKotlinKClassifier, UnflowMultiplatform_settings_coroutinesSuspendSettings, UnflowKtor_utilsStringValues, UnflowKotlinMapEntry, UnflowKtor_utilsStringValuesBuilder, UnflowKtor_httpHeaders, UnflowKtor_httpParameters, UnflowKtor_httpParametersBuilder, UnflowKotlinKType, UnflowKotlinx_coroutines_coreChildHandle, UnflowKotlinx_coroutines_coreChildJob, UnflowKotlinx_coroutines_coreDisposableHandle, UnflowKotlinSequence, UnflowKotlinx_coroutines_coreSelectClause0, UnflowKotlinCoroutineContextKey, UnflowKotlinCoroutineContextElement, UnflowKotlinx_serialization_coreCompositeEncoder, UnflowKotlinAnnotation, UnflowKotlinx_serialization_coreCompositeDecoder, UnflowKotlinSuspendFunction2, UnflowKotlinx_coroutines_coreParentJob, UnflowKotlinx_coroutines_coreSelectInstance, UnflowKotlinSuspendFunction0, UnflowKotlinx_serialization_coreSerializersModuleCollector, UnflowKotlinContinuation, UnflowKotlinContinuationInterceptor, UnflowKotlinx_coroutines_coreRunnable, UnflowKotlinFunction, UnflowKtor_httpHttpMessage, UnflowKtor_ioByteReadChannel, UnflowKtor_client_coreHttpRequest, UnflowKtor_ioReadSession, UnflowKotlinSuspendFunction1, UnflowKotlinAppendable, UnflowKtor_ioObjectPool;
 
@@ -398,6 +398,12 @@ __attribute__((swift_name("UnflowRepository")))
  @note This method converts instances of CancellationException to errors.
  Other uncaught Kotlin exceptions are fatal.
 */
+- (void)deviceIdWithCompletionHandler:(void (^)(NSString * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("deviceId(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)getAppMetadataWithCompletionHandler:(void (^)(UnflowAppMetadata * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getAppMetadata(completionHandler:)")));
 
 /**
@@ -413,6 +419,12 @@ __attribute__((swift_name("UnflowRepository")))
 - (void)getScreenId:(int64_t)id completionHandler:(void (^)(UnflowScreen * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("getScreen(id:completionHandler:)")));
 - (UnflowCommonFlow<NSArray<UnflowOpener *> *> *)openersSubscriptionId:(NSString *)subscriptionId __attribute__((swift_name("openers(subscriptionId:)")));
 - (UnflowCommonFlow<NSArray<UnflowLong *> *> *)pendingScreenIds __attribute__((swift_name("pendingScreenIds()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)providePingPingResponse:(UnflowPingResponse *)pingResponse completionHandler:(void (^)(UnflowKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("providePing(pingResponse:completionHandler:)")));
 - (UnflowCommonFlow<UnflowScreen *> *)screenId:(int64_t)id __attribute__((swift_name("screen(id:)")));
 
 /**
@@ -778,23 +790,64 @@ __attribute__((swift_name("Opener")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Page")))
 @interface UnflowPage : UnflowBase
-- (instancetype)initWithId:(int64_t)id theme:(UnflowTheme *)theme slots:(NSArray<UnflowSlot *> *)slots horizontalAlignment:(UnflowHorizontalAlignment * _Nullable)horizontalAlignment backgroundImageUrl:(NSString * _Nullable)backgroundImageUrl featureImage:(UnflowImage * _Nullable)featureImage __attribute__((swift_name("init(id:theme:slots:horizontalAlignment:backgroundImageUrl:featureImage:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithId:(int64_t)id theme:(UnflowTheme *)theme slots:(NSArray<UnflowSlot *> *)slots horizontalAlignment:(UnflowHorizontalAlignment * _Nullable)horizontalAlignment backgroundImageUrl:(NSString * _Nullable)backgroundImageUrl featureImage:(UnflowImage * _Nullable)featureImage duration:(UnflowInt * _Nullable)duration background:(UnflowPageBackground * _Nullable)background __attribute__((swift_name("init(id:theme:slots:horizontalAlignment:backgroundImageUrl:featureImage:duration:background:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
 - (UnflowTheme *)component2 __attribute__((swift_name("component2()")));
 - (NSArray<UnflowSlot *> *)component3 __attribute__((swift_name("component3()")));
 - (UnflowHorizontalAlignment * _Nullable)component4 __attribute__((swift_name("component4()")));
 - (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
 - (UnflowImage * _Nullable)component6 __attribute__((swift_name("component6()")));
-- (UnflowPage *)doCopyId:(int64_t)id theme:(UnflowTheme *)theme slots:(NSArray<UnflowSlot *> *)slots horizontalAlignment:(UnflowHorizontalAlignment * _Nullable)horizontalAlignment backgroundImageUrl:(NSString * _Nullable)backgroundImageUrl featureImage:(UnflowImage * _Nullable)featureImage __attribute__((swift_name("doCopy(id:theme:slots:horizontalAlignment:backgroundImageUrl:featureImage:)")));
+- (UnflowInt * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (UnflowPageBackground * _Nullable)component8 __attribute__((swift_name("component8()")));
+- (UnflowPage *)doCopyId:(int64_t)id theme:(UnflowTheme *)theme slots:(NSArray<UnflowSlot *> *)slots horizontalAlignment:(UnflowHorizontalAlignment * _Nullable)horizontalAlignment backgroundImageUrl:(NSString * _Nullable)backgroundImageUrl featureImage:(UnflowImage * _Nullable)featureImage duration:(UnflowInt * _Nullable)duration background:(UnflowPageBackground * _Nullable)background __attribute__((swift_name("doCopy(id:theme:slots:horizontalAlignment:backgroundImageUrl:featureImage:duration:background:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) UnflowPageBackground * _Nullable background __attribute__((swift_name("background")));
 @property (readonly) NSString * _Nullable backgroundImageUrl __attribute__((swift_name("backgroundImageUrl")));
+@property (readonly) UnflowInt * _Nullable duration __attribute__((swift_name("duration")));
 @property (readonly) UnflowImage * _Nullable featureImage __attribute__((swift_name("featureImage")));
 @property (readonly) UnflowHorizontalAlignment * _Nullable horizontalAlignment __attribute__((swift_name("horizontalAlignment")));
 @property (readonly) int64_t id __attribute__((swift_name("id")));
 @property (readonly) NSArray<UnflowSlot *> *slots __attribute__((swift_name("slots")));
 @property (readonly) UnflowTheme *theme __attribute__((swift_name("theme")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PageBackground")))
+@interface UnflowPageBackground : UnflowBase
+- (instancetype)initWithType:(UnflowPageBackgroundBackgroundType * _Nullable)type color:(NSString * _Nullable)color asset_url:(NSString * _Nullable)asset_url __attribute__((swift_name("init(type:color:asset_url:)"))) __attribute__((objc_designated_initializer));
+- (UnflowPageBackgroundBackgroundType * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
+- (UnflowPageBackground *)doCopyType:(UnflowPageBackgroundBackgroundType * _Nullable)type color:(NSString * _Nullable)color asset_url:(NSString * _Nullable)asset_url __attribute__((swift_name("doCopy(type:color:asset_url:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable asset_url __attribute__((swift_name("asset_url")));
+@property (readonly) NSString * _Nullable color __attribute__((swift_name("color")));
+@property (readonly) UnflowPageBackgroundBackgroundType * _Nullable type __attribute__((swift_name("type")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PageBackground.BackgroundType")))
+@interface UnflowPageBackgroundBackgroundType : UnflowKotlinEnum<UnflowPageBackgroundBackgroundType *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) UnflowPageBackgroundBackgroundTypeCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) UnflowPageBackgroundBackgroundType *image __attribute__((swift_name("image")));
+@property (class, readonly) UnflowPageBackgroundBackgroundType *video __attribute__((swift_name("video")));
++ (UnflowKotlinArray<UnflowPageBackgroundBackgroundType *> *)values __attribute__((swift_name("values()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PageBackground.BackgroundTypeCompanion")))
+@interface UnflowPageBackgroundBackgroundTypeCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowPageBackgroundBackgroundTypeCompanion *shared __attribute__((swift_name("shared")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -852,6 +905,7 @@ __attribute__((swift_name("Screen.Layout")))
 @property (class, readonly, getter=companion) UnflowScreenLayoutCompanion *companion __attribute__((swift_name("companion")));
 @property (class, readonly) UnflowScreenLayout *simple __attribute__((swift_name("simple")));
 @property (class, readonly) UnflowScreenLayout *visual __attribute__((swift_name("visual")));
+@property (class, readonly) UnflowScreenLayout *story __attribute__((swift_name("story")));
 + (UnflowKotlinArray<UnflowScreenLayout *> *)values __attribute__((swift_name("values()")));
 @end;
 
@@ -964,6 +1018,194 @@ __attribute__((swift_name("Theme.Companion")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppMetadataResponse")))
+@interface UnflowAppMetadataResponse : UnflowBase
+- (instancetype)initWithIos_app_id:(NSString * _Nullable)ios_app_id android_app_id:(NSString * _Nullable)android_app_id __attribute__((swift_name("init(ios_app_id:android_app_id:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowAppMetadataResponseCompanion *companion __attribute__((swift_name("companion")));
+- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (UnflowAppMetadataResponse *)doCopyIos_app_id:(NSString * _Nullable)ios_app_id android_app_id:(NSString * _Nullable)android_app_id __attribute__((swift_name("doCopy(ios_app_id:android_app_id:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable android_app_id __attribute__((swift_name("android_app_id")));
+@property (readonly) NSString * _Nullable ios_app_id __attribute__((swift_name("ios_app_id")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppMetadataResponse.Companion")))
+@interface UnflowAppMetadataResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowAppMetadataResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppStyleResponse")))
+@interface UnflowAppStyleResponse : UnflowBase
+- (instancetype)initWithThemes:(NSArray<UnflowAppStyleResponseTheme *> *)themes button_radius:(int32_t)button_radius __attribute__((swift_name("init(themes:button_radius:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowAppStyleResponseCompanion *companion __attribute__((swift_name("companion")));
+- (NSArray<UnflowAppStyleResponseTheme *> *)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (UnflowAppStyleResponse *)doCopyThemes:(NSArray<UnflowAppStyleResponseTheme *> *)themes button_radius:(int32_t)button_radius __attribute__((swift_name("doCopy(themes:button_radius:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t button_radius __attribute__((swift_name("button_radius")));
+@property (readonly) NSArray<UnflowAppStyleResponseTheme *> *themes __attribute__((swift_name("themes")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppStyleResponse.Companion")))
+@interface UnflowAppStyleResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowAppStyleResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppStyleResponse.Theme")))
+@interface UnflowAppStyleResponseTheme : UnflowBase
+- (instancetype)initWithName:(NSString *)name primary_color:(NSString *)primary_color on_primary_color:(NSString *)on_primary_color secondary_color:(NSString *)secondary_color on_secondary_color:(NSString *)on_secondary_color text_title_color:(NSString *)text_title_color text_body_color:(NSString *)text_body_color __attribute__((swift_name("init(name:primary_color:on_primary_color:secondary_color:on_secondary_color:text_title_color:text_body_color:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowAppStyleResponseThemeCompanion *companion __attribute__((swift_name("companion")));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (NSString *)component4 __attribute__((swift_name("component4()")));
+- (NSString *)component5 __attribute__((swift_name("component5()")));
+- (NSString *)component6 __attribute__((swift_name("component6()")));
+- (NSString *)component7 __attribute__((swift_name("component7()")));
+- (UnflowAppStyleResponseTheme *)doCopyName:(NSString *)name primary_color:(NSString *)primary_color on_primary_color:(NSString *)on_primary_color secondary_color:(NSString *)secondary_color on_secondary_color:(NSString *)on_secondary_color text_title_color:(NSString *)text_title_color text_body_color:(NSString *)text_body_color __attribute__((swift_name("doCopy(name:primary_color:on_primary_color:secondary_color:on_secondary_color:text_title_color:text_body_color:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly) NSString *on_primary_color __attribute__((swift_name("on_primary_color")));
+@property (readonly) NSString *on_secondary_color __attribute__((swift_name("on_secondary_color")));
+@property (readonly) NSString *primary_color __attribute__((swift_name("primary_color")));
+@property (readonly) NSString *secondary_color __attribute__((swift_name("secondary_color")));
+@property (readonly) NSString *text_body_color __attribute__((swift_name("text_body_color")));
+@property (readonly) NSString *text_title_color __attribute__((swift_name("text_title_color")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AppStyleResponse.ThemeCompanion")))
+@interface UnflowAppStyleResponseThemeCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowAppStyleResponseThemeCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BlockResponse")))
+@interface UnflowBlockResponse : UnflowBase
+- (instancetype)initWithId:(int64_t)id position:(int32_t)position block_type:(NSString *)block_type value:(NSString * _Nullable)value style:(UnflowBlockResponseStyle *)style data:(UnflowBlockResponseData * _Nullable)data __attribute__((swift_name("init(id:position:block_type:value:style:data:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowBlockResponseCompanion *companion __attribute__((swift_name("companion")));
+- (int64_t)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (UnflowBlockResponseStyle *)component5 __attribute__((swift_name("component5()")));
+- (UnflowBlockResponseData * _Nullable)component6 __attribute__((swift_name("component6()")));
+- (UnflowBlockResponse *)doCopyId:(int64_t)id position:(int32_t)position block_type:(NSString *)block_type value:(NSString * _Nullable)value style:(UnflowBlockResponseStyle *)style data:(UnflowBlockResponseData * _Nullable)data __attribute__((swift_name("doCopy(id:position:block_type:value:style:data:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *block_type __attribute__((swift_name("block_type")));
+@property (readonly) UnflowBlockResponseData * _Nullable data __attribute__((swift_name("data")));
+@property (readonly) int64_t id __attribute__((swift_name("id")));
+@property (readonly) int32_t position __attribute__((swift_name("position")));
+@property (readonly) UnflowBlockResponseStyle *style __attribute__((swift_name("style")));
+@property (readonly) NSString * _Nullable value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BlockResponse.Companion")))
+@interface UnflowBlockResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowBlockResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BlockResponse.Data")))
+@interface UnflowBlockResponseData : UnflowBase
+- (instancetype)initWithUri:(NSString * _Nullable)uri avatar:(NSString * _Nullable)avatar width:(UnflowInt * _Nullable)width height:(UnflowInt * _Nullable)height poster:(NSString * _Nullable)poster autoplay:(BOOL)autoplay request_review:(BOOL)request_review minimum_review_rating:(UnflowInt * _Nullable)minimum_review_rating analytics_id:(NSString * _Nullable)analytics_id __attribute__((swift_name("init(uri:avatar:width:height:poster:autoplay:request_review:minimum_review_rating:analytics_id:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowBlockResponseDataCompanion *companion __attribute__((swift_name("companion")));
+- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (UnflowInt * _Nullable)component3 __attribute__((swift_name("component3()")));
+- (UnflowInt * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (BOOL)component6 __attribute__((swift_name("component6()")));
+- (BOOL)component7 __attribute__((swift_name("component7()")));
+- (UnflowInt * _Nullable)component8 __attribute__((swift_name("component8()")));
+- (NSString * _Nullable)component9 __attribute__((swift_name("component9()")));
+- (UnflowBlockResponseData *)doCopyUri:(NSString * _Nullable)uri avatar:(NSString * _Nullable)avatar width:(UnflowInt * _Nullable)width height:(UnflowInt * _Nullable)height poster:(NSString * _Nullable)poster autoplay:(BOOL)autoplay request_review:(BOOL)request_review minimum_review_rating:(UnflowInt * _Nullable)minimum_review_rating analytics_id:(NSString * _Nullable)analytics_id __attribute__((swift_name("doCopy(uri:avatar:width:height:poster:autoplay:request_review:minimum_review_rating:analytics_id:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable analytics_id __attribute__((swift_name("analytics_id")));
+@property (readonly) BOOL autoplay __attribute__((swift_name("autoplay")));
+@property (readonly) NSString * _Nullable avatar __attribute__((swift_name("avatar")));
+@property (readonly) UnflowInt * _Nullable height __attribute__((swift_name("height")));
+@property (readonly) UnflowInt * _Nullable minimum_review_rating __attribute__((swift_name("minimum_review_rating")));
+@property (readonly) NSString * _Nullable poster __attribute__((swift_name("poster")));
+@property (readonly) BOOL request_review __attribute__((swift_name("request_review")));
+@property (readonly) NSString * _Nullable uri __attribute__((swift_name("uri")));
+@property (readonly) UnflowInt * _Nullable width __attribute__((swift_name("width")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BlockResponse.DataCompanion")))
+@interface UnflowBlockResponseDataCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowBlockResponseDataCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BlockResponse.Style")))
+@interface UnflowBlockResponseStyle : UnflowBase
+- (instancetype)initWithText_style:(NSString * _Nullable)text_style button_style:(NSString * _Nullable)button_style theme:(NSString * _Nullable)theme rating_style:(NSString * _Nullable)rating_style alignment:(NSString * _Nullable)alignment __attribute__((swift_name("init(text_style:button_style:theme:rating_style:alignment:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowBlockResponseStyleCompanion *companion __attribute__((swift_name("companion")));
+- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
+- (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (UnflowBlockResponseStyle *)doCopyText_style:(NSString * _Nullable)text_style button_style:(NSString * _Nullable)button_style theme:(NSString * _Nullable)theme rating_style:(NSString * _Nullable)rating_style alignment:(NSString * _Nullable)alignment __attribute__((swift_name("doCopy(text_style:button_style:theme:rating_style:alignment:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable alignment __attribute__((swift_name("alignment")));
+@property (readonly) NSString * _Nullable button_style __attribute__((swift_name("button_style")));
+@property (readonly) NSString * _Nullable rating_style __attribute__((swift_name("rating_style")));
+@property (readonly) NSString * _Nullable text_style __attribute__((swift_name("text_style")));
+@property (readonly) NSString * _Nullable theme __attribute__((swift_name("theme")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("BlockResponse.StyleCompanion")))
+@interface UnflowBlockResponseStyleCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowBlockResponseStyleCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("EmptyResponse")))
 @interface UnflowEmptyResponse : UnflowBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -978,6 +1220,248 @@ __attribute__((swift_name("EmptyResponse.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) UnflowEmptyResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ImageResponse")))
+@interface UnflowImageResponse : UnflowBase
+- (instancetype)initWithId:(int64_t)id uri:(NSString * _Nullable)uri width:(UnflowInt * _Nullable)width height:(UnflowInt * _Nullable)height __attribute__((swift_name("init(id:uri:width:height:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowImageResponseCompanion *companion __attribute__((swift_name("companion")));
+- (int64_t)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (UnflowInt * _Nullable)component3 __attribute__((swift_name("component3()")));
+- (UnflowInt * _Nullable)component4 __attribute__((swift_name("component4()")));
+- (UnflowImageResponse *)doCopyId:(int64_t)id uri:(NSString * _Nullable)uri width:(UnflowInt * _Nullable)width height:(UnflowInt * _Nullable)height __attribute__((swift_name("doCopy(id:uri:width:height:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) UnflowInt * _Nullable height __attribute__((swift_name("height")));
+@property (readonly) int64_t id __attribute__((swift_name("id")));
+@property (readonly) NSString * _Nullable uri __attribute__((swift_name("uri")));
+@property (readonly) UnflowInt * _Nullable width __attribute__((swift_name("width")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ImageResponse.Companion")))
+@interface UnflowImageResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowImageResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("LinkResponse")))
+@interface UnflowLinkResponse : UnflowBase
+- (instancetype)initWithId:(int64_t)id uri:(NSString * _Nullable)uri name:(NSString * _Nullable)name __attribute__((swift_name("init(id:uri:name:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowLinkResponseCompanion *companion __attribute__((swift_name("companion")));
+- (int64_t)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
+- (UnflowLinkResponse *)doCopyId:(int64_t)id uri:(NSString * _Nullable)uri name:(NSString * _Nullable)name __attribute__((swift_name("doCopy(id:uri:name:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int64_t id __attribute__((swift_name("id")));
+@property (readonly) NSString * _Nullable name __attribute__((swift_name("name")));
+@property (readonly) NSString * _Nullable uri __attribute__((swift_name("uri")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("LinkResponse.Companion")))
+@interface UnflowLinkResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowLinkResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("OpenerContext")))
+@interface UnflowOpenerContext : UnflowBase
+- (instancetype)initWithTitle:(NSString *)title subtitle:(NSString *)subtitle thumbnail_url:(NSString *)thumbnail_url __attribute__((swift_name("init(title:subtitle:thumbnail_url:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowOpenerContextCompanion *companion __attribute__((swift_name("companion")));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (UnflowOpenerContext *)doCopyTitle:(NSString *)title subtitle:(NSString *)subtitle thumbnail_url:(NSString *)thumbnail_url __attribute__((swift_name("doCopy(title:subtitle:thumbnail_url:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *subtitle __attribute__((swift_name("subtitle")));
+@property (readonly) NSString *thumbnail_url __attribute__((swift_name("thumbnail_url")));
+@property (readonly) NSString *title __attribute__((swift_name("title")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("OpenerContext.Companion")))
+@interface UnflowOpenerContextCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowOpenerContextCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PageBackgroundResponse")))
+@interface UnflowPageBackgroundResponse : UnflowBase
+- (instancetype)initWithType:(NSString * _Nullable)type color:(NSString * _Nullable)color asset_url:(NSString * _Nullable)asset_url __attribute__((swift_name("init(type:color:asset_url:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowPageBackgroundResponseCompanion *companion __attribute__((swift_name("companion")));
+- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
+- (UnflowPageBackgroundResponse *)doCopyType:(NSString * _Nullable)type color:(NSString * _Nullable)color asset_url:(NSString * _Nullable)asset_url __attribute__((swift_name("doCopy(type:color:asset_url:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property NSString * _Nullable asset_url __attribute__((swift_name("asset_url")));
+@property NSString * _Nullable color __attribute__((swift_name("color")));
+@property NSString * _Nullable type __attribute__((swift_name("type")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PageBackgroundResponse.Companion")))
+@interface UnflowPageBackgroundResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowPageBackgroundResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PageResponse")))
+@interface UnflowPageResponse : UnflowBase
+- (instancetype)initWithId:(int64_t)id theme:(NSString * _Nullable)theme slots:(NSArray<UnflowSlotResponse *> *)slots horizontal_alignment:(NSString *)horizontal_alignment background_image:(NSString * _Nullable)background_image feature_image:(UnflowImageResponse * _Nullable)feature_image duration:(UnflowInt * _Nullable)duration background:(UnflowPageBackgroundResponse * _Nullable)background __attribute__((swift_name("init(id:theme:slots:horizontal_alignment:background_image:feature_image:duration:background:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowPageResponseCompanion *companion __attribute__((swift_name("companion")));
+- (int64_t)component1 __attribute__((swift_name("component1()")));
+- (NSString * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (NSArray<UnflowSlotResponse *> *)component3 __attribute__((swift_name("component3()")));
+- (NSString *)component4 __attribute__((swift_name("component4()")));
+- (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
+- (UnflowImageResponse * _Nullable)component6 __attribute__((swift_name("component6()")));
+- (UnflowInt * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (UnflowPageBackgroundResponse * _Nullable)component8 __attribute__((swift_name("component8()")));
+- (UnflowPageResponse *)doCopyId:(int64_t)id theme:(NSString * _Nullable)theme slots:(NSArray<UnflowSlotResponse *> *)slots horizontal_alignment:(NSString *)horizontal_alignment background_image:(NSString * _Nullable)background_image feature_image:(UnflowImageResponse * _Nullable)feature_image duration:(UnflowInt * _Nullable)duration background:(UnflowPageBackgroundResponse * _Nullable)background __attribute__((swift_name("doCopy(id:theme:slots:horizontal_alignment:background_image:feature_image:duration:background:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property UnflowPageBackgroundResponse * _Nullable background __attribute__((swift_name("background")));
+@property (readonly) NSString * _Nullable background_image __attribute__((swift_name("background_image")));
+@property UnflowInt * _Nullable duration __attribute__((swift_name("duration")));
+@property (readonly) UnflowImageResponse * _Nullable feature_image __attribute__((swift_name("feature_image")));
+@property (readonly) NSString *horizontal_alignment __attribute__((swift_name("horizontal_alignment")));
+@property (readonly) int64_t id __attribute__((swift_name("id")));
+@property (readonly) NSArray<UnflowSlotResponse *> *slots __attribute__((swift_name("slots")));
+@property (readonly) NSString * _Nullable theme __attribute__((swift_name("theme")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PageResponse.Companion")))
+@interface UnflowPageResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowPageResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PingResponse")))
+@interface UnflowPingResponse : UnflowBase
+- (instancetype)initWithScreens:(NSArray<UnflowScreenResponse *> *)screens app_style:(UnflowAppStyleResponse *)app_style links:(NSArray<UnflowLinkResponse *> *)links app_metadata:(UnflowAppMetadataResponse *)app_metadata pending_screen_ids:(NSArray<UnflowLong *> *)pending_screen_ids __attribute__((swift_name("init(screens:app_style:links:app_metadata:pending_screen_ids:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowPingResponseCompanion *companion __attribute__((swift_name("companion")));
+- (NSArray<UnflowScreenResponse *> *)component1 __attribute__((swift_name("component1()")));
+- (UnflowAppStyleResponse *)component2 __attribute__((swift_name("component2()")));
+- (NSArray<UnflowLinkResponse *> *)component3 __attribute__((swift_name("component3()")));
+- (UnflowAppMetadataResponse *)component4 __attribute__((swift_name("component4()")));
+- (NSArray<UnflowLong *> *)component5 __attribute__((swift_name("component5()")));
+- (UnflowPingResponse *)doCopyScreens:(NSArray<UnflowScreenResponse *> *)screens app_style:(UnflowAppStyleResponse *)app_style links:(NSArray<UnflowLinkResponse *> *)links app_metadata:(UnflowAppMetadataResponse *)app_metadata pending_screen_ids:(NSArray<UnflowLong *> *)pending_screen_ids __attribute__((swift_name("doCopy(screens:app_style:links:app_metadata:pending_screen_ids:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) UnflowAppMetadataResponse *app_metadata __attribute__((swift_name("app_metadata")));
+@property (readonly) UnflowAppStyleResponse *app_style __attribute__((swift_name("app_style")));
+@property (readonly) NSArray<UnflowLinkResponse *> *links __attribute__((swift_name("links")));
+@property (readonly) NSArray<UnflowLong *> *pending_screen_ids __attribute__((swift_name("pending_screen_ids")));
+@property (readonly) NSArray<UnflowScreenResponse *> *screens __attribute__((swift_name("screens")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PingResponse.Companion")))
+@interface UnflowPingResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowPingResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ScreenResponse")))
+@interface UnflowScreenResponse : UnflowBase
+- (instancetype)initWithId:(int64_t)id subscription_id:(NSString *)subscription_id content_type:(NSString *)content_type presentation_style:(NSString *)presentation_style priority:(int32_t)priority pages:(NSArray<UnflowPageResponse *> *)pages opener_context:(UnflowOpenerContext * _Nullable)opener_context layout:(NSString *)layout __attribute__((swift_name("init(id:subscription_id:content_type:presentation_style:priority:pages:opener_context:layout:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowScreenResponseCompanion *companion __attribute__((swift_name("companion")));
+- (int64_t)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (NSString *)component3 __attribute__((swift_name("component3()")));
+- (NSString *)component4 __attribute__((swift_name("component4()")));
+- (int32_t)component5 __attribute__((swift_name("component5()")));
+- (NSArray<UnflowPageResponse *> *)component6 __attribute__((swift_name("component6()")));
+- (UnflowOpenerContext * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (NSString *)component8 __attribute__((swift_name("component8()")));
+- (UnflowScreenResponse *)doCopyId:(int64_t)id subscription_id:(NSString *)subscription_id content_type:(NSString *)content_type presentation_style:(NSString *)presentation_style priority:(int32_t)priority pages:(NSArray<UnflowPageResponse *> *)pages opener_context:(UnflowOpenerContext * _Nullable)opener_context layout:(NSString *)layout __attribute__((swift_name("doCopy(id:subscription_id:content_type:presentation_style:priority:pages:opener_context:layout:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *content_type __attribute__((swift_name("content_type")));
+@property (readonly) int64_t id __attribute__((swift_name("id")));
+@property (readonly) NSString *layout __attribute__((swift_name("layout")));
+@property (readonly) UnflowOpenerContext * _Nullable opener_context __attribute__((swift_name("opener_context")));
+@property (readonly) NSArray<UnflowPageResponse *> *pages __attribute__((swift_name("pages")));
+@property (readonly) NSString *presentation_style __attribute__((swift_name("presentation_style")));
+@property (readonly) int32_t priority __attribute__((swift_name("priority")));
+@property (readonly) NSString *subscription_id __attribute__((swift_name("subscription_id")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ScreenResponse.Companion")))
+@interface UnflowScreenResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowScreenResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SlotResponse")))
+@interface UnflowSlotResponse : UnflowBase
+- (instancetype)initWithId:(int64_t)id position:(int32_t)position blocks:(NSArray<UnflowBlockResponse *> *)blocks __attribute__((swift_name("init(id:position:blocks:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) UnflowSlotResponseCompanion *companion __attribute__((swift_name("companion")));
+- (int64_t)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (NSArray<UnflowBlockResponse *> *)component3 __attribute__((swift_name("component3()")));
+- (UnflowSlotResponse *)doCopyId:(int64_t)id position:(int32_t)position blocks:(NSArray<UnflowBlockResponse *> *)blocks __attribute__((swift_name("doCopy(id:position:blocks:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSArray<UnflowBlockResponse *> *blocks __attribute__((swift_name("blocks")));
+@property (readonly) int64_t id __attribute__((swift_name("id")));
+@property (readonly) int32_t position __attribute__((swift_name("position")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("SlotResponse.Companion")))
+@interface UnflowSlotResponseCompanion : UnflowBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) UnflowSlotResponseCompanion *shared __attribute__((swift_name("shared")));
 - (id<UnflowKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end;
 
@@ -1178,17 +1662,25 @@ __attribute__((swift_name("Opener_")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Page_")))
 @interface UnflowPage_ : UnflowBase
-- (instancetype)initWithPage_id:(int64_t)page_id screen_id:(int64_t)screen_id theme:(NSString * _Nullable)theme horizontal_alignment:(NSString * _Nullable)horizontal_alignment background_image_url:(NSString * _Nullable)background_image_url __attribute__((swift_name("init(page_id:screen_id:theme:horizontal_alignment:background_image_url:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPage_id:(int64_t)page_id screen_id:(int64_t)screen_id theme:(NSString * _Nullable)theme horizontal_alignment:(NSString * _Nullable)horizontal_alignment background_image_url:(NSString * _Nullable)background_image_url duration:(UnflowInt * _Nullable)duration background_type:(NSString * _Nullable)background_type background_color:(NSString * _Nullable)background_color background_asset_url:(NSString * _Nullable)background_asset_url __attribute__((swift_name("init(page_id:screen_id:theme:horizontal_alignment:background_image_url:duration:background_type:background_color:background_asset_url:)"))) __attribute__((objc_designated_initializer));
 - (int64_t)component1 __attribute__((swift_name("component1()")));
 - (int64_t)component2 __attribute__((swift_name("component2()")));
 - (NSString * _Nullable)component3 __attribute__((swift_name("component3()")));
 - (NSString * _Nullable)component4 __attribute__((swift_name("component4()")));
 - (NSString * _Nullable)component5 __attribute__((swift_name("component5()")));
-- (UnflowPage_ *)doCopyPage_id:(int64_t)page_id screen_id:(int64_t)screen_id theme:(NSString * _Nullable)theme horizontal_alignment:(NSString * _Nullable)horizontal_alignment background_image_url:(NSString * _Nullable)background_image_url __attribute__((swift_name("doCopy(page_id:screen_id:theme:horizontal_alignment:background_image_url:)")));
+- (UnflowInt * _Nullable)component6 __attribute__((swift_name("component6()")));
+- (NSString * _Nullable)component7 __attribute__((swift_name("component7()")));
+- (NSString * _Nullable)component8 __attribute__((swift_name("component8()")));
+- (NSString * _Nullable)component9 __attribute__((swift_name("component9()")));
+- (UnflowPage_ *)doCopyPage_id:(int64_t)page_id screen_id:(int64_t)screen_id theme:(NSString * _Nullable)theme horizontal_alignment:(NSString * _Nullable)horizontal_alignment background_image_url:(NSString * _Nullable)background_image_url duration:(UnflowInt * _Nullable)duration background_type:(NSString * _Nullable)background_type background_color:(NSString * _Nullable)background_color background_asset_url:(NSString * _Nullable)background_asset_url __attribute__((swift_name("doCopy(page_id:screen_id:theme:horizontal_alignment:background_image_url:duration:background_type:background_color:background_asset_url:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable background_asset_url __attribute__((swift_name("background_asset_url")));
+@property (readonly) NSString * _Nullable background_color __attribute__((swift_name("background_color")));
 @property (readonly) NSString * _Nullable background_image_url __attribute__((swift_name("background_image_url")));
+@property (readonly) NSString * _Nullable background_type __attribute__((swift_name("background_type")));
+@property (readonly) UnflowInt * _Nullable duration __attribute__((swift_name("duration")));
 @property (readonly) NSString * _Nullable horizontal_alignment __attribute__((swift_name("horizontal_alignment")));
 @property (readonly) int64_t page_id __attribute__((swift_name("page_id")));
 @property (readonly) int64_t screen_id __attribute__((swift_name("screen_id")));
@@ -1249,7 +1741,7 @@ __attribute__((swift_name("ScreenQueries")))
 - (UnflowRuntimeQuery<UnflowOpener_ *> *)selectOpenerForScreenIdScreen_id:(int64_t)screen_id __attribute__((swift_name("selectOpenerForScreenId(screen_id:)")));
 - (UnflowRuntimeQuery<id> *)selectOpenerForScreenIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, UnflowLong *, NSString *, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectOpenerForScreenId(screen_id:mapper:)")));
 - (UnflowRuntimeQuery<UnflowPage_ *> *)selectPageForScreenIdScreen_id:(int64_t)screen_id __attribute__((swift_name("selectPageForScreenId(screen_id:)")));
-- (UnflowRuntimeQuery<id> *)selectPageForScreenIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, UnflowLong *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectPageForScreenId(screen_id:mapper:)")));
+- (UnflowRuntimeQuery<id> *)selectPageForScreenIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, UnflowLong *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, UnflowInt * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectPageForScreenId(screen_id:mapper:)")));
 - (UnflowRuntimeQuery<UnflowScreen_ *> *)selectScreenForIdScreen_id:(int64_t)screen_id __attribute__((swift_name("selectScreenForId(screen_id:)")));
 - (UnflowRuntimeQuery<id> *)selectScreenForIdScreen_id:(int64_t)screen_id mapper:(id (^)(UnflowLong *, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable))mapper __attribute__((swift_name("selectScreenForId(screen_id:mapper:)")));
 - (UnflowRuntimeQuery<UnflowSlot_ *> *)selectSlotForPageIdPage_id:(int64_t)page_id __attribute__((swift_name("selectSlotForPageId(page_id:)")));
@@ -1346,7 +1838,7 @@ __attribute__((swift_name("HttpClientProvider")))
 @interface UnflowHttpClientProvider : UnflowBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (UnflowKtor_client_coreHttpClient *)httpClientIsNetworkLoggingEnabled:(BOOL)isNetworkLoggingEnabled config:(void (^)(UnflowKtor_client_coreHttpClientConfig<id> *))config __attribute__((swift_name("httpClient(isNetworkLoggingEnabled:config:)")));
+- (UnflowKtor_client_coreHttpClient * _Nullable)httpClientIsNetworkLoggingEnabled:(BOOL)isNetworkLoggingEnabled config:(void (^)(UnflowKtor_client_coreHttpClientConfig<id> *))config __attribute__((swift_name("httpClient(isNetworkLoggingEnabled:config:)")));
 @end;
 
 __attribute__((swift_name("GenericStorage")))
