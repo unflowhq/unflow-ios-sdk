@@ -1,8 +1,12 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnflowUI
+import AVFoundation
+import AVKit
 import Combine
+import CoreMIDI
 import Foundation
+import Network
 import SafariServices
 import StoreKit
 import Swift
@@ -20,6 +24,8 @@ public class UnflowSDK {
   public func setCustomFonts(fonts: UnflowUI.Fonts)
   public func trackEvent<T>(_ key: Swift.String, attributes: T?) where T : Swift.Decodable, T : Swift.Encodable
   public func trackEvent(_ key: Swift.String)
+  public func registerToken(token: Swift.String)
+  public func deregisterToken()
   public func sync()
   public func getOpeners(id subscriptionID: Swift.String = Opener.defaultSubscriptionID, completion: @escaping (Swift.Result<[UnflowUI.Opener], Swift.Error>) -> Swift.Void)
   public func openers(id subscriptionID: Swift.String) -> Combine.AnyPublisher<[UnflowUI.Opener], Swift.Never>
@@ -61,6 +67,22 @@ public enum TargetViewSelector {
   public static func ancestorOrSiblingContaining<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
   public static func ancestorOrSiblingOfType<TargetView>(from entry: UnflowUI.PlatformView) -> TargetView? where TargetView : UIKit.UIView
 }
+public enum NetworkError : Swift.Int, Swift.Error {
+  case badResponse
+  case badRequest
+  case notFound
+  case conflict
+  case offline
+  case other
+  case failedToDecode
+  public init(from error: Foundation.URLError)
+  public init(from errorCode: Swift.Int)
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) public struct OpenerRail<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
@@ -72,6 +94,15 @@ public struct OpenerItemState {
   public let opener: UnflowUI.Opener
   public let maxWidth: CoreGraphics.CGFloat
   public let numberOfOpeners: Swift.Int
+}
+@available(iOS 13.0, *)
+extension UnflowUI.UnflowSDK {
+  public func registerPushToken(token: Foundation.Data)
+  public func deregisterPushToken()
+  @discardableResult
+  public func didReceiveNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
+  public func receivedNotificationResponse(response: UserNotifications.UNNotificationResponse)
+  public func processLaunchNotification(launchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
 }
 @available(iOS 13, *)
 @_Concurrency.MainActor(unsafe) public struct OpenerView<Content> : SwiftUI.View where Content : SwiftUI.View {
@@ -149,6 +180,10 @@ public struct Typography : Swift.Hashable, Swift.Equatable {
     get
   }
 }
+public protocol NetworkEnvironmentProviding {
+  var apiUrl: Swift.String { get }
+  var debug: Swift.Bool { get }
+}
 @available(iOS 13.0, *)
 public struct Fonts {
   public var title: SwiftUI.Font?
@@ -160,3 +195,6 @@ public struct Fonts {
   public var openerSubtitle: SwiftUI.Font?
   public init(title: SwiftUI.Font? = nil, subtitle: SwiftUI.Font? = nil, body: SwiftUI.Font? = nil, bodyBold: SwiftUI.Font? = nil, button: SwiftUI.Font? = nil, openerTitle: SwiftUI.Font? = nil, openerSubtitle: SwiftUI.Font? = nil)
 }
+extension UnflowUI.NetworkError : Swift.Equatable {}
+extension UnflowUI.NetworkError : Swift.Hashable {}
+extension UnflowUI.NetworkError : Swift.RawRepresentable {}

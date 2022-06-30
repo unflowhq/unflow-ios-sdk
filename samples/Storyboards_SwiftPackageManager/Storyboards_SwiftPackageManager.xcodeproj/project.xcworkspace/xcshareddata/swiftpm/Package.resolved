@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/unflowhq/unflow-ios-sdk",
       "state" : {
-        "revision" : "d2c6998dca24456a7629b52b420a10b41e0df738",
-        "version" : "1.7.1"
+        "revision" : "44998ed90cffccda8f0144d28984779500c64939",
+        "version" : "1.9.1"
       }
     }
   ],
