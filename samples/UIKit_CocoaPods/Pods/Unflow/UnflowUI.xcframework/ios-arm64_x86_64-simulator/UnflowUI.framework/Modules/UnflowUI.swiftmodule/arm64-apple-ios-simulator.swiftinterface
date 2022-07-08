@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnflowUI
 import AVFoundation
 import AVKit
@@ -12,12 +12,12 @@ import StoreKit
 import Swift
 import SwiftUI
 import UIKit
-import Unflow
 @_exported import UnflowUI
 import _AVKit_SwiftUI
 import _Concurrency
 @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 public class UnflowSDK {
+  public static var version: Swift.String
   public func openScreen(withID screenID: Swift.Int) throws
   public func setUserId(userId: Swift.String)
   public func setAttributes(attributes: [Swift.String : Swift.String])
@@ -35,10 +35,16 @@ public class UnflowSDK {
 @available(iOS 13.0, *)
 extension UnflowUI.UnflowSDK {
   public struct Config {
-    public init(apiKey: Swift.String, enableLogging: Swift.Bool)
+    public init(apiKey: Swift.String, enableLogging: Swift.Bool, openLinksInSafari: Swift.Bool = false)
   }
   public static let client: UnflowUI.UnflowSDK
   public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: UnflowUI.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
+}
+public struct UnflowContent {
+  public var text: Swift.String {
+    get
+  }
+  public init()
 }
 public typealias PlatformView = UIKit.UIView
 public typealias PlatformViewController = UIKit.UIViewController
@@ -70,6 +76,7 @@ public enum TargetViewSelector {
 public enum NetworkError : Swift.Int, Swift.Error {
   case badResponse
   case badRequest
+  case unauthorised
   case notFound
   case conflict
   case offline
@@ -90,10 +97,11 @@ public enum NetworkError : Swift.Int, Swift.Error {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerRailV4bodyQrvp", 0) __<Content>
 }
-public struct OpenerItemState {
+public struct OpenerItemState : Swift.Equatable {
   public let opener: UnflowUI.Opener
   public let maxWidth: CoreGraphics.CGFloat
   public let numberOfOpeners: Swift.Int
+  public static func == (a: UnflowUI.OpenerItemState, b: UnflowUI.OpenerItemState) -> Swift.Bool
 }
 @available(iOS 13.0, *)
 extension UnflowUI.UnflowSDK {
@@ -159,6 +167,15 @@ public struct OpenerHost<Content> : SwiftUI.View where Content : SwiftUI.View {
 public protocol AnalyticsListener {
   func onEvent(event: UnflowUI.UnflowEvent)
 }
+public enum UnflowError : Swift.Error {
+  case attributeTypeMismatch
+  case uninitialised
+  public static func == (a: UnflowUI.UnflowError, b: UnflowUI.UnflowError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) public struct OpenerBanner : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
@@ -174,8 +191,8 @@ public struct UnflowEvent {
 }
 @available(iOS 13.0, *)
 public struct Typography : Swift.Hashable, Swift.Equatable {
-  public static func == (a: UnflowUI.Typography, b: UnflowUI.Typography) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: UnflowUI.Typography, b: UnflowUI.Typography) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
@@ -198,3 +215,5 @@ public struct Fonts {
 extension UnflowUI.NetworkError : Swift.Equatable {}
 extension UnflowUI.NetworkError : Swift.Hashable {}
 extension UnflowUI.NetworkError : Swift.RawRepresentable {}
+extension UnflowUI.UnflowError : Swift.Equatable {}
+extension UnflowUI.UnflowError : Swift.Hashable {}
