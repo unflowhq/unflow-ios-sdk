@@ -17,9 +17,6 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 variant_for_slice()
 {
   case "$1" in
-  "UnflowUI.xcframework/ios-arm64_x86_64-simulator")
-    echo "simulator"
-    ;;
   "UnflowUI.xcframework/ios-arm64")
     echo ""
     ;;
@@ -29,9 +26,6 @@ variant_for_slice()
 archs_for_slice()
 {
   case "$1" in
-  "UnflowUI.xcframework/ios-arm64_x86_64-simulator")
-    echo "arm64 x86_64"
-    ;;
   "UnflowUI.xcframework/ios-arm64")
     echo "arm64"
     ;;
