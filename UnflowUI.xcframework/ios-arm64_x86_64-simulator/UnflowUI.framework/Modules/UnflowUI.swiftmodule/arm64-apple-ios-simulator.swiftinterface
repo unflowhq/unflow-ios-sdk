@@ -22,13 +22,15 @@ public class UnflowSDK {
   public func setUserId(userId: Swift.String)
   public func setAttributes(attributes: [Swift.String : Swift.String])
   public func setCustomFonts(fonts: UnflowUI.Fonts)
+  public func trackEvent(_ key: Swift.String, attributes: [Swift.String : UnflowUI.UnflowAnalyticsValue])
   public func trackEvent<T>(_ key: Swift.String, attributes: T?) where T : Swift.Decodable, T : Swift.Encodable
   public func trackEvent(_ key: Swift.String)
   public func registerToken(token: Swift.String)
   public func deregisterToken()
   public func sync()
-  public func getOpeners(id subscriptionID: Swift.String = Opener.defaultSubscriptionID, completion: @escaping (Swift.Result<[UnflowUI.Opener], Swift.Error>) -> Swift.Void)
-  public func openers(id subscriptionID: Swift.String) -> Combine.AnyPublisher<[UnflowUI.Opener], Swift.Never>
+  public func getOpeners(id spaceKey: Swift.String = Opener.defaultSpaceKey, completion: @escaping (Swift.Result<[UnflowUI.Opener], Swift.Error>) -> Swift.Void)
+  public func openers(id spaceKey: Swift.String = Opener.defaultSpaceKey) -> Combine.AnyPublisher<[UnflowUI.Opener], Swift.Never>
+  public func spaces() -> Combine.AnyPublisher<[UnflowUI.UnflowSpace], Swift.Never>
   public func updateApiKey(_ apiKey: Swift.String)
   @objc deinit
 }
@@ -90,6 +92,37 @@ public enum NetworkError : Swift.Int, Swift.Error {
     get
   }
 }
+@available(iOS 13, *)
+@_Concurrency.MainActor(unsafe) public struct SpacesView<Content> : SwiftUI.View where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public init(client: UnflowUI.UnflowSDK = UnflowSDK.client, filterDefault: Swift.Bool = true, @SwiftUI.ViewBuilder _ content: @escaping (([UnflowUI.UnflowSpace]) -> Content))
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10SpacesViewV4bodyQrvp", 0) __<Content>
+}
+@available(iOS 13, *)
+extension UnflowUI.SpacesView where Content == UnflowUI.SpacesHost<UnflowUI.SpaceView> {
+  @_Concurrency.MainActor(unsafe) public init(client: UnflowUI.UnflowSDK = UnflowSDK.client, filterDefault: Swift.Bool = true, contentPadding: CoreGraphics.CGFloat = 16, showTitles: Swift.Bool = true, font: SwiftUI.Font? = nil, fontColor: SwiftUI.Color? = nil)
+}
+@available(iOS 13, *)
+extension UnflowUI.SpacesView {
+  @_Concurrency.MainActor(unsafe) public init<ChildContent>(client: UnflowUI.UnflowSDK = UnflowSDK.client, content: @escaping (UnflowUI.UnflowSpace) -> ChildContent) where Content == UnflowUI.SpacesHost<ChildContent>, ChildContent : SwiftUI.View
+}
+@available(iOS 13, *)
+public struct SpacesHost<Content> : SwiftUI.View where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10SpacesHostV4bodyQrvp", 0) __<Content>
+}
+@available(iOS 13, *)
+public struct SpaceView : SwiftUI.View {
+  public init(client: UnflowUI.UnflowSDK = .client, space: UnflowUI.UnflowSpace, contentPadding: CoreGraphics.CGFloat = 16, showTitle: Swift.Bool = true, font: SwiftUI.Font? = nil, fontColor: SwiftUI.Color? = nil)
+  @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI9SpaceViewV4bodyQrvp", 0) __
+}
 @available(iOS 13.0, *)
 @_Concurrency.MainActor(unsafe) public struct OpenerRail<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
@@ -114,13 +147,25 @@ extension UnflowUI.UnflowSDK {
 }
 @available(iOS 13, *)
 @_Concurrency.MainActor(unsafe) public struct OpenerView<Content> : SwiftUI.View where Content : SwiftUI.View {
-  @_Concurrency.MainActor(unsafe) public init(subscriptionID: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client, limit: Swift.Int? = nil, @SwiftUI.ViewBuilder openerHost: @escaping ([UnflowUI.Opener]) -> Content)
+  @_Concurrency.MainActor(unsafe) public init(spaceKey: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client, limit: Swift.Int? = nil, @SwiftUI.ViewBuilder openerHost: @escaping ([UnflowUI.Opener]) -> Content)
   @_Concurrency.MainActor(unsafe) public init(limit: Swift.Int? = nil) where Content == UnflowUI.OpenerHost<UnflowUI.OpenerRail<UnflowUI.OpenerBanner>>
   @_Concurrency.MainActor(unsafe) public init<ItemContent>(contentPadding: CoreGraphics.CGFloat? = 16.0, scrollSettlingEnabled: Swift.Bool = true, itemContent: @escaping (UnflowUI.OpenerItemState) -> ItemContent) where Content == UnflowUI.OpenerRail<ItemContent>, ItemContent : SwiftUI.View
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
   public typealias Body = @_opaqueReturnTypeOf("$s8UnflowUI10OpenerViewV4bodyQrvp", 0) __<Content>
+}
+public struct UnflowSpace : Swift.Identifiable, Swift.Hashable {
+  public let id: Swift.Int
+  public let key: Swift.String?
+  public let name: Swift.String?
+  public let openers: [UnflowUI.Opener]
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: UnflowUI.UnflowSpace, b: UnflowUI.UnflowSpace) -> Swift.Bool
+  public typealias ID = Swift.Int
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 extension CoreGraphics.CGFloat {
   public func pixelsToPoints() -> CoreGraphics.CGFloat
@@ -135,7 +180,7 @@ extension SwiftUI.View {
   
 }
 public struct Opener : Swift.Hashable, Swift.Identifiable {
-  public static let defaultSubscriptionID: Swift.String
+  public static let defaultSpaceKey: Swift.String
   public var id: Swift.Int
   public var priority: Swift.Int
   public var title: Swift.String
@@ -166,6 +211,24 @@ public struct OpenerHost<Content> : SwiftUI.View where Content : SwiftUI.View {
 }
 public protocol AnalyticsListener {
   func onEvent(event: UnflowUI.UnflowEvent)
+}
+public protocol UnflowAnalyticsValue {
+}
+extension Swift.String : UnflowUI.UnflowAnalyticsValue {
+}
+extension Swift.Int : UnflowUI.UnflowAnalyticsValue {
+}
+extension Swift.Double : UnflowUI.UnflowAnalyticsValue {
+}
+extension Swift.Bool : UnflowUI.UnflowAnalyticsValue {
+}
+extension Foundation.Date : UnflowUI.UnflowAnalyticsValue {
+}
+public typealias UnflowAnalyticsArray = [UnflowUI.UnflowAnalyticsValue]
+public typealias UnflowAnalyticsDictionary = [Swift.String : UnflowUI.UnflowAnalyticsValue]
+extension Swift.Array : UnflowUI.UnflowAnalyticsValue where Element == UnflowUI.UnflowAnalyticsValue {
+}
+extension Swift.Dictionary : UnflowUI.UnflowAnalyticsValue where Key == Swift.String, Value == UnflowUI.UnflowAnalyticsValue {
 }
 public enum UnflowError : Swift.Error {
   case attributeTypeMismatch
