@@ -1,3 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-UIKit_CocoaPods/Pods-UIKit_CocoaPods-frameworks.sh
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/Unflow/UnflowUI.framework/UnflowUI
-${PODS_XCFRAMEWORKS_BUILD_DIR}/Unflow/Unflow.framework/Unflow
