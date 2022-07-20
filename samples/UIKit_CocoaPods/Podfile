@@ -2,5 +2,5 @@ platform :ios, '11.0'
 
 target 'UIKit_CocoaPods' do
   use_frameworks!
-  pod 'Unflow', :git => 'https://github.com/unflowhq/unflow-ios-sdk.git', :tag => 'v1.9.1'
+  pod 'Unflow', :git => 'https://github.com/unflowhq/unflow-ios-sdk.git', :tag => 'v1.10.0'
 end

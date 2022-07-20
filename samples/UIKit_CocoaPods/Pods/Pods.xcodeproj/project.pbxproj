@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2C86A461AD22CC52DF08DAE5D02C6F11 /* PBXContainerItemProxy */ = {
+		BF4CB563D2CBDE9A0DEFDBCD0196702B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -37,20 +37,19 @@
 
 /* Begin PBXFileReference section */
 		06494F24D4D98F23769A965DF39773F9 /* Pods-UIKit_CocoaPods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UIKit_CocoaPods.modulemap"; sourceTree = "<group>"; };
-		11319CD63720FD81A3F4F53D9D0C0B2F /* Unflow-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Unflow-xcframeworks.sh"; sourceTree = "<group>"; };
 		2114D8DAFABE5B4CE787514346783E70 /* Pods-UIKit_CocoaPods */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UIKit_CocoaPods"; path = Pods_UIKit_CocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		41C8A5E9AA1223EBB94055F029B3C2E7 /* UnflowUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = UnflowUI.xcframework; sourceTree = "<group>"; };
+		2888922A185E573D7AA53D275852B6CF /* Unflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Unflow.debug.xcconfig; sourceTree = "<group>"; };
 		4AE682024D504B0589DBC3534BA0AD4D /* Pods-UIKit_CocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKit_CocoaPods.release.xcconfig"; sourceTree = "<group>"; };
+		578EB0F7740322D7938D261001444A58 /* UnflowUI.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = UnflowUI.xcframework; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		781AE565D948FC5BA0446B40013C6C89 /* Pods-UIKit_CocoaPods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UIKit_CocoaPods-frameworks.sh"; sourceTree = "<group>"; };
 		7E0A74643C4CEF6836C8A83EF48C95CF /* Pods-UIKit_CocoaPods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UIKit_CocoaPods-dummy.m"; sourceTree = "<group>"; };
 		8A226282B7EF77086A302B6ECEE6FF10 /* Pods-UIKit_CocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UIKit_CocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BCA623149FE7AD4FCE6E78BC957E2CFE /* Pods-UIKit_CocoaPods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UIKit_CocoaPods-umbrella.h"; sourceTree = "<group>"; };
-		BF36442E23B206358DEC59425EA0EEA3 /* Unflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Unflow.release.xcconfig; sourceTree = "<group>"; };
 		C089EBC3C29952D3D302DE98BA93C9B9 /* Pods-UIKit_CocoaPods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKit_CocoaPods-acknowledgements.plist"; sourceTree = "<group>"; };
-		C7585DF571A47E4A31F818FDABBBC686 /* Unflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Unflow.debug.xcconfig; sourceTree = "<group>"; };
-		D7AEC4750715E7BA92CE7E0A51985F72 /* Unflow.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Unflow.xcframework; sourceTree = "<group>"; };
+		C0BE3F2133604F35C92709F305692F05 /* Unflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Unflow.release.xcconfig; sourceTree = "<group>"; };
+		EDEDDD6748A96EC9AE512CD25F9EC6C9 /* Unflow-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Unflow-xcframeworks.sh"; sourceTree = "<group>"; };
 		F91584441FD3630AABF7FC878B1A2F59 /* Pods-UIKit_CocoaPods-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UIKit_CocoaPods-Info.plist"; sourceTree = "<group>"; };
 		F97C9A12FFAE1694FB4E1DA8F51AAB23 /* Pods-UIKit_CocoaPods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UIKit_CocoaPods-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,16 +66,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1241C487B8D12B36F5DC18D6E51A170A /* Unflow */ = {
-			isa = PBXGroup;
-			children = (
-				6B7AE03417912CBC9603AD186CC77A99 /* Frameworks */,
-				B97C4BE0A7436C4AF26F9CEB32DC11FD /* Support Files */,
-			);
-			name = Unflow;
-			path = Unflow;
-			sourceTree = "<group>";
-		};
 		281C571E99A68A438487C2FBD77AC790 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +77,7 @@
 		34B50F43B746BD133C5D38FDF2868008 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1241C487B8D12B36F5DC18D6E51A170A /* Unflow */,
+				77EC8ED08BE9B12EE9CF96EE0535E05C /* Unflow */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -101,24 +90,33 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6B7AE03417912CBC9603AD186CC77A99 /* Frameworks */ = {
+		746EC75FEEB36307295E49A7D345217C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D7AEC4750715E7BA92CE7E0A51985F72 /* Unflow.xcframework */,
-				41C8A5E9AA1223EBB94055F029B3C2E7 /* UnflowUI.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B97C4BE0A7436C4AF26F9CEB32DC11FD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				11319CD63720FD81A3F4F53D9D0C0B2F /* Unflow-xcframeworks.sh */,
-				C7585DF571A47E4A31F818FDABBBC686 /* Unflow.debug.xcconfig */,
-				BF36442E23B206358DEC59425EA0EEA3 /* Unflow.release.xcconfig */,
+				EDEDDD6748A96EC9AE512CD25F9EC6C9 /* Unflow-xcframeworks.sh */,
+				2888922A185E573D7AA53D275852B6CF /* Unflow.debug.xcconfig */,
+				C0BE3F2133604F35C92709F305692F05 /* Unflow.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Unflow";
+			sourceTree = "<group>";
+		};
+		77EC8ED08BE9B12EE9CF96EE0535E05C /* Unflow */ = {
+			isa = PBXGroup;
+			children = (
+				AD4894EEADE17EA48AB7765288D90D18 /* Frameworks */,
+				746EC75FEEB36307295E49A7D345217C /* Support Files */,
+			);
+			name = Unflow;
+			path = Unflow;
+			sourceTree = "<group>";
+		};
+		AD4894EEADE17EA48AB7765288D90D18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578EB0F7740322D7938D261001444A58 /* UnflowUI.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CBC54998FB3161706682ABA59D2731EC /* Pods-UIKit_CocoaPods */ = {
@@ -191,7 +189,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E7FEC417E95812F3F28BEF9001C082B7 /* PBXTargetDependency */,
+				BA61B89DE3ACA72E75FFC1BE5C84787D /* PBXTargetDependency */,
 			);
 			name = "Pods-UIKit_CocoaPods";
 			productName = Pods_UIKit_CocoaPods;
@@ -268,11 +266,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E7FEC417E95812F3F28BEF9001C082B7 /* PBXTargetDependency */ = {
+		BA61B89DE3ACA72E75FFC1BE5C84787D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Unflow;
 			target = 895BAA499B6471DE8219F1A3E8C15A11 /* Unflow */;
-			targetProxy = 2C86A461AD22CC52DF08DAE5D02C6F11 /* PBXContainerItemProxy */;
+			targetProxy = BF4CB563D2CBDE9A0DEFDBCD0196702B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -317,7 +315,7 @@
 		};
 		4EB27E018F603CEBBDEC9FB1056A9D8D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF36442E23B206358DEC59425EA0EEA3 /* Unflow.release.xcconfig */;
+			baseConfigurationReference = C0BE3F2133604F35C92709F305692F05 /* Unflow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,7 +461,7 @@
 		};
 		DFB44EE1F80D21DB1EB6D41E2B0525BB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7585DF571A47E4A31F818FDABBBC686 /* Unflow.debug.xcconfig */;
+			baseConfigurationReference = 2888922A185E573D7AA53D275852B6CF /* Unflow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
