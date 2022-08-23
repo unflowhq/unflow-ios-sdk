@@ -20,6 +20,9 @@ variant_for_slice()
   "UnflowUI.xcframework/ios-arm64")
     echo ""
     ;;
+  "UnflowUI.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   esac
 }
 
@@ -28,6 +31,9 @@ archs_for_slice()
   case "$1" in
   "UnflowUI.xcframework/ios-arm64")
     echo "arm64"
+    ;;
+  "UnflowUI.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
     ;;
   esac
 }
@@ -111,5 +117,5 @@ install_xcframework() {
   echo "Copied $source to $destination"
 }
 
-install_xcframework "${PODS_ROOT}/Unflow/UnflowUI.xcframework" "Unflow" "framework" "ios-arm64_x86_64-simulator" "ios-arm64"
+install_xcframework "${PODS_ROOT}/Unflow/UnflowUI.xcframework" "Unflow" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 
