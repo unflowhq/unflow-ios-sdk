@@ -7247,6 +7247,23 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnflowUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnflowUI"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -11263,6 +11280,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "UnflowUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "UnflowUI",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -15669,21 +15710,21 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/BlockView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3764,
+      "offset": 4120,
       "length": 4,
       "value": "100"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/BlockView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3814,
+      "offset": 4170,
       "length": 4,
       "value": "200"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/BlockView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3850,
+      "offset": 4206,
       "length": 4,
       "value": "300"
     },
@@ -15704,7 +15745,7 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/ButtonBlock.swift",
       "kind": "StringLiteral",
-      "offset": 8762,
+      "offset": 8776,
       "length": 15,
       "value": "\"button_tapped\""
     },
@@ -15940,6 +15981,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/BlockAction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 770,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenView.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
@@ -15949,42 +15997,42 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenView.swift",
       "kind": "StringLiteral",
-      "offset": 9850,
+      "offset": 10614,
       "length": 15,
       "value": "\"screen_viewed\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenView.swift",
       "kind": "StringLiteral",
-      "offset": 10058,
+      "offset": 10822,
       "length": 18,
       "value": "\"screen_dismissed\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenView.swift",
       "kind": "StringLiteral",
-      "offset": 10270,
+      "offset": 11034,
       "length": 19,
       "value": "\"question_answered\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenView.swift",
       "kind": "StringLiteral",
-      "offset": 10936,
+      "offset": 11773,
       "length": 17,
       "value": "\"rating_response\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenView.swift",
       "kind": "StringLiteral",
-      "offset": 11455,
+      "offset": 12292,
       "length": 25,
       "value": "\"NavigationInsetsChanged\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenView.swift",
       "kind": "StringLiteral",
-      "offset": 11549,
+      "offset": 12386,
       "length": 18,
       "value": "\"NavigationInsets\""
     },
@@ -16096,35 +16144,42 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Model\/DocumentModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4130,
+      "offset": 4401,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Model\/DocumentModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5488,
+      "offset": 5759,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Model\/DocumentModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5523,
+      "offset": 5794,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Model\/DocumentModel.swift",
       "kind": "StringLiteral",
-      "offset": 5561,
+      "offset": 5832,
       "length": 7,
       "value": "\"Other\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Model\/DocumentModel.swift",
       "kind": "StringLiteral",
-      "offset": 5608,
+      "offset": 5879,
+      "length": 22,
+      "value": "\"Enter your own value\""
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Model\/DocumentModel.swift",
+      "kind": "StringLiteral",
+      "offset": 6055,
       "length": 22,
       "value": "\"Enter your own value\""
     },
@@ -16180,21 +16235,21 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/QuestionBlock.swift",
       "kind": "StringLiteral",
-      "offset": 3867,
+      "offset": 3418,
       "length": 7,
       "value": "\"other\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/QuestionBlock.swift",
       "kind": "StringLiteral",
-      "offset": 3883,
+      "offset": 3434,
       "length": 7,
       "value": "\"other\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/QuestionBlock.swift",
       "kind": "StringLiteral",
-      "offset": 3905,
+      "offset": 3456,
       "length": 7,
       "value": "\"other\""
     },
@@ -16220,6 +16275,62 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenViewModel.swift",
+      "kind": "Array",
+      "offset": 401,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenViewModel.swift",
+      "kind": "Array",
+      "offset": 4436,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenViewModel.swift",
+      "kind": "Array",
+      "offset": 4619,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/TextInputBlock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 441,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/TextInputBlock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 484,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/TextInputBlock.swift",
+      "kind": "IntegerLiteral",
+      "offset": 527,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/TextInputBlock.swift",
+      "kind": "StringLiteral",
+      "offset": 560,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/TextInputBlock.swift",
+      "kind": "StringLiteral",
+      "offset": 2559,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/Push\/Domain\/NotificationProcessor.swift",
       "kind": "StringLiteral",
       "offset": 857,
@@ -16243,14 +16354,14 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenNavigationOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 1790,
+      "offset": 1978,
       "length": 2,
       "value": "56"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/ScreenNavigationOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 7188,
+      "offset": 7512,
       "length": 1,
       "value": "0"
     },
@@ -16306,7 +16417,7 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Storing\/UnflowGRDBStorage.swift",
       "kind": "StringLiteral",
-      "offset": 9854,
+      "offset": 9786,
       "length": 17,
       "value": "\"unflowdb.sqlite\""
     },
@@ -16418,28 +16529,28 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Utilities\/EnvironmentValues+Unflow.swift",
       "kind": "IntegerLiteral",
-      "offset": 6286,
+      "offset": 6310,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Utilities\/EnvironmentValues+Unflow.swift",
       "kind": "BooleanLiteral",
-      "offset": 7783,
+      "offset": 7807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Utilities\/EnvironmentValues+Unflow.swift",
       "kind": "BooleanLiteral",
-      "offset": 8454,
+      "offset": 8478,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Utilities\/EnvironmentValues+Unflow.swift",
       "kind": "StringLiteral",
-      "offset": 8839,
+      "offset": 8863,
       "length": 71,
       "value": "\"WARNING: BlockActionHandlerKey not registered in current view context\""
     },
@@ -16495,28 +16606,28 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/Wrappers\/UnflowTextField.swift",
       "kind": "StringLiteral",
-      "offset": 2524,
+      "offset": 2823,
       "length": 26,
       "value": "\"UnflowUI.UnflowTextFieldCoordinator\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/Wrappers\/UnflowTextField.swift",
       "kind": "StringLiteral",
-      "offset": 5330,
+      "offset": 5692,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/Wrappers\/UnflowTextField.swift",
       "kind": "StringLiteral",
-      "offset": 7942,
+      "offset": 8304,
       "length": 32,
       "value": "\"UnflowTextFieldDidBecomeActive\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Screen\/Blocks\/Quiz\/Wrappers\/UnflowTextField.swift",
       "kind": "StringLiteral",
-      "offset": 9238,
+      "offset": 9602,
       "length": 12,
       "value": "\"FieldFrame\""
     },
@@ -17363,98 +17474,98 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "BooleanLiteral",
-      "offset": 1796,
+      "offset": 1807,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "BooleanLiteral",
-      "offset": 1833,
+      "offset": 1844,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "BooleanLiteral",
-      "offset": 1954,
+      "offset": 1965,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "Array",
-      "offset": 1999,
+      "offset": 2010,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "BooleanLiteral",
-      "offset": 2028,
+      "offset": 2039,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "StringLiteral",
-      "offset": 2063,
+      "offset": 2074,
       "length": 7,
       "value": "\"Other\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 2117,
       "length": 22,
       "value": "\"Enter your own value\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "BooleanLiteral",
-      "offset": 2480,
+      "offset": 2491,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "BooleanLiteral",
-      "offset": 2510,
+      "offset": 2521,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "BooleanLiteral",
-      "offset": 2621,
+      "offset": 2632,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "Array",
-      "offset": 2659,
+      "offset": 2670,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "BooleanLiteral",
-      "offset": 2681,
+      "offset": 2692,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "StringLiteral",
-      "offset": 2709,
+      "offset": 2720,
       "length": 7,
       "value": "\"Other\""
     },
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/BlockRecord.swift",
       "kind": "StringLiteral",
-      "offset": 2745,
+      "offset": 2756,
       "length": 22,
       "value": "\"Enter your own value\""
     },
@@ -17508,39 +17619,46 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/AutoSizingScrollView.swift",
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/Scroll View\/AutoSizingScrollView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1739,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/Scroll View\/AutoSizingScrollView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1745,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/Scroll View\/AutoSizingScrollView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1821,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/Scroll View\/AutoSizingScrollView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2049,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/Scroll View\/ScrollModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 494,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/Scroll View\/ScrollModel.swift",
       "kind": "Array",
-      "offset": 1555,
+      "offset": 597,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/AutoSizingScrollView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5134,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/AutoSizingScrollView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5140,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/AutoSizingScrollView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5216,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Components\/AutoSizingScrollView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5444,
-      "length": 5,
-      "value": "false"
     }
   ]
 }
