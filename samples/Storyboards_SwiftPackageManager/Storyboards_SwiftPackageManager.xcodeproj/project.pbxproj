@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63521EB52822969100235A36 /* Unflow in Frameworks */ = {isa = PBXBuildFile; productRef = 63521EB42822969100235A36 /* Unflow */; };
 		C729BA132703CA3F00AF6611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729BA122703CA3F00AF6611 /* AppDelegate.swift */; };
 		C729BA152703CA3F00AF6611 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729BA142703CA3F00AF6611 /* SceneDelegate.swift */; };
 		C729BA172703CA3F00AF6611 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C729BA162703CA3F00AF6611 /* HomeViewController.swift */; };
 		C729BA1A2703CA3F00AF6611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C729BA182703CA3F00AF6611 /* Main.storyboard */; };
 		C729BA1C2703CA4100AF6611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C729BA1B2703CA4100AF6611 /* Assets.xcassets */; };
 		C729BA1F2703CA4100AF6611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C729BA1D2703CA4100AF6611 /* LaunchScreen.storyboard */; };
+		FA3512D6290BF59100F26D73 /* Unflow in Frameworks */ = {isa = PBXBuildFile; productRef = FA3512D5290BF59100F26D73 /* Unflow */; };
 		FA74390227F31DB500B904BB /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74390127F31DB500B904BB /* GridViewController.swift */; };
 		FA74390727F31E4C00B904BB /* OpenerTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA74390627F31E4C00B904BB /* OpenerTileCell.xib */; };
 		FA74390927F31E6500B904BB /* OpenerTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA74390827F31E6500B904BB /* OpenerTileCell.swift */; };
@@ -31,6 +31,7 @@
 		C729BA1B2703CA4100AF6611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C729BA1E2703CA4100AF6611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C729BA202703CA4100AF6611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA3512D3290BF58200F26D73 /* unflow-ios-sdk */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "unflow-ios-sdk"; path = ../..; sourceTree = "<group>"; };
 		FA74390127F31DB500B904BB /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		FA74390627F31E4C00B904BB /* OpenerTileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenerTileCell.xib; sourceTree = "<group>"; };
 		FA74390827F31E6500B904BB /* OpenerTileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenerTileCell.swift; sourceTree = "<group>"; };
@@ -44,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63521EB52822969100235A36 /* Unflow in Frameworks */,
+				FA3512D6290BF59100F26D73 /* Unflow in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,8 +55,10 @@
 		C729BA062703CA3F00AF6611 = {
 			isa = PBXGroup;
 			children = (
+				FA3512D2290BF58200F26D73 /* Packages */,
 				C729BA112703CA3F00AF6611 /* Storyboards_SwiftPackageManager */,
 				C729BA102703CA3F00AF6611 /* Products */,
+				FA3512D4290BF59100F26D73 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +83,21 @@
 				C729BA202703CA4100AF6611 /* Info.plist */,
 			);
 			path = Storyboards_SwiftPackageManager;
+			sourceTree = "<group>";
+		};
+		FA3512D2290BF58200F26D73 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				FA3512D3290BF58200F26D73 /* unflow-ios-sdk */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		FA3512D4290BF59100F26D73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FA74390327F31E3200B904BB /* Home */ = {
@@ -152,7 +170,7 @@
 			);
 			name = Storyboards_SwiftPackageManager;
 			packageProductDependencies = (
-				63521EB42822969100235A36 /* Unflow */,
+				FA3512D5290BF59100F26D73 /* Unflow */,
 			);
 			productName = UIKitAnymoExample;
 			productReference = C729BA0F2703CA3F00AF6611 /* Storyboards_SwiftPackageManager.app */;
@@ -183,7 +201,6 @@
 			);
 			mainGroup = C729BA062703CA3F00AF6611;
 			packageReferences = (
-				63521EB32822969100235A36 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */,
 			);
 			productRefGroup = C729BA102703CA3F00AF6611 /* Products */;
 			projectDirPath = "";
@@ -441,21 +458,9 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		63521EB32822969100235A36 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/unflowhq/unflow-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.12.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		63521EB42822969100235A36 /* Unflow */ = {
+		FA3512D5290BF59100F26D73 /* Unflow */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 63521EB32822969100235A36 /* XCRemoteSwiftPackageReference "unflow-ios-sdk" */;
 			productName = Unflow;
 		};
 /* End XCSwiftPackageProductDependency section */
