@@ -66,10 +66,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -1494,10 +1491,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -3080,10 +3074,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -3158,10 +3149,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -4307,10 +4295,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -4354,10 +4339,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -4908,10 +4890,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -5476,10 +5455,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -6002,9 +5978,16 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
+        "moduleName": "UnflowUI"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "UnflowUI",
         "declAttributes": [
-          "ImplementationOnly"
+          "RawDocComment"
         ]
       },
       {
@@ -6112,10 +6095,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -6169,10 +6149,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -6910,10 +6887,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -7455,10 +7429,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -7711,10 +7682,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -7751,10 +7719,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -7835,10 +7800,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -7976,10 +7938,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "TypeDecl",
@@ -8282,10 +8241,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -8558,10 +8514,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -8653,10 +8606,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "TypeDecl",
@@ -9067,10 +9017,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -9104,10 +9051,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -9455,10 +9399,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -11411,10 +11352,7 @@
         "name": "UnflowGRDB",
         "printedName": "UnflowGRDB",
         "declKind": "Import",
-        "moduleName": "UnflowUI",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
+        "moduleName": "UnflowUI"
       },
       {
         "kind": "Import",
@@ -16134,7 +16072,7 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Migration\/DatabaseVersionTwo.swift",
       "kind": "IntegerLiteral",
-      "offset": 330,
+      "offset": 309,
       "length": 1,
       "value": "1"
     },
@@ -16372,7 +16310,7 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/SlotRecord.swift",
       "kind": "Array",
-      "offset": 642,
+      "offset": 621,
       "length": 2,
       "value": "[]"
     },
@@ -16603,7 +16541,7 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Migration\/DatabaseVersionThree.swift",
       "kind": "IntegerLiteral",
-      "offset": 332,
+      "offset": 311,
       "length": 1,
       "value": "2"
     },
@@ -16687,7 +16625,7 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Migration\/DatabaseVersionFour.swift",
       "kind": "IntegerLiteral",
-      "offset": 329,
+      "offset": 308,
       "length": 1,
       "value": "4"
     },
@@ -16862,7 +16800,14 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Persistence\/Data\/Model\/PageRecord.swift",
       "kind": "Array",
-      "offset": 1222,
+      "offset": 1201,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowUI\/UI\/Opener\/OpenerViewModel.swift",
+      "kind": "Array",
+      "offset": 459,
       "length": 2,
       "value": "[]"
     },
@@ -17009,7 +16954,7 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Migration\/DatabaseVersionOne.swift",
       "kind": "IntegerLiteral",
-      "offset": 330,
+      "offset": 309,
       "length": 1,
       "value": "0"
     },
@@ -17919,7 +17864,7 @@
     {
       "filePath": "\/Users\/alex\/Developer\/Unflow\/unflow-multiplatform-sdk\/ios\/UnflowUI\/UnflowContent\/Content\/Domain\/Migration\/DatabaseVersionFive.swift",
       "kind": "IntegerLiteral",
-      "offset": 329,
+      "offset": 308,
       "length": 1,
       "value": "5"
     },
