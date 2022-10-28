@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnflowUI
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
@@ -13,6 +13,7 @@ import Swift
 import SwiftUI
 import UIKit
 import UIKit.UIScreen
+import UnflowGRDB
 @_exported import UnflowUI
 import _AVKit_SwiftUI
 import _Concurrency
@@ -23,6 +24,9 @@ public class UnflowSDK {
   public func openScreen(withID screenID: Swift.Int) throws
   public func setUserId(userId: Swift.String)
   public func setAttributes(attributes: [Swift.String : Swift.String])
+  @available(iOS 16.0, *)
+  public func setUserLocale(locale: Foundation.Locale = .autoupdatingCurrent, language: Foundation.Locale.LanguageCode)
+  public func setUserLocale(locale: Foundation.Locale = .autoupdatingCurrent, language: Swift.String)
   public func setAttributes(attributes: [Swift.String : UnflowUI.UnflowAnalyticsValue])
   @available(*, deprecated, message: "Use `setCustomFonts(fonts:UnflowFonts)` instead. This change is required to enable custom fonts to display in text fields.")
   public func setCustomFonts(fonts: UnflowUI.Fonts)
@@ -48,7 +52,7 @@ public class UnflowSDK {
 @available(iOS 13.0, *)
 extension UnflowUI.UnflowSDK {
   public struct Config {
-    public init(apiKey: Swift.String, enableLogging: Swift.Bool, openLinksInSafari: Swift.Bool = false, enablePrivacyMode: Swift.Bool = false)
+    public init(apiKey: Swift.String, enableLogging: Swift.Bool, openLinksInSafari: Swift.Bool = false, enablePrivacyMode: Swift.Bool = false, ignoreSilentMode: Swift.Bool = false)
   }
   public static let client: UnflowUI.UnflowSDK
   public static func initialize(config: UnflowUI.UnflowSDK.Config, analyticsListener: UnflowUI.AnalyticsListener? = nil) -> UnflowUI.UnflowSDK
