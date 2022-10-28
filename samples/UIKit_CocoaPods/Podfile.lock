@@ -1,22 +1,16 @@
 PODS:
-  - Unflow (1.12.1)
+  - Unflow (1.13.0)
 
 DEPENDENCIES:
-  - Unflow (from `https://github.com/unflowhq/unflow-ios-sdk.git`, tag `v1.12.1`)
+  - Unflow (from `../../`)
 
 EXTERNAL SOURCES:
   Unflow:
-    :git: https://github.com/unflowhq/unflow-ios-sdk.git
-    :tag: v1.12.1
-
-CHECKOUT OPTIONS:
-  Unflow:
-    :git: https://github.com/unflowhq/unflow-ios-sdk.git
-    :tag: v1.12.1
+    :path: "../../"
 
 SPEC CHECKSUMS:
-  Unflow: 6cdf0cea5e2ff605321d73b663b7e5ddce8aa19e
+  Unflow: d6a73b5266ff800b019aef1b036ae94214975c2a
 
-PODFILE CHECKSUM: 514134a0213c42492f487e79e810580e43b8d950
+PODFILE CHECKSUM: 840f07bbf921c40d4c37114d37ee32568bd57582
 
 COCOAPODS: 1.11.3
