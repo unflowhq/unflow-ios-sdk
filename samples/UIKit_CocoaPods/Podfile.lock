@@ -1,5 +1,5 @@
 PODS:
-  - Unflow (1.14.0)
+  - Unflow (1.13.0)
 
 DEPENDENCIES:
   - Unflow (from `../../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Unflow: d263c46c387af06d7000081a3c652526778329b7
+  Unflow: d6a73b5266ff800b019aef1b036ae94214975c2a
 
 PODFILE CHECKSUM: 840f07bbf921c40d4c37114d37ee32568bd57582
 

@@ -1,10 +1,10 @@
 {
   "name": "Unflow",
-  "version": "1.14.0",
+  "version": "1.13.0",
   "summary": "A low-code tool for marketers to ship screens quickly",
   "source": {
     "git": "https://github.com/unflowhq/unflow-ios-sdk.git",
-    "tag": "v1.14.0"
+    "tag": "v1.13.0"
   },
   "homepage": "https://www.unflow.com",
   "license": {
@@ -17,10 +17,10 @@
   "platforms": {
     "ios": "11.0"
   },
-  "swift_versions": "5.7",
+  "swift_versions": "5.5",
   "vendored_frameworks": "UnflowUI.xcframework",
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
-  "swift_version": "5.7"
+  "swift_version": "5.5"
 }
