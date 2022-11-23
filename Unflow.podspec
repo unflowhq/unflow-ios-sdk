@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'Unflow'
-    s.version               = '1.13.0-swift-5.6'
+    s.version               = '1.14.0-swift-5.6'
     s.summary               = 'A low-code tool for marketers to ship screens quickly'
     s.source                = { :git => "https://github.com/unflowhq/unflow-ios-sdk.git", :tag => "v#{s.version.to_s}" }
     s.homepage              = 'https://www.unflow.com'
