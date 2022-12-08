@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name UnflowUI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVFoundation
 import AVKit
 import Combine
@@ -15,23 +16,24 @@ import UIKit.UIScreen
 @_exported import UnflowUI
 import _AVKit_SwiftUI
 import _Concurrency
+import _StringProcessing
 @_hasMissingDesignatedInitializers @available(iOS 13.0, *)
 public class UnflowSDK {
   public static var version: Swift.String
   public func openScreen(withID screenID: Swift.Int) throws
   public func setUserId(userId: Swift.String)
   public func setAttributes(attributes: [Swift.String : Swift.String])
+  @available(iOS 16.0, *)
+  public func setUserLocale(locale: Foundation.Locale = .autoupdatingCurrent, language: Foundation.Locale.LanguageCode)
   public func setUserLocale(locale: Foundation.Locale = .autoupdatingCurrent, language: Swift.String)
   public func setAttributes(attributes: [Swift.String : UnflowUI.UnflowAnalyticsValue])
   @available(*, deprecated, message: "Use `setCustomFonts(fonts:UnflowFonts)` instead. This change is required to enable custom fonts to display in text fields.")
   public func setCustomFonts(fonts: UnflowUI.Fonts)
   public func setCustomFonts(fonts: UnflowUI.UnflowFonts)
   public func close(complete: @escaping () -> ())
-  
   #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor public func close() async
   #endif
-
   public func trackEvent(_ key: Swift.String, attributes: [Swift.String : UnflowUI.UnflowAnalyticsValue])
   public func trackEvent<T>(_ key: Swift.String, attributes: T?) where T : Swift.Decodable, T : Swift.Encodable
   public func trackEvent(_ key: Swift.String)
@@ -114,7 +116,7 @@ public enum NetworkError : Swift.Int, Swift.Error {
 }
 @available(iOS 13, *)
 extension UnflowUI.SpacesView where Content == UnflowUI.SpacesHost<UnflowUI.SpaceView> {
-  @_Concurrency.MainActor(unsafe) public init(client: UnflowUI.UnflowSDK = UnflowSDK.client, filterDefault: Swift.Bool = true, contentPadding: CoreGraphics.CGFloat = 16, showTitles: Swift.Bool = true, font: SwiftUI.Font? = nil, fontColor: SwiftUI.Color? = nil, bannerBackgroundColor: SwiftUI.Color? = nil, bannerTitleColor: SwiftUI.Color? = nil, bannerSubtitleColor: SwiftUI.Color? = nil)
+  @_Concurrency.MainActor(unsafe) public init(client: UnflowUI.UnflowSDK = UnflowSDK.client, filterDefault: Swift.Bool = true, contentPadding: CoreFoundation.CGFloat = 16, showTitles: Swift.Bool = true, font: SwiftUI.Font? = nil, fontColor: SwiftUI.Color? = nil, bannerBackgroundColor: SwiftUI.Color? = nil, bannerTitleColor: SwiftUI.Color? = nil, bannerSubtitleColor: SwiftUI.Color? = nil)
 }
 @available(iOS 13, *)
 extension UnflowUI.SpacesView {
@@ -129,7 +131,7 @@ public struct SpacesHost<Content> : SwiftUI.View where Content : SwiftUI.View {
 }
 @available(iOS 13, *)
 public struct SpaceView : SwiftUI.View {
-  public init(client: UnflowUI.UnflowSDK = .client, space: UnflowUI.UnflowSpace, contentPadding: CoreGraphics.CGFloat = 16, showTitle: Swift.Bool = true, font: SwiftUI.Font? = nil, fontColor: SwiftUI.Color? = nil, bannerBackgroundColor: SwiftUI.Color? = nil, bannerTitleColor: SwiftUI.Color? = nil, bannerSubtitleColor: SwiftUI.Color? = nil)
+  public init(client: UnflowUI.UnflowSDK = .client, space: UnflowUI.UnflowSpace, contentPadding: CoreFoundation.CGFloat = 16, showTitle: Swift.Bool = true, font: SwiftUI.Font? = nil, fontColor: SwiftUI.Color? = nil, bannerBackgroundColor: SwiftUI.Color? = nil, bannerTitleColor: SwiftUI.Color? = nil, bannerSubtitleColor: SwiftUI.Color? = nil)
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -144,7 +146,7 @@ public struct SpaceView : SwiftUI.View {
 }
 public struct OpenerItemState : Swift.Equatable {
   public let opener: UnflowUI.Opener
-  public let maxWidth: CoreGraphics.CGFloat
+  public let maxWidth: CoreFoundation.CGFloat
   public let numberOfOpeners: Swift.Int
   public static func == (a: UnflowUI.OpenerItemState, b: UnflowUI.OpenerItemState) -> Swift.Bool
 }
@@ -165,7 +167,7 @@ extension Combine.Publisher {
 @_Concurrency.MainActor(unsafe) public struct OpenerView<Content> : SwiftUI.View where Content : SwiftUI.View {
   @_Concurrency.MainActor(unsafe) public init(spaceKey: Swift.String? = nil, client: UnflowUI.UnflowSDK = UnflowSDK.client, limit: Swift.Int? = nil, @SwiftUI.ViewBuilder openerHost: @escaping ([UnflowUI.Opener]) -> Content)
   @_Concurrency.MainActor(unsafe) public init(spaceKey: Swift.String? = nil, limit: Swift.Int? = nil, backgroundColor: SwiftUI.Color? = nil, titleColor: SwiftUI.Color? = nil, subtitleColor: SwiftUI.Color? = nil) where Content == UnflowUI.OpenerSwitchingView
-  @_Concurrency.MainActor(unsafe) public init<ItemContent>(contentPadding: CoreGraphics.CGFloat? = 16.0, scrollSettlingEnabled: Swift.Bool = true, itemContent: @escaping (UnflowUI.OpenerItemState) -> ItemContent) where Content == UnflowUI.OpenerRail<ItemContent>, ItemContent : SwiftUI.View
+  @_Concurrency.MainActor(unsafe) public init<ItemContent>(contentPadding: CoreFoundation.CGFloat? = 16.0, scrollSettlingEnabled: Swift.Bool = true, itemContent: @escaping (UnflowUI.OpenerItemState) -> ItemContent) where Content == UnflowUI.OpenerRail<ItemContent>, ItemContent : SwiftUI.View
   @_Concurrency.MainActor(unsafe) public var body: some SwiftUI.View {
     get
   }
@@ -191,8 +193,8 @@ public struct UnflowSpace : Swift.Identifiable, Swift.Hashable {
     get
   }
 }
-extension CoreGraphics.CGFloat {
-  public func pixelsToPoints() -> CoreGraphics.CGFloat
+extension CoreFoundation.CGFloat {
+  public func pixelsToPoints() -> CoreFoundation.CGFloat
 }
 public enum SpaceLayout : Swift.String, Swift.Codable, Swift.Equatable, Swift.CaseIterable {
   case visual, banner
