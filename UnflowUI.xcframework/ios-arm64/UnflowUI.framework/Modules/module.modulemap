@@ -6,6 +6,6 @@ framework module UnflowUI {
 }
 
 module UnflowUI.Swift {
-  header "UnflowUI-Swift.h"
-  requires objc
+    header "UnflowUI-Swift.h"
+    requires objc
 }
