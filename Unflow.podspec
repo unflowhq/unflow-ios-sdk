@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'Unflow'
-    s.version               = '1.15.1-swift-5.6'
+    s.version               = '1.15.1'
     s.summary               = 'A low-code tool for marketers to ship screens quickly'
     s.source                = { :git => "https://github.com/unflowhq/unflow-ios-sdk.git", :tag => "v#{s.version.to_s}" }
     s.homepage              = 'https://www.unflow.com'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.author                = { 'Unflow' => 'team@monaru.io' }
 
     s.platform              = :ios
-    s.swift_version         = '5.6'
+    s.swift_version         = '5.7'
     s.ios.deployment_target = '11.0'
     s.vendored_frameworks   = 'UnflowUI.xcframework'
 
