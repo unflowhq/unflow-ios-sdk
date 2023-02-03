@@ -8,7 +8,7 @@ Tired of building the same simple screens over and over again? Empower your prod
 
 Please visit [docs.unflow.com](https://docs.unflow.com/) for Quick Start and detailed explanations of features, usage, and more info.
 
-## Installation
+## Installation
 
 ![SPM](https://img.shields.io/github/v/release/unflowhq/unflow-ios-sdk?label=Current%20Version)
 
